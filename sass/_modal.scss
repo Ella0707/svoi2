@@ -97,4 +97,11 @@
             }
         }
     }
+
+    &.modal-review-for-performer {
+        .leave-review__who {
+            font-size: 1.8rem;
+            color: #898D93;
+        }
+    }
 }

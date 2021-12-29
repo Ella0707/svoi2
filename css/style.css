@@ -1283,6 +1283,10 @@ input[type=number] {
 .modal__footer .btn:last-child {
   margin-right: 0;
 }
+.modal.modal-review-for-performer .leave-review__who {
+  font-size: 1.8rem;
+  color: #898D93;
+}
 
 .header {
   position: absolute;
@@ -23720,6 +23724,16 @@ input[type=number] {
   .modal.modal-statistics .modal__subtitle {
     width: 85%;
     margin: 0 auto;
+  }
+  .modal.modal-review-for-performer .leave-review__ava {
+    width: 9.6rem;
+    height: 9.6rem;
+  }
+  .modal.modal-review-for-performer .leave-review__name {
+    font-size: 3.6rem;
+  }
+  .modal.modal-review-for-performer .leave-review__who {
+    font-size: 3.2rem;
   }
 
   .advertisign {
