@@ -1,0 +1,133 @@
+.cldr {
+    &__calendar {
+        //overflow: visible !important;
+        padding: 0 !important;
+        position: relative;
+    }
+    table {
+        border-color: transparent;
+    }
+    .prev,
+    .next {
+        position: absolute;
+        top: -9rem;
+        display: flex !important;
+        width: 3.7rem !important;
+        height: 3.7rem !important;
+        border-radius: 100%;
+        display: none !important;
+        @include bg-icon;
+        span {
+            opacity: 0;
+        }
+        &:hover {
+            @include bg-icon;
+            background-color: transparent !important;
+        }
+    }
+    .prev {
+        right: 4.7rem;
+        background-image: url(../img/block-arr-left.svg);
+    }
+    .calendar .calendar-header table .next:hover {
+        @include bg-icon;
+        background-color: transparent;
+        background-image: url(../img/block-arr-right.svg);
+    }
+    .calendar .calendar-header table .prev:hover {
+        @include bg-icon;
+        background-color: transparent;
+        background-image: url(../img/block-arr-left.svg);
+    }
+    .next {
+        right: 0;
+        background-image: url(../img/block-arr-right.svg);
+    }
+    &.prev-disabled {
+        .prev {
+            pointer-events: none;
+            background-image: url(../img/block-arr-left-dis.svg) !important;
+        }
+    }
+    &.next-disabled {
+        .next {
+            pointer-events: none;
+        }
+    }
+    .calendar-header {
+        border: none;
+        display: none !important;
+    }
+    .year-title {
+        pointer-events: none;
+    }
+    .months-container {
+        flex-wrap: nowrap;
+        width: 100%;
+        //overflow: auto;
+    }
+    .month-container {
+        width: 37.6rem !important;
+        height: 36rem;
+        flex-shrink: 0;
+        background: #ffffff;
+        box-shadow: 0.5rem 1rem 3rem rgba(230, 230, 230, 0.6);
+        border-radius: 3rem;
+        margin-right: 3rem;
+        padding: 3rem !important;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    .month-title {
+        font-family: "Circe";
+        font-size: 2rem !important;
+        letter-spacing: -0.024rem !important;
+        color: #000000 !important;
+        padding-bottom: 2rem !important;
+    }
+    .day-header {
+        font-size: 1.3rem !important;
+        color: #d8d8d8 !important;
+        padding-bottom: 1rem !important;
+    }
+    .month {
+        margin: 0;
+        width: 100%;
+    }
+    .day-content {
+        width: 3.2rem;
+        height: 3.2rem;
+        margin: 0;
+        padding: 0.5rem 0.4rem !important;
+        color: #5f5f5f;
+        font-size: 1.8rem !important;
+        border-radius: 100% !important;
+        border: 0.2rem solid transparent;
+        &:hover {
+            background-color: #fff !important;
+            border-color: $green;
+        }
+    }
+    .day[style] {
+        box-shadow: none !important;
+        .day-content {
+            background-color: $green !important;
+            border-color: $green;
+            color: #fff;
+        }
+    }
+    .day {
+        padding: 0.4rem 0.6rem !important;
+        &.day-check .day-content {
+            background-color: $green !important;
+            border-color: $green;
+            color: #fff;
+        }
+        &.day-uncheck .day-content {
+            background-color: #fff !important;
+            border-color: transparent;
+            color: #5f5f5f;
+        }
+    }
+}

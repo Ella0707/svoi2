@@ -1,0 +1,100 @@
+.contacts-bottom {
+    &__inner {
+        margin-bottom: 5rem;
+        background-color: $grey;
+        padding-top: 10rem;
+        padding-left: 10.6rem;
+        padding-right: 10.6rem;
+        padding-bottom: 10.4rem;
+        border-radius: 7rem;
+    }
+    &__blocks {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__block {
+        width: 34rem;
+        min-height: 30rem;
+        background-color: #fff;
+        padding-top: 3rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-bottom: 2.3rem;
+        border-radius: 3rem;
+    }
+    &__icon {
+        width: 3.8rem;
+        height: 3.8rem;
+        margin-bottom: 2.3rem;
+        @include contain;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 2.5rem;
+        color: #2f3646;
+        margin-bottom: 1.5rem;
+    }
+    &__subtitle {
+        color: #868a8e;
+        width: 26rem;
+        margin-bottom: 2.4rem;
+    }
+    &__email {
+        margin-bottom: 0.4rem;
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        img {
+            width: 2.4rem;
+            height: 2.4rem;
+            margin-right: 1rem;
+        }
+    }
+    &__email-text {
+        font-weight: bold;
+        font-size: 2rem;
+        color: #171e2f;
+    }
+    &__address {
+        margin-bottom: 0.4rem;
+        display: flex;
+        margin-bottom: 1.5rem;
+        img {
+            width: 2.4rem;
+            height: 2.4rem;
+            margin-right: 1rem;
+        }
+    }
+    &__phone {
+        display: flex;
+        align-items: center;
+        img {
+            width: 2.4rem;
+            height: 2.4rem;
+            margin-right: 1rem;
+        }
+    }
+    &__phone-text {
+        font-weight: bold;
+        font-size: 1.7rem;
+        color: #171e2f;
+    }
+    &__map {
+        width: 111.8rem;
+        height: 30rem;
+        border-radius: 3rem;
+        overflow: hidden;
+        #map {
+            width: 100%;
+            height: 30rem;
+        }
+    }
+
+    &__pic {
+        display: none;
+    }
+}

@@ -1,0 +1,117 @@
+.error-banner {
+    padding-top: 14.6rem;
+    margin-bottom: 13rem;
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+      background-color: #CC283C;
+      border-radius: 7rem;
+      padding-right: 10.7rem;
+      padding-left: 10.5rem;
+      padding-bottom: 8.7rem;
+      position: relative;
+    }
+    &__left {
+        width: 50.1rem;
+    }
+    &__kod{
+      font-weight: bold;
+      font-size: 2.4rem;
+      color: #FFFFFF;
+      margin-bottom: 1rem;
+      margin-top: 18.8rem;
+    }
+    &__title {
+      font-weight: bold;
+      font-size: 5rem;
+      line-height: 5.8rem;
+      color: #FFFFFF;
+      width: 47.6rem;
+    }
+    &__subtitle {
+        width: 37.5rem;
+        font-size: 1.8rem;
+        line-height: 1.4;
+        color: #FFC2D1;
+        padding-top: 2rem;
+        margin-bottom: 5rem;
+    }
+    &__down {
+        display: flex;
+        align-items: center;
+    }
+    &__down-texts {
+        padding-left: 3rem;
+    }
+    &__a-button {
+        display: inline-block;
+        width: 7rem;
+        height: 10rem;
+        z-index: 1;
+    }
+    &__services {
+        font-size: 2rem;
+        line-height: 2.9rem;
+        color: #171e2f;
+        position: relative;
+        padding-bottom: 1.2rem;
+        &::after {
+            content: "";
+            display: inline-block;
+            width: 3.3rem;
+            height: 0.2rem;
+            background-color: #171e2f;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+    &__all-services {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        color: #868a8e;
+        padding-top: 1.3rem;
+    }
+    &__mid {
+        width: 50rem;
+        padding-top: 4rem;
+        margin-left: 14.4rem;
+    }
+    &__pic{
+      width: 94.1rem;
+      height: 52.3rem;
+    }
+    &__img-1 {
+      position: absolute;
+      right: 6rem;
+      width: 94.1rem;
+      height: 52.3rem;
+      top: 7rem;
+
+      &.mobile {
+        display: none;
+      }
+    }
+    &__pic1{
+      top: -17.3rem;
+      position: absolute;
+      transform: rotate(-3.4deg) scale(1, -1);
+      left: 19.6rem;
+      overflow: hidden;
+      img{
+        width: 66.7rem;
+        height: 34.7rem;
+      }
+    }
+    &__pic2{
+      position: absolute;
+      left: 14.1rem;
+      bottom: -15.1rem;
+      transform: rotate(183.9deg);
+      overflow: hidden;
+      img{
+        width: 66.7rem;
+        height: 34.7rem;
+      }
+    }
+  }

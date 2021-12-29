@@ -1,0 +1,288 @@
+.article {
+    margin-bottom: 19rem;
+    &__inner {
+        font-size: 2rem;
+        line-height: 1.4;
+
+        p {
+            margin-bottom: 3rem;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        .article__title {
+            font-weight: bold;
+            font-size: 4rem;
+            line-height: 1.2;
+            margin-bottom: 3rem;
+        }
+        --counter-ol: 1;
+        ol {
+            list-style: none;
+            counter-reset: counter-ol;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+            margin-bottom: 3rem;
+            li {
+                counter-increment: counter-ol;
+                display: flex;
+                margin-bottom: 1.8rem;
+                &::before {
+                    content: counter(counter-ol);
+                    display: inline-block;
+                    font-size: 2rem;
+                    min-width: 4.2rem;
+                }
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4),
+                &:nth-child(5),
+                &:nth-child(6),
+                &:nth-child(7),
+                &:nth-child(8),
+                &:nth-child(9) {
+                    &::before {
+                        content: "0" counter(counter-ol);
+                    }
+                }
+            }
+        }
+    }
+    &__block {
+        width: 100rem;
+        margin: 0 auto;
+        margin-bottom: 4rem;
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:nth-child(3) {
+            margin-bottom: 6.5rem;
+        }
+
+        &:nth-child(5) {
+            margin-bottom: 6.5rem;
+        }
+
+        &:nth-child(7) {
+            margin-bottom: 8.2rem;
+        }
+
+        &:nth-child(8) {
+            margin-bottom: 7rem;
+        }
+
+        &:nth-child(10) {
+            padding-bottom: 0;
+            margin-bottom: 16rem;
+        }
+
+        &:nth-child(11) {
+            margin-bottom: 6rem;
+        }
+
+        &:nth-child(13) {
+            margin-bottom: 6rem;
+        }
+
+        &:nth-child(15) {
+            margin-bottom: 15.5rem;
+        }
+    }
+    &__block-grey {
+        background-color: #ecebef;
+        border-radius: 4rem;
+        margin-bottom: 6.5rem;
+        position: relative;
+        overflow: hidden;
+        padding-top: 8.6rem;
+        padding-bottom: 3rem;
+        &--q {
+            padding-top: 5.5rem;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:nth-child(4) {
+            margin-bottom: 12.5rem;
+        }
+
+        &:nth-child(6) {
+            padding-bottom: 0;
+            margin-bottom: 8rem;
+        }
+
+        &:nth-child(9) {
+            margin-bottom: 8rem;
+        }
+
+        &:nth-child(12) {
+            padding-bottom: 1rem;
+        }
+
+        &:nth-child(14) {
+            margin-bottom: 12rem;
+        }
+    }
+    &__rose {
+        position: absolute;
+        &--1 {
+            top: 0rem;
+            left: 0rem;
+            width: 57rem;
+        }
+        &--2 {
+            bottom: 0rem;
+            right: 0rem;
+            width: 63rem;
+        }
+    }
+    &__subtitle {
+        font-weight: normal;
+        font-size: 2rem;
+        color: #171e2f;
+        margin-bottom: 13.3rem;
+    }
+    &__mauthor {
+        display: flex;
+    }
+    &__author {
+        display: flex;
+        width: 30rem;
+    }
+    &__ava {
+        position: relative;
+        img {
+            width: 7rem;
+            height: 7rem;
+            object-fit: cover;
+            border-radius: 100%;
+            overflow: hidden;
+        }
+    }
+    &__text {
+        padding-top: 0.5rem;
+        width: 100%;
+        flex-grow: 1;
+        margin-left: 3rem;
+    }
+    &__authora {
+        font-weight: bold;
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+    &__name {
+        font-size: 1.6rem;
+        padding-bottom: 2rem;
+        padding-right: 1.1rem;
+    }
+    &__ranking {
+        display: flex;
+    }
+    &__ranking-num {
+        font-weight: bold;
+        font-size: 1.8rem;
+        color: #171e2f;
+    }
+    &__star {
+        margin-left: 0.6rem;
+        padding-top: 0.2rem;
+        &-wr {
+            display: flex;
+        }
+        img {
+            width: 1.5rem;
+            height: 1.5rem;
+            object-fit: contain;
+        }
+    }
+    &__review {
+        font-weight: bold;
+        font-size: 1.7rem;
+        margin-left: 1.1rem;
+        text-align: center;
+        margin-left: 3rem;
+        span {
+            padding-top: 0.2rem;
+            display: block;
+            font-size: 1.2rem;
+            color: $greyt;
+            font-weight: normal;
+        }
+    }
+    &__rank {
+        font-size: 1.2rem;
+        color: $greyt;
+    }
+    &__btns {
+        margin-top: 1.5rem;
+        img {
+            transform: rotate(0deg);
+        }
+
+        & .btn-ca {
+            height: 5rem;
+            width: 16rem;
+        }
+    }
+    &__text-second {
+        font-size: 1.8rem;
+        width: 67.2rem;
+        margin-left: 1rem;
+    }
+    &__text1 {
+        font-size: 1.8rem;
+        // p {
+            
+        // }
+    }
+    &__text2 {
+        font-weight: normal;
+        font-size: 1.8rem;
+        color: #898d93;
+        padding-top: 3rem;
+    }
+    &__subtexts {
+        margin-bottom: 15.4rem;
+    }
+    &__quotes {
+        padding-top: 7rem;
+        background-image: url(../img/quotes.svg);
+        background-repeat: no-repeat;
+        background-position: center top 0rem;
+        background-size: 4.4rem;
+    }
+    &__subtitle6 {
+        margin-bottom: 3rem;
+        text-align: center;
+        font-size: 2rem;
+    }
+    &__subtitle7 {
+        font-size: 2rem;
+        color: #898d93;
+        text-align: center;
+    }
+    &__image {
+        border-radius: 3rem;
+        overflow: hidden;
+    }
+    &__social-icons {
+        display: flex;
+    }
+    &__social-icon {
+        width: 5rem;
+        height: 5rem;
+        margin-right: 2rem;
+        img {
+        }
+    }
+    &__other {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

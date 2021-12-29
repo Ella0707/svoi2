@@ -1,0 +1,97 @@
+.portfolio-info {
+    position: relative;
+    .tab__mtitle-str {
+        position: absolute;
+        top: -8rem;
+        left: 0;
+    }
+    &__block {
+        display: none;
+        &.active {
+            display: block;
+        }
+    }
+    &__title {
+        color: $greyt;
+        font-size: 1.5rem;
+        width: 53.4rem;
+        margin-bottom: 4rem;
+    }
+    &__images {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(13rem, auto-fill);
+        grid-gap: 1.5rem;
+        margin-bottom: 3rem;
+        img {
+            height: 100%;
+            border-radius: 1.4rem;
+            overflow: hidden;
+            object-fit: cover;
+        }
+    }
+    &__list {
+        margin-bottom: 5.6rem;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 3.5rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__left {
+        flex-shrink: 0;
+        position: relative;
+    }
+    &__img {
+        width: 15.4rem;
+        height: 13rem;
+        img {
+            border-radius: 1.4rem;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__remove {
+        position: absolute;
+        top: -1.2rem;
+        right: -1.2rem;
+        background-image: url(../img/red-close.svg);
+        background-repeat: no-repeat;
+        background-size: 2.5rem;
+        background-position: center;
+        border-radius: 100%;
+        width: 3.2rem;
+        height: 3.2rem;
+        background-color: #fff;
+        cursor: pointer;
+        &-text {
+            display: none;
+        }
+    }
+    &__textarea {
+        width: 80.3rem;
+        height: 13rem;
+        background-color: #fff;
+        padding: 2.7rem;
+        border-radius: 1.4rem;
+        color: $blackt;
+        resize: none;
+        &::placeholder {
+            color: $greyt;
+        }
+    }
+    &__btns {
+        display: flex;
+        align-items: center;
+        .btn-ca {
+            width: 26.5rem;
+            margin-right: 2.5rem;
+        }
+    }
+}

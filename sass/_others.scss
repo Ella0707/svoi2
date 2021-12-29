@@ -1,0 +1,55 @@
+.root {
+    font-size: 1.8rem;
+    @media (max-width: 48em) {
+        font-size: 3rem;
+    }
+}
+.o-hidden {
+    overflow: hidden;
+}
+
+.tel-confirm {
+    margin-bottom: 3rem;
+    background-color: #fff;
+    border-radius: 1.4rem;
+    padding-left: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1.1rem;
+    padding-right: 2.5rem;
+    width: 30.5rem;
+    &.error {
+        border: 2px solid red;
+    }
+    &__str {
+        font-size: 1.4rem;
+        color: $greyt;
+        margin-bottom: 0.8rem;
+    }
+    &__input {
+        font-size: 1.7rem;
+        color: $blackt;
+        width: 100%;
+    }
+}
+
+.svgpercent {
+    position: relative;
+    svg {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    &__num {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        font-weight: bold;
+        color: $greyt;
+        font-size: 1.6rem;
+    }
+}

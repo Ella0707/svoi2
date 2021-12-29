@@ -1,0 +1,60 @@
+.corner {
+    position: absolute;
+    background-color: transparent;
+    background-color: #fff;
+    &::before {
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+        background-color: $grey;
+    }
+    &--lt {
+        left: 0;
+        top: 0;
+        &::before {
+            border-top-left-radius: 100%;
+        }
+    }
+    &--lb {
+        left: 0;
+        bottom: 0;
+        &::before {
+            border-bottom-left-radius: 100%;
+        }
+    }
+    &--rt {
+        right: 0;
+        top: 0;
+        &::before {
+            border-top-right-radius: 100%;
+        }
+    }
+    &--rb {
+        right: 0;
+        bottom: 0;
+        &::before {
+            border-bottom-right-radius: 100%;
+        }
+    }
+    &--4 {
+        width: 4rem;
+    }
+    &--5 {
+        width: 5rem;
+    }
+    &--3_5 {
+        width: 3.5rem;
+    }
+    &--whigra {
+        background-color: #fff;
+        &::before {
+            background-color: $grey;
+        }
+    }
+    &--grawhi {
+        background-color: $grey;
+        &::before {
+            background-color: #fff;
+        }
+    }
+}

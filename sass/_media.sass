@@ -1,0 +1,3542 @@
+@media (max-width: 48em)
+  main
+    // overflow: hidden
+  
+  .btn-back
+    display: inline-block
+    font-size: 3.6rem
+    color: #171E2F
+    padding-left: 10rem
+    position: relative
+    margin-left: 3rem
+    &::before
+      content: ''
+      position: absolute
+      top: 50%
+      left: 0
+      transform: translateY(-50%)
+      width: 7.8rem
+      height: 7.8rem
+      border-radius: 50%
+      background: url('../img/arrow-back.svg') 50% no-repeat, linear-gradient(99.76deg, #DC2B40 -9.6%, #CC284F 122.42%)
+      background-size: 2rem
+      box-shadow: .6rem .6rem 2.5rem rgba(229, 39, 39, 0.4)
+    &.other
+      &::before
+        background: #fff url('../img/arrow-back-red.svg') 50% no-repeat
+        background-size: 2rem
+        box-shadow: 1rem 3rem 6rem rgba(98, 98, 98, 0.1)
+
+  .def-inp
+    height: 13rem
+    background-color: #F4F3F8
+    border-radius: 2.8rem
+    padding: 0 8rem 0 4rem
+    font-size: 2.8rem
+
+  .services-banner
+    margin-bottom: 10.5rem
+    padding-top: 20rem
+    .container
+      padding: 0
+    &__inner
+      display: block
+      padding: 0
+      padding: 10rem 6rem 8.5rem
+      border-radius: 6rem
+    &__dash
+      &.desktop
+        display: none
+      &.mobile
+          display: block
+      &--left
+          width: 10.4rem
+          left: 0
+          top: -5rem
+      &--mid
+          width: 26rem
+          left: auto
+          right: 9rem
+          top: 35rem
+      &--right
+          width: 15.2rem
+          right: auto
+          left: 0
+          top: auto
+          bottom: 1rem
+    &__left
+      width: 100%
+      padding: 0
+    &__title
+      width: auto
+      font-size: 5.6rem
+      line-height: 1.25
+    &__subtitle
+      width: 95%
+      font-size: 3rem
+      line-height: 1.47
+      padding: 0
+      margin: 1rem 0 6rem
+    &__a-button
+      width: 11.6rem
+      height: auto
+    &__down
+      &-texts
+        width: 40rem
+        padding-top: 1rem
+        padding-left: 4rem
+    &__services
+      font-size: 3.2rem
+      padding: 0
+      &::after
+        bottom: auto
+        top: calc(100% + 2.5rem)
+        width: 6.6rem
+        height: 1px
+    &__all-services
+      padding-top: 3.5rem
+      font-size: 3rem
+      line-height: 1.47
+    &__right
+      margin-left: -.5rem
+      width: 100%
+      display: flex
+      flex-direction: row-reverse
+      justify-content: space-between
+      padding: 0
+      padding-top: 6.2rem
+    &__stat
+      width: 48%
+      text-align: center
+      padding-right: 0
+      position: relative
+      margin-bottom: 0
+      &::after
+        content: none
+    &__key
+      position: relative
+      &::before
+        content: ""
+        position: relative
+        display: inline-block
+        width: 1.6rem
+        height: 1.6rem
+        background: #3AB292
+        top: 50%
+        transform: translateY(-50%)
+        margin-right: 2rem
+        border-radius: 50%
+        
+  .services
+    margin-bottom: 17rem
+    &__title
+      font-size: 6rem
+      margin-bottom: 9.5rem
+    &__block
+      width: 47%
+      margin-right: 0
+      margin-bottom: 6rem
+      &s
+        justify-content: space-between
+        flex-wrap: wrap
+        margin-bottom: 4.5rem
+      &.active
+        .services__icon
+          box-shadow: 1.8rem 1.8rem 7.2rem rgba(229, 39, 39, 0.3)
+    &__icon
+      width: 12rem
+      height: 12rem
+      border-radius: 3.2rem
+    &__text
+      font-size: 2.8rem
+    &-list
+      .container
+        padding: 0
+      &__inner
+        justify-content: space-between
+      &__block
+        padding: 2.2rem 2rem
+        padding-right: 7rem
+        width: 48%
+        height: 32.75rem
+        margin-bottom: 3rem
+        &:not(:nth-child(4n))
+          margin-right: 0
+      &__pic
+        img
+          object-fit: contain
+      &__text
+        font-size: 3rem
+      &__sub-text
+        font-size: 3rem
+  
+  .executor-banner
+    padding-top: 20rem
+    margin-bottom: 4rem
+    .container
+      padding: 0
+    &__inner
+      display: block
+      background: linear-gradient(182.54deg, #CC283C -10.66%, #CC284F 75.64%, #BF2343 93.81%)
+      border-radius: 6rem
+      padding: 10rem 6rem 51rem
+    &__left
+      width: 90%
+      padding-top: 0
+    &__mtitle
+      width: 82%
+      font-size: 6rem
+      line-height: 1.17
+      margin-bottom: 3rem
+    &__subtitle
+      width: 100%
+      font-size: 3rem
+      line-height: 1.47
+      padding: 0
+      margin-bottom: 3.6rem
+    &__down
+      .btn-car
+        min-width: auto
+        width: 40.6rem
+        padding: 0 2.5rem 0 4rem
+        border-radius: .4rem 20rem 20rem 25rem
+        img
+          margin-left: 2rem
+      &2
+        .btn-car
+          width: 40.6rem
+          padding: 0 2.5rem 0 4rem
+          border-radius: .4rem 20rem 20rem 25rem
+          img
+            margin-left: 2rem
+    &__mid
+      position: absolute
+      bottom: 0
+      left: 50%
+      transform: translateX(-50%)
+      width: 63rem
+      padding: 0
+      margin: 0
+      z-index: 1
+    &__img-1
+      &.desktop
+        display: none
+      &.mobile
+        display: block
+    &__right
+      width: 100%
+      display: block
+    &__materials
+      width: 100%
+      margin-top: 9rem
+      margin-left: 0
+      &-wrap
+        display: flex
+        align-items: center
+        margin-bottom: 4rem
+    &__icon
+      margin-bottom: 0
+      margin-right: 2.6rem
+      img
+        width: 9.4rem
+        height: auto
+    &__title
+      font-size: 4rem
+      font-weight: 700
+      width: auto
+      line-height: 1.25
+    &__subtitle2
+      width: 79%
+      font-size: 3rem
+      line-height: 1.47
+      padding-top: 0
+      margin-bottom: 4rem
+    &__pic
+      bottom: 0
+      width: 100%
+      overflow: visible
+      z-index: 0
+      img
+        width: 100%
+        height: auto
+        display: none
+        transform: none
+        &.mobile
+          display: block
+      &2
+        display: none
+    
+  .cat-perf
+    margin-bottom: 18rem
+    &__inner
+      padding: 10rem 3rem 9rem
+      border-radius: 6rem
+    &__header
+      margin-bottom: 7.8rem
+    &__htop
+      align-items: flex-start
+      flex-wrap: wrap
+      margin-bottom: 8rem
+    &__mtitle
+      font-size: 4.4rem
+    &__htopright
+      display: block
+      .select, .radio-icon
+        display: none
+    &__count
+      font-size: 3.2rem
+      margin-right: 0
+      margin-top: 1rem
+      span
+        font-size: 3rem
+        margin-right: 1rem
+    &__hbot
+      flex-wrap: wrap
+      position: relative
+      .select
+        transition: width .25s
+        &.open
+          width: 100%
+      .select--ser
+        display: none
+      .select--filter
+        order: -1
+        position: absolute
+        top: 0
+        left: 0
+        // width: 100%
+        width: 48%
+        .select__header
+          width: 100%
+      .select--local
+        position: absolute
+        top: 0
+        right: 0
+        // width: 100%
+        width: 48%
+        z-index: 6
+        .select__header
+          width: 100%
+        .select__drop
+          padding: 2.6rem 2.6rem 0
+        .select__group
+          margin: 0 2.5rem
+          padding: 0 2rem 4rem
+          .select__item
+            &:not(:last-child)
+              margin-bottom: 5.2rem
+        .select__reset
+          padding: 0 4rem
+      .search-lg
+        order: 1
+        // margin-top: 4rem
+        margin-top: 14rem
+        border-radius: 10rem
+        input
+          font-size: 3rem
+          padding-left: 3rem
+        &__btn
+          width: 4rem
+          height: 4rem
+          right: 3rem
+          img
+            width: 100%
+    &__catalog
+      display: block
+      &.desktop
+        display: none
+      &.mobile
+        display: block
+      .performer
+        width: 100%
+        margin-bottom: 4rem
+    &__more
+      margin-top: 9.5rem
+      .btn-ca
+        width: 46.2rem
+        height: 10rem
+        padding-right: 3rem
+        img
+          transform: none
+  
+  .switch
+    font-size: 2.8rem
+    &-text
+      display: none
+    input:checked + .switch__row .switch__icon
+      transform: translateX(5.5rem)
+      // background-color: $pink
+      // .switch__lock
+      //   display: none
+      .switch__unlock
+        display: none
+    &__row
+      width: 14.2rem
+      padding: .8rem
+      // background: #ffffff
+      // border-radius: 60rem
+      // border: 1px solid $pink
+      border-width: .7rem
+      margin-left: 0
+    &__icon
+      width: 5.8rem
+      height: 5.8rem
+      // background-color: $red2
+      // position: relative
+      // transition-property: margin, background-color
+      // transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1)
+      // transition-duration: 200ms
+      img, svg
+        width: 3.2rem
+        &.switch__mobile
+          display: block
+    // &__unlock
+    //   display: none
+    &__lock
+      display: none
+    &--green
+      .switch__row
+        // border-color: #bebbc3
+      .switch__icon
+        background-color: #78DFC4
+        box-shadow: .8rem .8rem 4rem rgba(120, 223, 196, 0.3)
+      input:checked + .switch__row .switch__icon
+        background-color: #3AB292
+        box-shadow: .8rem .8rem 4rem rgba(58, 178, 146, 0.3)
+  .checkbox
+    font-size: 2.8rem
+    &__icon
+      width: 6.8rem
+      height: 6.8rem
+      margin-right: 2rem
+      border: .6rem solid #FF85A0
+      border-radius: 1rem
+      img
+        width: 3rem
+
+  .select
+    position: relative
+    display: inline-block
+    z-index: 4
+    &.open 
+      z-index: 50
+      .select__arr-grey
+        display: none
+      .select__arr-green
+        display: inline-block
+    &.indicator 
+      &::after
+        top: 0
+        right: 3.2rem
+        width: 1.6rem
+        height: 1.6rem
+        transform: translateY(-50%)
+        box-shadow: 0.6rem 0.8rem 2rem rgba(229, 39, 39, 0.4)
+    &.disabled
+      pointer-events: none
+    &__header
+      width: 30rem
+      height: 10rem
+      padding-left: 3rem
+      padding-right: 3rem
+    &__icon
+      width: 4rem
+      height: 4rem
+      margin-right: 2rem
+    &__title
+      font-size: 3.2rem
+    &__arr
+      width: 2.8rem
+    &--local
+      .select__icon
+        width: 3.5rem
+        height: 3.5rem
+    &__drop
+      top: calc(100% + 2.8rem)
+      // max-height: 72rem
+      max-height: 90rem
+      // overflow: auto
+      border-radius: 8rem
+      padding: 6.5rem 6.5rem 0
+      // padding: 1.2rem
+      // padding-bottom: 0
+      box-shadow: 4rem 6rem 24rem rgba(149, 156, 165, 0.25)
+    &__search
+      border-radius: 20rem
+      padding: 0 3rem 0 4.5rem
+      font-size: 3rem
+      margin-bottom: 4.5rem
+      input
+        height: 10rem
+      img
+        width: 3.4rem
+        padding-left: 0
+    &__autolocal
+      border-radius: 20rem
+      padding: 0 3rem 0 4.5rem
+      font-size: 3rem
+      height: 10rem
+      margin-bottom: 3rem
+      img
+        width: 3.6rem
+        padding-left: 0
+    &__group
+      width: 85%
+      padding: 0
+      padding-bottom: 3.8rem
+      margin-bottom: 5rem
+      &:last-child
+        // margin-bottom: 2px
+      &.cus-select__g--hendler
+        margin-bottom: 1px
+    &__gtitle
+      margin-bottom: 4.4rem
+    &__item
+      font-size: 3rem
+      line-height: 1.47
+      margin-bottom: 4rem
+      &.selected
+        order: -1
+        font-weight: bold
+        margin-bottom: 2.4rem
+    &__check
+      width: 4.6rem
+      height: 4.6rem
+      margin-right: 3.3rem
+      margin-bottom: 0
+      background-size: 2.2rem
+    // &__notfound
+    //   display: none
+    //   &.active
+    //     display: block
+    &__reset
+      height: 14rem
+      padding-left: 0
+      font-size: 3rem
+      img
+        width: 2.1rem
+        margin-left: -.7rem
+        margin-right: 4rem
+    &--catagory
+      width: 100%
+      .select
+        &__header
+          width: 100%
+          border-radius: 1.4rem
+        &__val
+          color: $greyt
+          font-weight: normal
+          font-size: 1.6rem
+        &__arr
+          width: 2rem
+        &__drop
+          border-radius: 1.4rem
+
+  .lab-inp
+    margin-bottom: 4rem
+    // &--log
+    //   .lab-inp
+    //     &__list
+    //       display: block
+    //     &__label
+    //       margin-bottom: 1rem
+    //       &:last-child
+    //         margin-bottom: 0
+    //     &__str
+    //       font-size: 1.2rem
+    //     &__input
+    //       font-size: 1.2rem
+    // &--12
+    //   .lab-inp
+    //     &__label
+    //       padding-top: 1.4rem
+    //       padding-bottom: 0.9rem
+    //       margin-bottom: 3.5rem
+    //       &--textarea
+    //         padding-bottom: 0.4rem
+    //     &__str
+    //       font-size: 1.2rem
+    //     &__input
+    //       &::placeholder
+    //         font-size: 1.2rem
+    //     &__textarea
+    //       &::placeholder
+    //         font-size: 1.2rem
+    &__mtitle
+      margin-bottom: -2.5rem
+      &.general-info__mtitle
+        font-size: 4rem
+    &__list
+      margin-top: 6rem
+    &__label
+      padding: 2.2rem 4rem
+      border-radius: 2.8rem
+      margin-bottom: 2.8rem
+      &.error
+        // border: 2px solid red
+        border-width: 0
+      &--33
+        width: 100%
+      &--66
+        width: 100%
+      // &--textarea
+      //   padding-bottom: 0.6rem
+    &__str
+      font-size: 3rem
+      margin-bottom: 1.2rem
+    &__input
+      font-size: 3.2rem
+    &__textarea
+      font-size: 1.7rem
+      font-weight: bold
+      color: $blackt
+      height: 2rem
+      width: 100%
+      &::placeholder
+        font-weight: normal
+        color: $greyt
+
+  .performer
+    &__inner
+      padding-top: 12rem
+    &__set
+      width: 6rem
+      height: 6rem
+      padding-top: 0
+      right: 3rem
+      top: 2rem
+      img
+        width: 4.4rem
+        display: none
+        &.mobile
+          display: block
+    &__header
+      padding: 0 2rem
+      margin-bottom: 4rem
+    &__ava
+      width: 14rem
+      height: auto
+      margin-right: 2rem
+      img
+        height: auto
+      &::after
+        top: auto
+        bottom: 2rem
+        right: 0
+        width: 3rem
+        height: 3rem
+        border-width: .8rem
+    &__orders
+      width: 6.4rem
+      height: 6.4rem
+    &__name 
+      margin-bottom: 2rem
+      &-inner
+        font-size: 3.6rem
+    &__confirmed
+      margin-left: 1rem
+      img
+        width: 4rem
+    &__ses
+      font-size: 2.8rem
+      &-last
+        img
+          width: 4rem
+          margin-right: 1rem
+      &-online
+        font-size: 3rem
+    &__rec
+      position: absolute
+      top: 2rem
+      left: 2rem
+      min-width: 21.8rem
+      background: #DC2B40
+      box-shadow: 1rem 3rem 6rem rgba(98, 98, 98, 0.1)
+      padding: 1.4rem 2.4rem
+      margin-right: 0
+      border-radius: 20rem
+      font-size: 2.8rem
+      &-inner
+        color: #FCFCFC
+      img
+        width: 3.2rem
+        margin-right: 2rem
+        display: none
+        &.mobile
+          display: block
+    &__content
+      padding: 0 1.6rem 1.6rem
+    &__rate
+      justify-content: center
+      font-size: 2.6rem
+      padding-left: 0
+      width: 16%
+      height: 10.8rem
+      &.performer__rate-c-white
+        color: #fff
+      img
+        position: absolute
+        top: 45%
+        left: 50%
+        transform: translate(-50%, -50%)
+        width: 8rem
+        margin-right: 0
+        z-index: -1
+      .corner
+        width: 4rem
+        z-index: -1
+    &__info-list
+      height: 10.8rem
+      align-items: flex-start
+      padding: 2.5rem 2rem 1rem
+      border-radius: 4rem 4rem 0 0
+    &__info-item
+      text-align: center
+    &__k
+      font-size: 3.2rem
+      margin-bottom: .5rem
+    &__v
+      font-size: 2.4rem
+    &__text-box
+      padding: 3.5rem 2rem 2rem
+      border-radius: 4rem 0 4rem 4rem
+    &__text
+      font-size: 3rem
+      line-height: 1.47
+      height: 14rem
+      margin-bottom: 3rem
+    &__btns
+      flex-wrap: wrap
+      .btn-ca
+        width: 100%
+        height: 10rem
+        padding: 0 3rem 0 9rem
+        &:not(:last-child)
+          margin-bottom: 3rem
+        img
+          width: 4rem
+        &--message
+          img
+            margin-left: 0
+            margin-right: 3rem
+
+  .performer--fav
+    // background-color: transparent
+    &:not(:last-child)
+      margin-bottom: 8rem
+    .performer
+      &__inner
+        flex-wrap: wrap
+      &__set
+        // width: 7.8rem
+        // padding-top: 4.9rem
+        top: auto
+        bottom: 2.5rem
+        left: 1.2rem
+        z-index: 1
+        padding: 0
+        img
+          width: .8rem
+      &__header
+        // padding: 0
+        width: 100%
+        // padding-top: 4rem
+        // padding-bottom: 4.3rem
+        padding: 3rem 3rem
+        border-radius: 4rem 4rem 0 0
+        margin: 0
+      &__user
+        flex-direction: row
+      &__ava
+        margin-bottom: 0
+        margin-right: 4rem
+        // &::after
+        //   top: auto
+        //   bottom: 0
+      &__name
+        margin-bottom: 1rem
+        justify-content: flex-start
+      &__ses
+        justify-content: flex-start
+      &__ses-last
+        font-size: 2.8rem
+        color: #8C8989
+        img
+          width: 3rem
+          margin-top: -.2rem
+          margin-right: 1rem
+      // &__content
+      //   padding: 0
+      &__info
+        border-radius: 0 0 4rem 0
+        // flex-wrap: wrap
+      &__rate
+        font-size: 3.6rem
+        width: 11rem
+        // padding-left: 0
+        // width: auto
+        padding-top: 0
+        margin-top: -3.8rem
+        img
+          top: 88%
+          width: 3.2rem
+          z-index: 1
+      &__info-list
+        padding: 2rem 3rem
+        height: auto
+        .performer__k
+          margin-bottom: 1.5rem
+      &__text
+        height: auto
+        margin-bottom: 5rem
+        &-box
+          width: 91%
+          margin: 0 auto
+          margin-top: 1rem
+          padding-top: 3rem
+          border-top: .3rem solid #EAE8EE
+          border-radius: 0
+      &__btns
+        padding-top: 3rem
+        &::before
+          content: ''
+          position: absolute
+          top: 0
+          left: 0
+          width: 15%
+          height: 100%
+          background: #fff
+          border-radius: 0 0 4.5rem 4.5rem
+        .corner
+          left: 15%
+          width: 7rem
+        .btn-ca--message
+          display: flex
+          justify-content: center
+          align-items: center
+          width: 10rem
+          margin: 0
+          margin-right: 3rem
+          padding: 0
+          img
+            width: 5.6rem
+            margin: 0
+          &__text
+            display: none
+        .btn-ca--green
+          width: 42.2rem
+          padding: 0 3rem
+          // margin: 0
+
+  .performer-info
+    // &__block
+    //   display: none
+    //   &.active
+    //     display: block
+    &__list
+      margin-bottom: 4rem
+      &--remove
+        margin-top: 3rem
+        margin-bottom: 4rem
+        width: 100%
+        .performer-info__item
+          width: auto
+          padding-right: 12rem
+          background-image: url(../img/red-close.svg)
+    &__title
+      font-size: 3.2rem
+      margin-bottom: 3.5rem
+    &__item
+      height: 9.8rem
+      padding: 0 10rem 0 4rem
+      min-width: auto
+      width: 100%
+      margin-right: 0
+      margin-bottom: 2.7rem
+      font-size: 2.8rem
+      box-shadow: 1rem 1rem 6rem rgba(229, 39, 85, 0.2)
+      background-position: right 2rem top 50%
+      background-size: 5.8rem
+    &__text
+      color: #FFC1D0
+      width: 100%
+      margin: -1.5rem 0 -2rem
+    &__row
+      flex-wrap: wrap
+      margin-bottom: 0
+      &--btn
+        margin-top: 2.5rem
+        .btn-ca
+          height: 10.6rem
+    &__left
+      width: 100%
+      padding-top: 0
+    &__right
+      width: 100%
+      .select
+        &__header
+          height: 13rem
+          border-radius: 2.8rem
+          padding: 0 4rem
+        &__val
+          font-size: 2.8rem
+        &__arr
+          width: 3.6rem
+    &__lab
+      font-size: 3.2rem
+      margin-bottom: 3rem
+    &__disc
+      font-size: 3rem
+      line-height: 1.4
+      margin-top: -1.5rem
+    &__textarea
+      margin-top: 3rem
+      height: 44rem
+      padding: 5.5rem 4rem
+      border-radius: 2.8rem
+
+  .serpri-info
+    // &__block
+    //   display: none
+    //   &.active
+    //     display: block
+    &__title
+      font-size: 3rem
+      width: 100%
+      line-height: 1.4
+      margin-bottom: 5rem
+    &__list
+      display: block
+      margin-top: -2rem
+      margin-bottom: 3rem
+    &__item
+      font-size: 3.2rem
+      font-weight: 700
+      padding-right: 22rem
+      &:not(:last-child)
+        margin-bottom: 4.8rem
+    // &__remove
+    //   position: absolute
+    //   top: -1.2rem
+    //   right: 0rem
+    //   background-image: url(../img/red-close.svg)
+    //   background-repeat: no-repeat
+    //   background-size: 2.5rem
+    //   background-position: center
+    //   border-radius: 100%
+    //   width: 3.2rem
+    //   height: 3.2rem
+    //   background-color: #fff
+    //   cursor: pointer
+    &__cat-str
+      font-size: 3rem
+      font-weight: 400
+      margin-bottom: .5rem
+    &__ser-str
+      margin-bottom: 1.2rem
+    &__com-str
+      margin-bottom: 0
+    &__price-str
+      font-size: 2.8rem
+      position: absolute
+      bottom: 0
+      right: 2rem
+    &__price-sum
+      font-size: 4rem
+    &__price-cur
+      top: -1rem
+    &__add-list
+      display: block
+      margin-bottom: 6rem
+      .select
+        &__header
+          height: 13rem
+          padding: 0 4rem
+          background: #F4F3F8
+          border-radius: 2.8rem
+        &__val
+          font-size: 2.8rem
+        &__arr
+          width: 3.6rem
+    &__add-item
+      position: relative
+      &:not(:last-child)
+        margin-bottom: 2.8rem
+    &__cur
+      right: 4.5rem
+      font-size: 3.6rem
+    &__btns
+      flex-wrap: wrap
+      margin-bottom: -2rem
+      .btn-ca
+        width: 100%
+        height: 10.6rem
+        font-size: 3.2rem
+        margin-right: 0
+        &:not(:last-child)
+          margin-bottom: 3rem
+
+  .portfolio-info
+    .tab__mtitle-str
+      top: -10.5rem
+    // &__block
+    //   display: none
+    //   &.active
+    //     display: block
+    &__title
+      font-size: 3rem
+      width: 100%
+      line-height: 1.4
+      margin-bottom: 4.5rem
+    &__images
+      display: grid
+      grid-template-columns: repeat(4, 1fr)
+      // grid-template-rows: repeat(14.4rem, auto-fill)
+      grid-gap: 1.6rem
+      margin-bottom: -1.5rem
+      img
+        height: 14.4rem
+        border-radius: 4rem
+    &__list
+      // margin-bottom: 5rem
+    &__item
+      flex-wrap: wrap
+      align-items: flex-start
+      margin-bottom: 5.5rem
+    &__img
+      width: 40.2rem
+      height: 39.2rem
+      img
+        border-radius: 11rem
+    &__remove
+      position: absolute
+      top: 54%
+      right: -22.5rem
+      transform: translateY(-50%)
+      background-image: url(../img/white-close.svg)
+      background-size: 3rem
+      border-radius: 50%
+      width: 6.2rem
+      height: 6.2rem
+      background-color: #FF7795
+      box-shadow: 2.5rem 2.5rem 10rem rgba(39, 229, 195, 0.3)
+      &-text
+        display: block
+        font-size: 2.8rem
+        color: #171E2F
+        position: absolute
+        top: 50%
+        right: 8rem
+        transform: translateY(-50%)
+    &__textarea
+      width: 100%
+      height: 44rem
+      background-color: #F4F3F8
+      padding: 4.5rem 4rem
+      border-radius: 2.8rem
+      font-size: 2.8rem
+      margin-top: 4rem
+    &__btns
+      flex-wrap: wrap
+      margin-bottom: -1.5rem
+      .btn-ca
+        width: 100%
+        height: 10.6rem
+        font-size: 3.2rem
+        margin-right: 0
+        &:not(:last-child)
+          margin-bottom: 3rem
+
+  .hint
+    &.active
+      .hint__content
+        display: block !important
+    &__content
+      padding: 6rem 3.6rem
+      border-radius: 4rem
+      display: none !important
+      top: calc(100% + 4rem)
+      left: -5.5rem
+      transform: none
+      font-size: 4rem
+      width: 69rem
+      box-shadow: 3rem 6rem 24rem rgba(36, 36, 36, 0.2)
+      &::after
+        width: 2.5rem
+        height: 2.5rem
+        left: 24%
+      &::before
+        content: ''
+        position: absolute
+        top: 2rem
+        right: 2rem
+        width: 7rem
+        height: 7rem
+        background: url(../img/hint-close.svg) 50% no-repeat
+        background-size: contain
+    &__title
+      width: 90%
+      margin-bottom: 3rem
+    &__text
+      line-height: 1.45
+
+  .pa
+    padding: 8rem 0 8rem
+    // padding: 8rem 0 20rem
+    margin-top: 18rem
+    // padding: 20rem 0 8rem
+    background: #F4F3F8
+    border-radius: 6rem
+    border-bottom-right-radius: 0
+    border-bottom-left-radius: 0
+    &__inner
+      flex-wrap: wrap
+    .container--sm
+      width: 100%
+      padding: 0
+    &__sidebar
+      width: 100%
+      .user
+        // margin-bottom: 2rem
+    &__content
+      width: 100%
+      margin-top: 5rem
+      .pa-header
+        margin-bottom: 8rem
+    &__padding
+      border-radius: 0
+      padding: 4rem 3rem
+      &-chat
+        display: block
+
+  .user
+    display: none
+    &.user-detail
+      width: 92%
+      margin: 0 auto
+      display: block
+      margin-top: 29.5rem
+    &__inner
+      background-color: #fff
+      padding-bottom: .5rem
+      border-radius: 0 0 6rem 6rem
+    &__ava
+      width: 29.4rem
+      height: 29.4rem
+      top: -7rem
+      &::before
+        width: 3.6rem
+        height: 3.6rem
+        border-width: 3px
+        bottom: 2rem
+        right: 3.5rem
+    &-detail-btn
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 9.4rem
+      height: 9.4rem
+      border-radius: 50%
+      flex-shrink: 0
+      border: 1.6px solid #3AB292
+      position: absolute
+      top: 3.5rem
+      left: 3.8rem
+      &.user-detail-img
+        left: auto
+        right: 3.8rem
+      img
+        width: 4.6rem
+    &__name
+      font-size: 4.6rem
+      // text-align: center
+      padding: 16rem 0 4rem
+      background: url(../img/user-bg-mobile.png) 50% 0 no-repeat
+      // background-repeat: no-repeat
+      // background-position: center 0
+      background-size: 100% 101%
+    &__title
+      margin-bottom: 4.1rem
+    &__role
+      font-size: 2.8rem
+      color: #171E2F
+      margin-right: 4rem
+    &__rate
+      font-size: 3.4rem
+      img
+        width: 4.2rem
+        margin-left: 2rem
+        margin-top: -1.5rem
+    &__content
+      &-item
+        width: 85%
+        margin: 0 auto
+        padding: 4.4rem 0 5.2rem
+        border-top: 1.3px solid #EAE8EE
+        border-bottom: 1.3px solid #EAE8EE
+        margin-bottom: -1px
+        &:last-child
+          border-bottom: none
+    &__text
+      font-size: 2.4rem
+      margin-bottom: 2rem
+    &__item
+      text-align: center
+    &__k
+      font-size: 3.4rem
+    &__v
+      font-size: 2.4rem
+
+  .user-info
+    display: flex
+    align-items: center
+    padding: 2.8rem 4.4rem 2.8rem 2.8rem
+    background: #fff
+    border-radius: 5rem
+    margin: 0 3rem 8rem
+    &__avatar
+      width: 12.2rem
+      height: 12.2rem
+      border-radius: 50%
+      flex-shrink: 0
+      overflow: hidden
+      margin-right: 5rem
+      img
+        width: 100%
+        height: 100%
+        object-fit: cover
+    &__name
+      font-size: 3.6rem
+      font-weight: 700
+      color: #171E2F
+      margin-bottom: 1rem
+    &__rating
+      display: flex
+      align-items: center
+      color: #171E2F
+      &-item
+        display: flex
+        align-items: center
+        font-size: 3rem
+        font-weight: 700
+        &:not(:last-child)
+          margin-right: 4rem
+        img
+          width: 3.6rem
+          flex-shrink: 0
+          margin-top: -1rem
+          margin-left: 1.5rem
+    &__link
+      width: 9rem
+      height: 9rem
+      border-radius: 2.8rem
+      background: linear-gradient(0deg, #F4F3F8, #F4F3F8), #FFFFFF
+      display: flex
+      justify-content: center
+      align-items: center
+      margin-left: auto
+      img
+        width: 1.9rem
+
+  .pa-sidebar
+    &__filter
+      margin: 0 3rem
+      display: flex
+      align-items: center
+      background: #fff
+      padding: 2.2rem 2.2rem
+      border-radius: 20rem
+      margin-bottom: 4rem
+      position: relative
+      &.active
+        &::after
+          transform: translateY(-50%) rotate(-180deg)
+      &::after
+        content: ''
+        position: absolute
+        top: 50%
+        right: 4rem
+        transform: translateY(-50%)
+        width: 3.2rem
+        height: 1.8rem
+        background: url(../img/pa-sidebar-filter-arrow.svg) 50% no-repeat
+        background-size: contain
+        transition: transform .25s
+      &-img
+        width: 7.8rem
+        height: 7.8rem
+        border-radius: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-shrink: 0
+        overflow: hidden
+        box-shadow: .6rem .6rem 2.5rem rgba(229, 39, 39, 0.4)
+        margin-right: 3.4rem
+        background: linear-gradient(99.76deg, #DC2B40 -9.6%, #CC284F 122.42%)
+        svg
+          width: 100%
+          height: 100%
+          object-fit: contain
+          *[fill="white"]
+            fill: $red
+          *[stroke="#BEBBC3"]
+            stroke: #fff
+          *[fill="#BEBBC3"]
+            fill: #fff
+          path
+            &:first-of-type
+              display: none
+      &-text
+        font-size: 5.2rem
+        font-weight: 700
+        color: #171E2F
+    &__catalog
+      display: none
+      // padding: 0 3rem 10rem
+      padding: 0 3rem 5rem
+      background: #F4F3F8
+    &__list
+      // margin-bottom: 3.6rem
+      padding: 3rem 3rem
+      background-color: #fff
+      border-radius: 5rem
+      &--chat
+        border-top-left-radius: 0
+        position: relative
+      &:last-child
+        margin-bottom: 0
+    &__item
+      font-size: 3.6rem
+      margin-bottom: 3rem
+      *[fill="white"]
+        fill: #F4F3F8
+      // &.active
+      //   *[fill="white"]
+      //     fill: $red
+      //   *[stroke="#BEBBC3"]
+      //     stroke: #fff
+      //   *[fill="#BEBBC3"]
+      //     fill: #fff
+    &__icon 
+      width: 12.2rem
+      height: 12.2rem
+      margin-right: 5.2rem
+    &__ind
+      min-width: auto
+      height: 4.8rem
+      width: 4.8rem
+      border-radius: 50%
+      font-size: 2.4rem
+      padding-top: 0.3rem
+      right: 3.5rem
+      top: 50%
+      transform: translateY(-50%)
+      box-shadow: 1rem 1rem 4rem rgba(229, 39, 39, 0.4)
+
+  .pa-header
+    margin-top: -9rem
+    &__top
+      margin-bottom: 9rem
+      .radio-role
+        margin-left: 0
+    &__mtitle
+      display: none
+    &__filter
+      display: none
+      &.mobile
+        display: block
+      &-review
+        display: block
+        margin: -1rem 0
+        .radio-tab
+          &__label
+            &:not(:last-child)
+              margin-right: .7rem
+          &__text
+            font-size: 3rem
+      &-fav
+        margin: -5rem 0 5rem
+        .radio-tab
+          &__label
+            &:not(:last-child)
+              margin-right: .7rem
+          &__text
+            font-size: 3rem
+
+  .pa-subscription
+    &__item
+      padding: 4.5rem 4rem 5rem
+      border-radius: 2.8rem
+      margin-bottom: 4rem
+    &__rose
+      display: none
+      width: 25.6rem
+      top: 50%
+      left: auto
+      right: 0
+      transform: translate(0, -50%)
+      &.rose-mobile
+        display: block
+    &__top
+      flex-wrap: wrap
+      margin-bottom: 3.5rem
+      &-left
+        width: 100%
+        justify-content: space-between
+        border-bottom: 1px solid #D2D0D7
+        padding-bottom: 3rem
+        margin-bottom: 3.3rem
+      &-right
+        flex-wrap: wrap
+    &__title
+      font-size: 4rem
+      color: #171E2F
+    // &__img
+    //   display: flex
+    //   margin-top: 0.7rem
+    // &__icon
+    //   margin-right: 1rem
+    //   img
+    //     width: 1.6rem
+    //     height: 1.6rem
+    &__cur
+      padding: 1.5rem 3rem 1.5rem 1.5rem
+      // margin-left: 2rem
+      background: #3AB292
+      font-size: 2.8rem
+      color: #F8F8F8
+      box-shadow: 1rem 3rem 6rem rgba(58, 178, 146, 0.2)
+      img
+        width: 3.2rem
+        margin-right: 2rem
+        display: none
+        &.subscription-mobile
+          display: block
+    &__time-left
+      width: 100%
+      font-size: 3rem
+      color: #FFAEC0
+      padding: 2rem 2.8rem
+      margin-right: 0
+      background: #CC284C
+      box-shadow: 1rem 3rem 6rem rgba(98, 98, 98, 0.1)
+      order: +1
+      b
+        color: #fff
+        margin-left: 4rem
+      // img
+      //   width: 1.6rem
+      //   margin-right: 1rem
+    &__currency
+      width: 100%
+      display: flex
+      align-items: center
+      margin-bottom: 2rem
+      &-price
+        margin: -1rem 0 -2rem
+    &__free
+      font-size: 3.6rem
+    &__condition
+      font-size: 3.6rem
+      color: #3AB292
+    &__days
+      font-size: 3.2rem
+      color: #171E2F
+    &__bot
+      flex-wrap: wrap
+      margin-top: 0
+      .btn-ca
+        height: 10.6rem
+        font-size: 3.2rem
+        padding-right: 3rem
+        padding-left: 4rem
+        img
+          width: 5rem
+          height: auto
+    &__subtitle
+      width: 100%
+      font-size: 2.8rem
+      color: #171E2F
+      margin-bottom: 3.5rem
+    &__value
+      font-size: 2.18rem
+      top: -1.5rem
+    &__info
+      margin: 6rem 0 -1.5rem
+      width: 100%
+      &-title
+        font-size: 3.2rem
+        line-height: 1.2
+        margin-bottom: 2.5rem
+      &-text
+        font-size: 3rem
+        line-height: 1.33
+  
+  .radio-role
+    width: 100%
+    justify-content: space-between
+    padding: 2.2rem 2.3rem
+    gap: unset
+    &__input:checked + .radio-role__text
+      // background-color: $red
+      // background: linear-gradient(92.39deg, #dc2b40 -14.37%, #cc284f 129.71%), #dc2b40
+      // box-shadow: 0.5rem 0.5rem 2rem rgba(229, 39, 39, 0.4)
+      padding: 0 4rem
+      span
+        font-weight: 700
+        color: #EA8096
+    // &__input:disabled + .radio-role__text
+    //   opacity: 0.3
+    //   pointer-events: none
+    &__text
+      height: 7.6rem
+      // padding: 0 5rem
+      padding: 0 2rem
+      font-size: 3.6rem
+      span
+        display: block
+        font-size: 2.8rem
+        font-weight: normal
+        color: #BFBEC2
+        margin-left: 1.8rem
+        margin-top: 0.5rem
+
+  .radio-tab
+    width: 100%
+    gap: unset
+    &__label
+    &__input:checked + .radio-tab__text
+      color: #fff
+      background: #3AB595
+      box-shadow: 1rem 1rem 4rem rgba(58, 181, 149, 0.4)
+      border-radius: 20rem
+    // &__input:disabled + .radio-tab__text
+    //   opacity: 0.3
+    //   pointer-events: none
+    &__text
+      display: flex
+      align-items: center
+      font-size: 3.6rem
+      height: 7.6rem
+      color: #171E2F
+      padding: 0 3rem
+      &::after
+        content: none
+
+  .radio-view
+    display: none
+
+  .orders
+    &--performer
+      .orders
+        &__info
+          grid-template-columns: repeat(1, 28rem)
+    &__item
+      flex-wrap: wrap
+      margin-bottom: 7.8rem
+    &__left
+      width: 100%
+      flex-wrap: wrap
+      padding: 5rem 4.5rem 0
+      border-radius: 6rem 6rem 6rem 0
+    &__user-wrap
+      width: 100%
+      margin-right: 0
+      border-right: none
+      padding-bottom: 4rem
+      border-bottom: 1.3px solid #EAE8EE
+      margin-bottom: 4rem
+      & ~ .orders__content 
+        .orders__info
+          border: none
+          padding-top: 0
+        .orders__point
+          width: 45%
+          margin-bottom: 3rem
+    &__user
+      margin-bottom: 3rem
+    &__ava
+      margin-right: 4rem
+      img
+        width: 14.2rem
+        height: 14.2rem
+    &__name
+      &-inner
+        font-size: 3.6rem
+    // &__confirmed
+    //   width: 2.6rem
+    //   margin-left: 1rem
+    &__rate
+      font-size: 3rem
+      span
+        margin-left: 2.5rem
+      img
+        width: 3.6rem
+        margin-right: 1.5rem
+    &__price
+      width: 100%
+      height: 10rem
+      padding: 0 5rem
+      background-color: #F4F3F8
+      border-radius: .5rem 8rem 8rem 10rem
+    &__price-title
+      font-size: 2.8rem
+    &__cost
+      margin-left: 5rem
+    &__sum
+      font-size: 4rem
+    &__cur
+      font-size: 2.8rem
+      top: -1rem
+      margin-left: 1rem
+    &__date
+      font-size: 3rem
+      position: static
+      margin-left: 0.5rem
+      margin-bottom: 1.7rem
+    &__title
+      font-size: 4rem
+      margin-bottom: 3.5rem
+    &__info
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      grid-gap: unset
+      padding: 4.5rem 0 0
+      border-top: 1.3px solid #EAE8EE
+      margin-bottom: -1rem
+    &__point
+      width: 47%
+      display: block
+      font-size: 3rem
+      line-height: 1.4
+      margin-bottom: 4rem
+      img
+        width: 4.6rem
+        margin-right: 0
+        margin-bottom: 1rem
+    &__right
+      width: 100%
+      flex-direction: row
+    &__status-wrap
+      padding-top: 3.5rem
+      padding-right: 3.5rem
+      border-radius: 0 0 6rem 6rem
+      display: flex
+      justify-content: flex-end
+    &__status
+      min-width: 25.8rem
+      height: 7.2rem
+      padding: 0 2.5rem
+      background: #F4F3F8
+      font-size: 3rem
+      img
+        width: 3rem
+      span
+        margin: auto
+    &__btn
+      padding-top: 3rem
+      .corner
+        width: 6rem
+      .btn-ca
+        width: 33rem
+        height: 10rem
+        img
+          width: 3.6rem
+          margin-right: 1.4rem
+          margin-left: 0
+      .orders__btn-ca
+        // justify-content: space-between
+        padding-left: 4rem
+        // padding-right: 2rem
+        img
+          width: 5rem
+          margin-left: 2rem
+          margin-right: 0
+      .orders__btn-ref
+        img
+          width: 3.6rem
+          margin-right: 2rem
+      .orders__btn-leave-rev
+        font-size: 2.8rem
+        // border-radius: 4rem
+        box-shadow: 1rem 1rem 4rem rgba(229, 39, 39, 0.4)
+        img
+          width: 4.5rem
+          margin-right: 2rem
+      .orders__btn-edit
+        font-size: 2.8rem
+        img
+          width: 4.2rem
+          margin-right: 2rem
+    &__more
+      margin-top: 9.5rem
+      .btn-ca
+        width: 46.2rem
+        height: 10rem
+        padding-right: 3rem
+        img
+          transform: none
+    &__empty
+      display: block
+      font-size: 5.2rem
+      line-height: 1.47
+      background: #fff
+      padding: 20rem 10rem 19.5rem 3rem
+      border-radius: 4rem 4rem 4rem 0
+      &-rose
+        bottom: .5rem
+        left: 3rem
+        width: 38rem
+        border-radius: 0
+        img
+          display: none
+          &.mobile
+            display: block
+      &-bot
+        margin: 0 3rem
+        margin-top: -4rem
+        display: flex
+        justify-content: space-between
+      &-bot-left
+        background: #fff
+        border-radius: 0 0 5rem 5rem
+        &::before
+          content: none
+    &__gocatalog
+      padding-top: 4rem
+      padding-left: 4rem
+      .corner
+        width: 8rem
+        background: #fff
+        &::before
+          background: #F4F3F8
+      .btn-ca
+        width: 50.4rem
+        height: 10rem
+        border-radius: 6rem
+        padding-left: 2.5rem
+        padding-right: 3.5rem
+        box-shadow: 2rem 3rem 10rem rgba(229, 228, 235, 0.5)
+        z-index: 1
+        span
+          display: none
+          &.mobile
+            display: inline-block
+        img
+          width: 4rem
+
+  .reviewes
+    &--row
+      .reviewes
+        &__list
+        &__item
+          // display: flex
+          // flex-wrap: wrap
+          position: relative
+        &__header
+          width: 47%
+          flex-grow: 0
+          border-radius: 5rem 5rem 0 0
+          padding-bottom: 3rem
+          padding-right: 0
+        &__user
+          display: block
+        &__ava
+          margin-bottom: 3rem
+          img
+            width: 11rem
+            height: 11rem
+        &__task
+          // order: 1
+          width: 100%
+          padding: 4rem 3rem 3.5rem
+          // display: flex
+          flex-wrap: wrap
+          border-radius: 0
+          // padding: 0
+          // border-top-right-radius: 4rem
+          position: relative
+          &::before
+            content: ''
+            position: absolute
+            top: 0
+            left: 3rem
+            right: 3rem
+            height: .3rem
+            background: #EAE8EE
+        &__tasked
+          margin-left: 0
+        &__content
+          width: 100%
+          order: 2
+          border-radius: 0 0 4rem 4rem
+        &__text-box
+          background-color: #fff
+          padding: 0
+          padding-bottom: 3rem
+          border-bottom-left-radius: 5rem
+        &__total-rate
+          // display: flex
+          background: none
+          position: absolute
+          top: 4rem
+          left: 22%
+          font-size: 4rem
+          img
+            width: 3.6rem
+            margin-top: -1rem
+            margin-right: 1rem
+          .corner
+            // width: 3rem
+            display: none
+        &__rates
+          padding: 0
+        &__rate-list
+          // justify-content: flex-start
+          justify-content: space-between
+          // background-color: $grey
+          // flex-grow: 1
+          padding: 5.5rem 2rem .5rem
+          border-radius: 4rem 4rem 0 0
+          margin: 0 3rem
+        &__rate
+          margin-right: 0
+        &__text
+          // background-color: $grey
+          margin: 0 3rem
+          padding: 3rem 3rem 5rem
+          border-radius: 0 0 4rem 4rem
+          &-inner
+            height: auto
+        &__bot
+          // flex-shrink: 0
+          margin-top: 13.5rem
+          width: 53%
+          // .corner--lt
+          //   display: none
+          // .corner--lb
+          //   display: block
+        &__date
+          width: 100%
+          border-radius: 0 5rem 0 0
+          padding-top: 2.5rem
+          padding-left: 14rem
+          &-inner
+            width: 19.4rem
+          // padding-bottom: 2.1rem
+          // padding-top: 1.9rem
+        &__btn
+          // flex-grow: 0
+          // align-items: flex-start
+          // padding-top: 0
+          padding-bottom: 3.5rem
+          // padding-left: 2.5rem
+          position: absolute
+          top: 0
+          right: 0
+          width: 53%
+    &--perf
+      .reviewes
+        &__list
+          grid-template-columns: repeat(1, 1fr)
+        &__name-inner
+          font-size: 2.2rem
+        &__item
+          position: relative
+        &__date
+          position: absolute
+          top: 2rem
+          right: 2rem
+          padding: 0
+        &__task
+          display: flex
+          padding-left: 4rem
+          padding-bottom: 0
+        &__content
+          padding-left: 2rem
+          padding-right: 2rem
+          padding-bottom: 2.3rem
+          border-radius: 0 0 4rem 4rem
+        &__text-box
+          background-color: transparent
+          padding: 0
+          padding-top: 2.1rem
+        &__rates
+          padding-bottom: 0
+        &__total-rate
+          display: flex
+          padding-left: 0.3rem
+          padding-bottom: 1.7rem
+          .corner
+            width: 2.7rem
+        &__rate-list
+          background-color: $gray2
+          display: flex
+          align-items: center
+          flex-grow: 1
+          padding-left: 3rem
+          padding-right: 2.6rem
+          padding-top: 1.8rem
+          border-radius: 2.7rem 2.7rem 0 0
+        &__text
+          background-color: $gray2
+          padding: 2.2rem
+          padding-top: 3rem
+          padding-bottom: 2.7rem
+          border-radius: 2.7rem 0 2.7rem 2.7rem
+        &__text-inner
+          height: auto
+    &__list
+      display: block
+    &__item
+      &:not(:last-child)
+        margin-bottom: 8rem
+    &__header
+      border-radius: 5rem 5rem 0 0
+      padding: 3rem 3rem 4.5rem
+    &__user
+    &__ava
+      margin-right: 3.5rem
+      img
+        width: 9.6rem
+        height: 9.6rem
+    &__name
+      margin-top: .2rem
+      margin-bottom: .2rem
+      &-inner
+        font-size: 3.6rem
+    &__pos
+      font-size: 3rem
+    &__confirmed
+      width: 4.4rem
+      margin-left: 2rem
+      margin-top: -.2rem
+    &__task
+      padding: 0 4rem 3rem
+      font-size: 3rem
+    &__task-title
+      margin-bottom: 1rem
+    &__content
+      padding: 0
+      // background-color: #fff
+      border-radius: 0 0 4rem 0
+    &__text-box
+      background-color: #fff
+      border-radius: 0
+      border-bottom-right-radius: 5rem
+      padding: 2rem 3rem 4rem
+    &__rates
+      padding-bottom: 4.5rem
+    // &__total-rate
+    //   display: none
+    //   align-items: center
+    //   justify-content: center
+    //   font-weight: bold
+    //   font-size: 2.4rem
+    //   padding-left: 2.1rem
+    //   padding-top: 2.2rem
+    //   padding-right: 2.3rem
+    //   padding-bottom: 1.8rem
+    //   background-color: #fff
+    //   position: relative
+    //   span
+    //     position: relative
+    //     z-index: 2
+    //   img
+    //     width: 2rem
+    //     margin-right: 1.4rem
+    //     flex-shrink: 0
+    //     margin-top: -0.6rem
+    //     position: relative
+    //     z-index: 2
+    &__rate-list
+    &__rate
+    &__k
+      font-size: 3.6rem
+      margin-bottom: -.8rem
+      img
+        width: 2.2rem
+    &__v
+      font-size: 2.4rem
+    &__text
+      background: #F2F1F5
+      border-radius: 4.4rem
+      padding: 5rem 3rem
+      &-inner
+        line-height: 1.47
+        height: auto
+    // &__bot
+    //   display: flex
+    //   justify-content: space-between
+    &__date
+      padding: 1rem 4rem 4rem
+      border-radius: 0 0 5rem 5rem
+      &-inner
+        width: 24.6rem
+        height: 7.8rem
+        font-size: 3rem
+        padding-top: .5rem
+    &__btn
+      // padding-top: 1rem
+      // padding-left: 1rem
+      .btn-ca
+        width: 32.8rem
+        height: 10rem
+        padding: 0 3rem
+        img
+          width: 4rem
+      .corner
+        width: 8rem
+        &::before
+          background: #F4F3F8
+      // .corner--lb 
+      //   display: none
+    &__more
+      margin-top: 7.5rem
+      .btn-ca
+        // width: 46.2rem
+        // height: 10rem
+        width: 43.6rem
+        height: 10.8rem
+        // padding-right: 3rem
+        padding: 0 2.8rem 0 4.8rem
+        font-size: 3.2rem
+        img
+          transform: none
+    &__empty
+      background: #fff
+      border-radius: 4rem
+      padding: 12rem 0 13rem
+      font-size: 5.2rem
+      overflow: hidden
+      &-icon
+        // display: none
+        width: 11rem
+      &-rose
+        bottom: 4rem
+        right: 2.5rem
+        width: 52rem
+        img
+          transform: none
+          display: none
+          &.mobile
+            display: block
+
+  .fav
+    &__list
+      display: block
+    &__more
+      margin-top: 11rem
+      .btn-ca
+        width: 43.6rem
+        height: 10.8rem
+        font-size: 3.2rem
+        padding-left: 4.5rem
+        padding-right: 3rem
+        img
+          transform: none
+    &__empty
+      padding: 20rem 4rem 17.5rem
+      border-radius: 4rem 4rem 4rem 0
+      font-size: 5.2rem
+      line-height: 1.46
+      background: #fff
+      &-rose
+        position: absolute
+        bottom: 0
+        left: 0rem
+        width: 45rem
+        overflow: hidden
+        border-radius: 0 0 0 4rem
+        z-index: 1
+    // &__gocatalog
+    //   position: relative
+    //   top: 100%
+    //   right: 0
+    //   padding-top: 2.5rem
+    //   padding-left: 2.5rem
+    .btn-ca
+      padding: 0 3rem
+
+  // .edit-avatar
+  //   &__content
+  //     display: none
+  //     &.active
+  //       display: block
+  //   &__progress
+  //     display: flex
+  //     flex-direction: column
+  //     align-items: center
+  //   &__progress-title
+  //     width: 38.7rem
+  //     margin-bottom: 1rem
+  //   &__progress-row
+  //     width: 38.7rem
+  //     background-color: #fff
+  //     box-shadow: 0rem 2rem 7rem rgba(36, 36, 36, 0.15)
+  //     border-radius: 4rem
+  //     padding: 0.5rem
+  //   &__progress-value
+  //     background-color: $green
+  //     height: 1rem
+  //     border-radius: 4rem
+  //     width: 30%
+  //     max-width: 100%
+  //   &__avatar
+  //     display: flex
+  //     justify-content: center
+  //     margin-bottom: 4rem
+  //     .croppie-container .cr-viewport
+  //       border: none
+  //     .croppie-container .cr-resizer
+  //       border-width: 1px
+  //     .cr-resizer-horisontal-left
+  //       position: absolute
+  //       left: 0
+  //       top: 0
+  //       width: 100%
+  //       height: 20px
+  //       background-color: red
+  //       z-index: 10
+  //       pointer-events: all
+  //       cursor: col-resize
+  //     .cr-resizer-vertical::after, .cr-resizer-horisontal::after
+  //       border: none
+  //   &__img
+  //     width: 50rem
+  //     height: 33.5rem
+  //     overflow: hidden
+  //     position: relative
+  //     background-color: $grey
+  //   &__rotate
+  //     position: absolute
+  //     bottom: 1.5rem
+  //     right: 1.5rem
+  //     display: flex
+  //     z-index: 10
+  //     button
+  //       width: 2.5rem
+  //       margin-left: 1rem
+
+  .tab
+    &__tabs
+      flex-wrap: wrap
+      justify-content: space-between
+      padding: 0 3rem
+      margin-bottom: 6.5rem
+    &__tab
+      border-radius: 0
+      font-size: 3.6rem
+      color: #171E2F
+      height: 7.6rem
+      padding: 0 3rem
+      margin-bottom: 2rem
+      &.active
+        font-size: 3.6rem
+        border-radius: 20rem
+        color: #FFFEFE
+        background: linear-gradient(0deg, #CD2940, #CD2940), #DC2B40
+        box-shadow: 1rem 1rem 4rem rgba(205, 41, 64, 0.4)
+        .corner 
+          display: none
+      &:first-child
+        padding-left: inherit
+        &::after
+          content: none
+        &.active
+          &::after
+            display: block
+        .corner--rb
+          display: none
+      .corner
+        width: 3.5rem
+        background-color: $red2
+        display: none
+        &::before
+          padding: 0
+          height: 3rem
+      .corner--lb
+        left: 100%
+      .corner--rb
+        right: 100%
+    &__block
+      border-radius: 0
+      margin-bottom: 0
+      padding-bottom: 6.5rem
+      &--red
+        // color: #fff
+        .tab__block-inner
+          background: #CD2944
+          box-shadow: 1rem 1rem 8rem rgba(229, 39, 39, 0.4)
+      &-social
+        padding-bottom: 18rem
+        .tab__block-inner
+          padding: 7.7rem 2.5rem
+      &-inner
+        margin: 0 3rem
+        padding: 6rem 2.5rem 8rem
+        // background: #CD2944
+        background: #fff
+        border-radius: 4rem
+        // box-shadow: 1rem 1rem 8rem rgba(229, 39, 39, 0.4)
+        &-subscription
+          .tab__mtitle
+            margin: 2rem 0 6.5rem
+            justify-content: center
+            &-str
+              font-size: 4.8rem
+        &-advertisign
+          .tab__mtitle
+            &-str
+              font-size: 4.4rem
+    &__mtitle
+      align-items: center
+      margin-bottom: 3.5rem
+      &.other-mtitle
+        flex-wrap: wrap
+        margin-top: 2rem
+        .tab__mtitle-str
+          width: 100%
+          margin-bottom: 4rem
+        .btn-ca
+          height: 10.6rem
+          font-size: 3.2rem
+      &-str
+        font-size: 4rem
+
+      // &:last-child
+      //   margin-bottom: 0
+  .tab-subscribes
+    &__inner
+      flex-wrap: wrap
+    &__item
+      // display: flex
+      // align-items: center
+      width: 100%
+      background: #F4F3F8
+      border-radius: 1.8rem
+      padding-right: 3rem
+      &:not(:last-child)
+        margin-bottom: 4rem
+      &>div:last-child
+        width: 100% 
+        display: flex
+        align-items: center
+    &__icon
+      width: 12rem
+      height: 12rem
+      border-radius: 0
+      background: none
+      margin-right: 2.6rem
+    &__title
+      font-size: 4rem
+      margin-bottom: 0
+    &__subtitle
+      font-size: 2.8rem
+      margin-left: auto
+      img
+        width: 5rem
+        margin-left: 2rem
+
+  .general-info
+    // &__block
+    //   display: none
+    //   &.active
+    //     display: block
+    &__list
+      // display: flex
+      // flex-wrap: wrap
+    &__item
+      min-width: auto
+      width: 50%
+      padding-right: 5rem
+      margin-bottom: 5rem
+      &:nth-child(1)
+        order: 1
+      &:nth-child(2)
+        order: 2
+      &:nth-child(6)
+        order: 3
+      &:nth-child(3)
+        order: 4
+      &:nth-child(4)
+        order: 5
+      &:nth-child(5)
+        order: 6
+      &:nth-child(7)
+        order: 7
+        width: 100%
+      &:nth-child(8)
+        order: 8
+        width: 100%
+    &__k
+      font-size: 3rem
+      color: #FF8599
+      margin-bottom: 1rem
+    &__v
+      font-size: 3.2rem
+    &__swithes
+      padding: 2.5rem 0 4rem
+      .switch
+        margin-right: 0
+        // margin-bottom: 2rem
+        &:last-child
+          // margin-right: 0
+        &__row
+          order: -1
+          margin-right: 2rem
+    &__mtitle
+      font-weight: bold
+      font-size: 3rem
+      margin-right: auto
+    &__bot
+      padding-top: 4.5rem
+      justify-content: space-between
+      flex-wrap: wrap
+      .general-info__mtitle
+        font-size: 4rem
+        margin-bottom: 2.5rem
+      .checkbox
+        width: 50%
+        margin-right: 0
+        &:nth-of-type(1)
+          order: 1
+    &__btns
+      align-items: flex-start
+      flex-wrap: wrap
+      margin: -2.5rem 0 2rem
+      padding-bottom: 5rem
+      border-bottom: 1px solid rgba(255, 133, 160, 0.45)
+      .btn-ca
+        font-size: 3.2rem
+        width: 52rem
+        height: 11.2rem
+        padding: 0 3rem 0 4rem
+        box-shadow: none
+    &__remove
+      display: none
+      // display: flex
+      // align-items: center
+      // font-weight: bold
+      // font-size: 1.7rem
+      // img
+      //   width: 2rem
+      //   flex-shrink: 0
+      //   margin-right: 2rem
+      //   margin-top: -0.3rem
+
+  .modal
+    padding: 3rem 0
+    &__inner
+      padding: 12rem 3rem
+      width: 92%
+      border-radius: 4rem
+    &__bg
+      // position: absolute
+      width: 44.4rem
+      &--top
+        img
+          display: none
+          &.mobile
+            display: block
+      &--bot
+        bottom: -6rem
+        img
+          display: none
+          &.mobile
+            display: block
+      // &--left
+      //   top: -7rem
+      //   left: -12rem
+      //   width: 31.5rem
+    &__close
+      width: 13rem
+      height: 13rem
+      img
+        width: 3rem
+    &__content
+      position: relative
+    &__header
+      margin-bottom: 8rem
+      &:last-child
+        margin-bottom: 0
+    &__mtitle
+      font-size: 5.2rem
+      margin-bottom: 6rem
+    &__subtitle
+      font-size: 3.6rem
+      font-weight: 700
+      line-height: 1.5
+    &__footer
+      align-items: flex-start
+      flex-wrap: wrap-reverse
+      .btn
+        width: 93%
+        height: 10.8rem
+        font-size: 3.2rem
+        margin-right: 0
+        margin-bottom: 3.5rem
+    &.modal-subscription
+      .modal
+        &__subtitle
+          width: 95%
+          margin: 0 auto
+    &.modal-change-subscription
+      .modal
+        &__mtitle
+          width: 70%
+          margin-left: auto
+          margin-right: auto
+    &.modal-statistics
+      .modal
+        &__subtitle
+          width: 85%
+          margin: 0 auto
+
+  .advertisign
+    margin-top: 4.5rem
+    &__top
+      flex-wrap: wrap
+    &__left
+      width: 100%
+    &__main-text
+      font-size: 3.2rem
+      margin-bottom: 2rem
+    &__sub-text
+      width: 98%
+      font-size: 3rem
+      line-height: 1.4
+      margin-bottom: 4rem
+    &__block
+      margin-top: 3rem
+    &__kub
+      width: 10.2rem
+      height: 10.2rem
+      background: linear-gradient(140.73deg, #FFFFFF -27.81%, #FFFBF8 120.66%, #FFFFFF 120.66%)
+      box-shadow: 1.8rem 1.8rem 7.4rem rgba(229, 39, 39, 0.3)
+      border-radius: .2rem 2.6rem 2.6rem 2.6rem
+      margin-right: 4.5rem
+      img
+        width: 5.4rem
+        height: auto
+    &__text
+      font-size: 3.2rem
+    &__right
+      width: 100%
+      position: relative
+      margin: 8rem 0 3rem
+    &__img
+      margin-left: auto
+      width: 51rem
+      top: 0
+      right: -2.5rem
+      img
+        width: 100%
+        display: none
+        &.mobile
+          display: block
+    &__rose1
+      top: -8.5rem
+      left: -1.5rem
+      img
+        width: 50rem
+        height: auto
+        transform: none
+        display: none
+        &.mobile
+          display: block
+    &__rose2
+      top: 24.5rem
+      left: -1.5rem
+      img
+        width: 50rem
+        height: auto
+        transform: scale(1, -1)
+        display: none
+        &.mobile
+          display: block
+    // &__list
+    &__item
+      margin-bottom: 8rem
+      &:last-child
+        margin-bottom: 2rem
+      .corner
+        display: block
+        width: 7rem
+        height: 7rem
+        left: 36%
+        top: calc(100% - 12.4rem)
+        pointer-events: none
+        &::before
+          background: #CD2944
+    &__item-rose
+      display: none
+    &__bg
+      display: none
+      // width: 100%
+      // position: relative
+    &__content
+      position: static
+      border-radius: 6rem 6rem 6rem 0
+      background: #fff
+      // width: 100%
+      padding: 4.5rem 4rem
+      flex-wrap: wrap
+    &__lleft
+      width: 100%
+      margin-left: 0
+    &__1
+      font-size: 3rem
+      margin-top: 0
+      align-items: center
+      margin-bottom: 2.5rem
+      img
+        width: 3.7rem
+        height: auto
+        margin-right: 2rem
+    &__2
+      font-size: 4rem
+      padding-bottom: 3rem
+      border-bottom: .26rem solid #EAE8EE
+      margin-bottom: 9.5rem
+    &__3
+      width: 100%
+      font-size: 3rem
+      line-height: 1.4
+    &__rright
+      // position: absolute
+      // top: 21.5rem
+      // left: 4rem
+      // right: 4rem
+      // width: 100%
+      padding-top: 0
+      flex-wrap: wrap
+    &__first
+      position: absolute
+      top: 21.5rem
+      left: 4rem
+      right: 4rem
+      width: 100%
+      // width: 100%
+      display: flex
+      align-items: center
+      flex-wrap: wrap
+      flex-direction: row-reverse
+      justify-content: flex-end
+      margin-right: 0
+    &__mmain
+      font-size: 4rem
+      text-align: left
+      margin-left: 3.5rem
+    &__ssub
+      font-size: 2.8rem
+      text-align: left
+    &__second
+      position: absolute
+      bottom: 2rem
+      left: 4rem
+      display: flex
+      flex-direction: column
+    &__currency
+      font-size: 6rem
+      margin-left: 1.5rem
+      text-align: left
+    &__value
+      font-size: 3.2rem
+      color: #2B3242
+      margin-left: 1rem
+    &__cost
+      font-size: 2.8rem
+      text-align: left
+      order: -1
+      margin-bottom: 1rem
+    &__button
+      position: static
+      height: 12.4rem
+      width: 36%
+      background: #fff
+      border-radius: 0 0 6rem 6rem
+      .btn-ca
+        position: absolute
+        bottom: 0
+        right: 0
+        width: auto
+        height: 10rem
+        padding: 0 2.8rem 0 3.4rem
+        font-size: 2.8rem
+        box-shadow: 1rem 1rem 6rem rgba(58, 178, 146, 0.3)
+        z-index: 1
+        img
+          width: 4.2rem
+
+  .chat
+    background-color: $gray2
+    border-radius: 2.5rem
+    &__inner
+      height: auto
+      flex-wrap: wrap
+    &__sidebar
+      width: 100%
+      padding: 0 3rem
+    &__list
+      padding: 0
+      background-color: unset
+      height: auto
+      overflow: visible
+      border-radius: 0
+    &__content
+      width: 100%
+      display: none
+      padding: 2.5rem 3rem 5rem
+      flex-grow: 0
+      &-detail
+        display: block
+    &__user
+    &__chat
+      padding-top: 0
+      margin-top: 4.5rem
+      max-height: 120rem
+      overflow-y: auto
+    &__area
+      padding-top: 9rem
+    &__date
+      font-size: 2.8rem
+      margin-bottom: 4.5rem
+
+  .chat-switcher
+    margin-top: -5rem
+    margin-bottom: 8rem
+    &__inner
+      display: flex
+      overflow: visible
+      justify-content: space-between
+      align-items: center
+      position: relative
+      background: #fff
+      border-radius: 40rem
+      padding: 2.2rem
+      &::before
+        content: none
+    &__item
+      flex-grow: 0
+      height: auto
+      background-color: unset
+      &--left
+        border-radius: 0
+        height: auto
+        .chat-switcher__title
+          border-radius: 0
+        &.active
+          height: auto
+          border-radius: 0
+          .chat-switcher__title
+            border-radius: 0
+      &--right
+        border-radius: 0
+        height: auto
+        .chat-switcher__title
+          border-radius: 0
+        &.active
+          height: auto
+          border-radius: 0
+          .chat-switcher__title
+            border-radius: 0
+          & + .chat-switcher__space
+            order: -1
+            &::before
+              border-radius: 0
+      &.active
+        background-color: unset
+        filter: drop-shadow(1rem 1rem 4rem rgba(229, 39, 39, 0.4))
+        .chat-switcher__title
+          background: linear-gradient(92.39deg, #DC2B40 -14.37%, #CC284F 129.71%), #DC2B40
+          padding: 0 5rem
+          // box-shadow: 1rem 1rem 4rem rgba(229, 39, 39, 0.4)
+          border-radius: 10rem
+          color: #fff
+          span
+            color: #EA8096
+    &__title
+      flex-grow: 0
+      background: none
+      padding: 0
+      font-size: 3.6rem
+      font-weight: 700
+      height: 7.6rem
+      color: #898D93
+      span
+        font-size: 2.8rem
+        font-weight: 400
+        color: #BFBEC2
+        margin-left: 2rem
+        margin-top: 0.2rem
+    &__space
+      display: none
+
+  .chat-contact
+    padding: 3rem 2.6rem 2.4rem
+    border-radius: 6rem
+    margin-bottom: 4.1rem
+    background: #fff
+    &__ava
+      margin-right: 2.8rem
+      img
+        width: 13.8rem
+        height: 13.8rem
+    &__ind
+      width: 4.8rem
+      height: 4.8rem
+      border-radius: 50%
+      font-size: 2.4rem
+      line-height: 1
+      right: -1rem
+      top: -0.4rem
+      padding-top: 0.3rem
+      box-shadow: 1rem 1rem 4rem rgba(229, 39, 39, 0.4)
+    &__name
+      margin-bottom: 1.5rem
+      &-inner
+        font-size: 3.6rem
+    &__date
+      font-size: 2.6rem
+    &__msg
+      width: 46.5rem
+      font-size: 3rem
+
+  .chat-user
+    padding: 2rem
+    background-color: #dc2b40
+    border-radius: 9.6rem
+    box-shadow: 1rem 1rem 8rem rgba(229, 39, 39, 0.4)
+    &--online
+      .chat-user__ava::after
+        display: block
+    &__ava
+      margin-right: 2.5rem
+      img
+        width: 11.8rem
+        height: 11.8rem
+      &::after
+        width: 2.8rem
+        height: 2.8rem
+        border-radius: 50%
+        border-width: .7rem
+        right: -0.5rem
+        bottom: 1.2rem
+    &__name
+      margin-bottom: 1.5rem
+      &-inner
+        font-size: 3.6rem
+    &__ses
+      font-size: 2.8rem
+      color: #FF8599
+    &__complain
+      padding: 1rem
+      width: 7.8rem
+      height: 7.8rem
+      justify-content: center
+      border-radius: 50%
+      img
+        width: 3.4rem
+        margin-left: 0
+      &-text
+        display: none
+
+  .chat-msg
+    padding: 5rem 2.5rem
+    max-width: 59rem
+    margin-bottom: 4.3rem
+    &::before
+      width: 5rem
+      height: 5rem
+      right: 2rem
+      bottom: 1rem
+      background-size: contain
+    &--incoming
+      border-radius: 0 5rem 5rem 5rem
+    &--outgoing
+      border-radius: 5rem 0 5rem 5rem
+    &--sending
+      &::before
+        background-image: url(../img/loading.gif)
+        background-size: contain
+    // &--delivered
+    //   &::before
+    //     background-image: url(../img/msg-delivered.svg)
+    // &--read
+    //   &::before
+    //     background-image: url(../img/msg-read.svg)
+    &--sent
+      &::before
+        // background-image: url(../img/msg-sent.svg)
+        width: 3.5rem
+    &__name
+      margin-bottom: 2rem
+      &-inner
+        font-size: 3rem
+    &__date
+      font-size: 2.6rem
+    &__text
+      font-size: 3rem
+      line-height: 1.4
+      padding-right: 0
+      p
+        margin-bottom: 0
+        &:not(:last-child)
+          margin-bottom: 2.5rem
+      &-img
+        display: flex
+
+      img
+        height: 14.4rem
+        border-radius: 4rem
+        margin-right: 0
+        margin-bottom: 0
+        &:not(:last-child)
+          margin-right: 2rem
+
+  .chat-area
+    &__inner
+      align-items: center
+      padding: 2.6rem
+      border-radius: 5rem
+    &__label
+      width: 10rem
+      height: 10rem
+      margin-right: 2.5rem
+    &__entry
+      height: 100%
+      padding-top: 3rem
+      font-size: 2.8rem
+      &::placeholder
+        color: $greyt
+    &__submit
+      width: 10rem
+      height: 10rem
+      margin-left: 3rem
+      box-shadow: 0.6rem 1.2rem 4rem rgba(39, 229, 138, 0.3)
+      border-radius: 2.8rem
+  
+  .statistics
+    &__chart-wrap
+      color: $blackt
+      // background-image: linear-gradient(90deg, #ffffff 6.15%, rgba(255, 255, 255, 0) 30.65%)
+      padding: 5.6rem 0 6rem 2.5rem
+      margin-bottom: 9.5rem
+    &__filter
+      // margin-bottom: 5rem
+      position: relative
+      z-index: 10
+      .select_checked
+        display: block
+      .select-text
+        width: 36.2rem
+        height: 10.4rem
+        display: flex
+        align-items: center
+        background: #FFFFFF
+        border: .7rem solid #FF85A0
+        padding: 0 3.2rem
+        border-radius: 10rem
+        font-size: 3.2rem
+        font-weight: 700
+        color: #DE3954
+        position: relative
+        box-shadow: 1rem 3rem 6rem rgba(255, 133, 160, 0.1)
+        &::after
+          content: ''
+          position: absolute
+          top: 50%
+          right: 3rem
+          transform: translateY(-50%)
+          width: 2rem
+          height: 1.2rem
+          background: url(../img/select-text-arrow.svg) 50% no-repeat
+          background-size: contain
+      .select-dropdown
+        display: none
+        position: absolute
+        top: 50%
+        left: .7rem
+        right: .7rem
+        z-index: -1
+        background: #fff
+        padding: 9rem 4rem 5.5rem
+        border-radius: 0 0 3.6rem 3.6rem
+      &-item
+        font-size: 3.2rem
+        height: auto
+        padding: 0
+        color: #2B3242
+        &.active
+          color: #2B3242
+          background: transparent
+          border-radius: 0
+          box-shadow: none
+        &:not(:last-child)
+          margin-right: 0
+          margin-bottom: 5rem
+
+
+    &__list
+      flex-wrap: wrap
+      margin-bottom: 3.4rem
+      &:last-child
+        margin-bottom: -.5rem
+      &-title
+        font-size: 4rem
+        margin-bottom: 4rem
+    &__item
+      width: 100%
+      height: 19.8rem
+      padding: 0 4rem
+      color: #2B3242
+      border-radius: 4rem
+      background-size: 36rem auto
+      &:not(:last-child)
+        margin-bottom: 3.4rem
+    &__icon
+      width: 8.6rem
+      height: auto
+      margin-right: 4rem
+      &--red
+        box-shadow: 2rem 2rem 8rem rgba(229, 39, 39, 0.3)
+      &--green
+        box-shadow: 2rem 2rem 8rem rgba(39, 229, 195, 0.3)
+    &__k
+      font-size: 6.6rem
+      // color: #2B3242
+      line-height: 1
+      margin-bottom: -1rem
+      span
+        font-size: 2.8rem
+    &__v
+      font-size: 2.8rem
+      span
+        display: none
+        &.mobile
+          display: block
+    &__icon-right
+      width: 6.6rem
+      height: auto
+    &__header
+      flex-wrap: wrap
+      padding: 0 1.5rem
+      margin-bottom: 12rem
+      .radio-btn
+        display: flex
+        gap: 0
+        &__label
+          &:not(:last-child)
+            margin-right: 5rem
+        &__input:checked + .radio-btn__text
+          padding: 1.6rem 1.8rem
+        &__text
+          height: auto
+          font-size: 3rem
+          padding: 1.6rem 0
+    &__title
+      font-size: 4rem
+      margin-bottom: 4rem
+    // &__chart-over
+    //   overflow: auto
+    &__chart
+      height: 60rem
+
+  .add-adv
+    margin-bottom: -6.5rem
+    // .select--add-adv
+    //   margin-bottom: 4.6rem
+    .cus-select
+      margin-bottom: 6rem
+      &__header
+        height: 13rem
+        border-radius: 2.8rem
+        .select__arr
+          width: 3.6rem
+      &__val
+        font-size: 2.8rem
+      &__drop
+        max-height: 75rem
+    .search-item
+      margin-bottom: 3rem
+      &__header
+        margin-bottom: 2rem
+        z-index: 1
+        &.active
+          input
+            box-shadow: 5px 15px 30px rgba(98, 98, 98, 0.1)
+          .search-item__drop
+            display: block
+      &__input
+        height: 13rem
+        padding: 0 4rem
+        border-radius: 2.8rem
+      &__item
+        font-size: 2.8rem
+        min-height: 10rem
+        display: inline-flex
+        align-items: center
+        border-radius: 2rem
+        padding: 1rem 10rem 1rem 3.5rem
+        margin-right: 0
+        margin-bottom: 2rem
+        background-size: 2.8rem
+        background-position: right 4rem center
+      &__drop
+        top: 50%
+        padding: 11.5rem 4rem 5rem
+        border-radius: 2.8rem
+        max-height: none
+        z-index: -1
+        div
+          font-size: 2.8rem
+          padding: 0
+          &:not(:last-child)
+            margin-bottom: 4.8rem
+    // .btn--green
+    //   padding-left: 4.2rem
+    //   padding-right: 4.2rem
+    &__inner
+      margin: -2.3rem 0 14.5rem
+    &__title
+      font-size: 3.2rem
+      font-weight: 700
+      line-height: 1.3
+      margin-bottom: 2rem
+    &__fx-sb
+      font-size: 3.2rem
+      margin-bottom: 2rem
+    &__price
+      position: absolute
+      left: 0
+      bottom: -8.5rem
+    &__sum
+      color: $green
+      font-size: 5.2rem
+      span
+        font-size: 3rem
+        top: -2.5rem
+    &__dur
+      font-size: 2.8rem
+    &__info
+      margin-top: 4rem
+      position: relative
+
+  .about-banner
+    // padding-top: 14.6rem
+    padding-top: 20rem
+    margin-bottom: 14.5rem
+    .container
+      padding: 0
+    &__inner
+      flex-wrap: wrap
+      border-radius: 6rem
+      padding: 11.5rem 3rem 7.5rem
+    &__dash
+      display: none
+      &.mobile
+        display: block
+      &--left
+        width: 16rem
+        left: 0
+        top: auto
+        bottom: 10rem
+      &--right
+        width: 26rem
+        right: 0
+        top: 35rem
+    &__left
+      width: 100%
+      padding-top: 0
+    &__title
+      width: 90%
+      font-size: 5.6rem
+      line-height: 1.14
+      color: #3B3E47
+      margin-bottom: 4rem
+    &__subtitle
+      width: 100%
+      font-size: 3rem
+      line-height: 1.47
+      padding-top: 0
+      margin-bottom: 6.5rem
+    &__down-texts
+      padding-left: 4.5rem
+    &__a-button
+      width: 7.8rem
+      height: auto
+      img
+        display: none
+        &.mobile
+          display: block
+    &__services
+      font-size: 3.2rem
+      line-height: 1.5
+      color: #3B3E47
+      padding-bottom: 1rem
+      &::after
+        width: 4.6rem
+        height: 0.4rem
+        background-color: #171e2f
+        border-radius: 2rem
+    &__all-services
+      font-size: 2.8rem
+      line-height: 1
+      padding-top: 2rem
+    &__mid
+      width: 80rem
+      padding-top: 4rem
+      margin-left: -12rem
+    &__right
+      width: 100%
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      padding: 0 6rem 0 9rem
+      margin-top: 5rem
+    &__stat
+      text-align: left
+      padding-right: 0
+      margin-bottom: 0
+      &::after
+        right: auto
+        left: -2.5rem
+    &__key
+      font-size: 4.8rem
+      color: #3B3E47
+    &__value
+      font-size: 3rem
+      line-height: 1.6
+
+  .solve
+    margin-top: 13rem
+    margin-bottom: 18.5rem
+    .container
+      padding-top: 0
+    &__bg
+      width: auto
+      height: 91%
+      background: #F2F1F5
+      border-radius: 6rem
+      left: 3rem
+      right: 3rem
+    &__rose
+      width: 72rem
+      display: none
+      &.mobile
+        display: block
+      &--1
+        left: 0
+        top: 0
+        transform: none
+      &--2
+        right: 0
+        bottom: 0
+        transform: none
+    &__inner
+      position: relative
+      padding: 12rem 2.6rem 0
+    &__mtitle
+      font-size: 4.4rem
+      line-height: 1.25
+      color: #3B3E47
+      margin-bottom: 4rem
+    &__subtitle
+      font-size: 3rem
+      line-height: 1.47
+      margin-bottom: 6rem
+    &__buttons
+      height: auto
+      margin-bottom: 7.5rem
+    &__btns
+      flex-wrap: wrap
+      .btn-car
+        width: 46.2rem
+        margin-right: 0
+        &:not(:last-child)
+          margin-bottom: 4rem
+        img
+          width: 4rem
+          box-shadow: none
+    &__list
+      flex-wrap: wrap
+      gap: unset
+    &__item
+      padding: 8rem 8.5rem 8.5rem
+      width: 100%
+      height: auto
+      border-radius: 6rem
+      box-shadow: 2rem 4rem 10rem rgba(149, 156, 165, 0.2)
+      &:not(:last-child)
+        margin-bottom: 2.6rem
+    &__item-conditions
+      font-size: 4rem
+      color: #3B3E47
+      padding: 0
+      margin-bottom: 6rem
+      img
+        margin-right: 3.5rem
+        height: auto
+        width: 7.6rem
+    &__item-text
+      font-size: 3rem
+      line-height: 1.47
+      margin: 0
+
+  .information
+    position: relative
+    margin: 20.5rem 0 11.5rem
+    .container
+      padding: 0
+    &__inner
+      flex-wrap: wrap
+      margin-bottom: 0
+    &__function
+      position: static
+      margin-top: 11.5rem
+      width: 100%
+      background: #CC2849
+      border-radius: 0
+      padding: 0
+      // padding: 2.2rem 3rem
+      // overflow-x: scroll
+    &__list
+      display: flex
+      padding: 2.2rem 3rem
+      position: static
+      // overflow-y: hidden
+      overflow-x: scroll
+    &__point
+      margin-bottom: 0
+      border-radius: 2.8rem
+      padding-right: 3rem
+      white-space: nowrap
+      font-size: 3rem
+      color: #fff
+      position: relative
+      &:not(:last-child)
+        margin-right: 4rem
+      // &:last-child
+      //   margin-right: 3rem
+      //   &::after
+      //     content: ''
+      //     position: absolute
+      //     top: 0
+      //     left: 100%
+      //     width: 3rem
+      //     height: 100%
+      //     pointer-events: none
+      //     z-index: -1
+      &.active
+        background-color: #fff
+        color: #3B3E47
+        path
+          stroke: #cc2849
+      &:hover
+        color: #3B3E47
+      &:last-child
+        margin-bottom: 0
+    &__icon
+      width: 9.6rem
+      height: 9.6rem
+      margin-right: 2rem
+      border-radius: 2.8rem
+      svg
+        width: 5.4rem
+        height: 5.4rem
+    &__girl
+      display: none
+    &__btns
+      flex-wrap: wrap
+      position: absolute
+      bottom: 0
+      left: 3rem
+      right: 3rem
+      justify-content: center
+      .btn-car
+        width: 42.2rem
+        margin-top: 0
+        font-size: 3rem
+        padding-left: 4.5rem
+        border: 1px solid #DCDBE1
+        img
+          width: 4rem
+          box-shadow: none
+        &:not(:last-child)
+          margin-bottom: 3.5rem
+    &__waves
+      display: none
+    &__about
+      width: 100%
+      padding: 6rem 3rem 30rem
+      &-item
+        display: none
+        font-size: 3rem
+        line-height: 1.47
+        &.active
+          display: block
+        &:not(:last-child)
+          margin-bottom: 0
+        p
+          &:not(:last-child)
+            margin-bottom: 7.2rem
+          &.t-24
+            &:not(:last-child)
+              margin-bottom: 4.5rem
+      .t-40
+        position: absolute
+        top: 0
+        left: 3rem
+        right: 3rem
+        font-size: 5.6rem
+        line-height: 1.2
+        color: #3B3E47
+        margin: 0
+      .t-24
+        font-size: 4rem
+        line-height: 1.27
+        color: #3B3E47
+
+    &.a-information
+      .information
+        &__function
+          margin-top: 20.5rem
+        &__about
+          .t-40
+            top: -5rem
+        
+
+  .politica-banner
+    margin: 20rem 0 0
+    .container
+      padding: 0
+    &__line-1
+      display: none
+    &__line-2
+      display: none
+      width: 26rem
+      right: 0
+      top: 42rem
+      z-index: 0
+      &.mobile
+        display: block
+    &__inner
+      padding: 0
+      flex-wrap: wrap
+      border-radius: 6rem 6rem 0 0
+    &__text
+      width: 100%
+      padding: 11.5rem 3rem 5.5rem
+    &__title
+      font-size: 5.6rem
+      line-height: 1.14
+      color: #3B3E47
+      margin-bottom: 3rem
+      text-transform: lowercase
+      &::first-letter
+        text-transform: uppercase
+    &__subtitle
+      font-size: 3rem
+      padding-left: 6.5rem
+      line-height: 1.47
+    &__icon
+      width: 5rem
+      height: 5rem
+      left: -1rem
+      box-shadow: 2rem 3rem 8rem rgba(146, 146, 146, 0.4)
+      img
+        width: .7rem
+        height: auto
+    &__boy
+      width: 100%
+
+  .politica-info
+    margin-bottom: 1.5rem
+    .container
+      padding: 0
+    &__inner
+      flex-wrap: wrap
+    &__list
+      width: 100%
+      padding: 7rem 3rem 0
+    &__item
+      margin-bottom: 7.2rem
+      display: none
+      &.active
+        display: block
+    &__title
+      font-size: 4rem
+      line-height: 1.25
+      color: #3B3E47
+      padding-bottom: 0
+      margin-bottom: 4.5rem
+    &__text
+      font-size: 3rem
+      line-height: 1.47
+      padding-bottom: 0
+    &__function
+      position: static
+      width: 100%
+      order: -1
+      border-radius: 0
+      background: #CC2847
+      display: flex
+      overflow-y: hidden
+      overflow-y: auto
+      padding: 2.2rem 3rem
+    &__point
+      white-space: nowrap
+      margin-bottom: 0
+      padding-right: 3rem
+      border-radius: 2.8rem
+      font-size: 3rem
+      font-weight: 700
+      color: #fff
+      transition: background .25s
+      &:not(:last-child)
+        margin-right: 4.4rem
+      &.active
+        background-color: #fff
+        color: #3B3E47
+        .politica-info__icon
+          color: #CC2844
+      &:hover
+        color: #3B3E47
+    &__icon
+      width: 9.6rem
+      height: 9.6rem
+      padding-top: .5rem
+      margin-right: 2rem
+      border-radius: 2.8rem
+      font-size: 3.6rem
+      color: #BEBBC3
+
+  .sub-tariff
+    margin: 14rem 0 10rem
+    &__inner
+      border-radius: 6rem
+      padding: 8rem 2.6rem 10.5rem
+    &__mtitle
+      font-size: 6rem
+      color: #3B3E47
+      padding-bottom: 0
+      margin-bottom: 6.5rem
+    &__comfortable
+      flex-wrap: wrap
+    &__card
+      width: 100%
+      height: 84rem
+      padding: 6.5rem 4rem 10rem
+      border-radius: 3rem
+      position: relative
+      background-image: url(../img/bgcard-mobile.svg)
+      z-index: 1
+      &:not(:last-child)
+        margin-bottom: 6rem
+    &__title
+      width: 70%
+      padding-bottom: 0
+      font-size: 4rem
+      line-height: 1.28
+      color: #3B3E47
+      margin-bottom: 5rem
+    &__sub-title
+      width: 80%
+      padding-bottom: 0
+      font-size: 3rem
+      line-height: 1.26
+      color: #3B3E47
+      margin-bottom: 4rem
+    &__price
+      margin-left: -2.5rem
+      margin-bottom: 4rem
+    &__icon
+      width: 10rem
+      height: 10rem
+      border-radius: 50%
+      box-shadow: 1rem 2rem 6rem rgba(230, 230, 230, 0.4)
+      img
+        width: 4.8rem
+        height: auto
+    &__value
+      padding-left: 3rem
+    &__number
+      font-size: 8rem
+      margin-top: .5rem
+      margin-right: .5rem
+    &__currency
+      font-size: 3rem
+      top: -5rem
+    &__month
+      font-size: 4rem
+      position: relative
+      top: -1rem
+    &__btns
+      .btn-car
+        width: 43.8rem
+        height: 10rem
+        padding: 0 4rem 0 4.5rem
+        border-radius: 1rem 20rem 20rem 30rem
+        img
+          margin-left: auto
+          width: 4rem
+    &__top-icon
+      width: 10.6rem
+      height: 10.6rem
+      border-radius: 50%
+      top: 4rem
+      right: 2rem
+      box-shadow: 1.5rem 4rem 14.5rem rgba(95, 95, 95, 0.3)
+      z-index: -1
+      img
+        width: 5rem
+        height: auto
+    &__pic
+      bottom: 0
+      right: 0
+      width: 100%
+      height: 21rem
+      border-radius: 4rem
+      img
+        width: 70rem
+        left: 9rem
+
+  .pay
+    overflow: hidden
+    padding-top: 10rem
+    .container
+      padding: 0 3rem
+    &__inner
+      border-radius: 12rem
+      padding: 10.5rem 6.5rem 11rem
+      margin-bottom: 0
+    &__icon
+      width: 10.2rem
+      box-shadow: 2rem 1rem 6rem rgba(95, 95, 95, 0.2)
+      left: 50%
+      top: 0
+      transform: translate(-50%, -50%)
+      img
+        width: 1.5rem
+        margin-left: .5rem
+    &__title
+      font-size: 4rem
+      line-height: 1.25
+      padding: 0
+      margin-bottom: 2rem
+    &__sub-title
+      font-size: 3rem
+      line-height: 1.47
+      width: 100%
+    &__pic
+      width: 65rem
+      height: 45rem
+      right: -12rem
+      top: auto
+      bottom: -19rem
+      transform: scale(1, -1) rotate(15deg)
+
+  .sda

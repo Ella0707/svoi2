@@ -1,0 +1,99 @@
+.result {
+    &__list {
+        margin-bottom: 6rem;
+    }
+    &__item {
+        margin-bottom: 6rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &.hide {
+            display: none;
+        }
+    }
+    &__title {
+        font-size: 1.6rem;
+        color: $greyt;
+        margin-bottom: 1rem;
+    }
+    &__item-inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        width: 74.7rem;
+        &-inner {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            align-content: center;
+            &:empty {
+                display: none;
+            }
+        }
+    }
+    &__right {
+        flex-shrink: 0;
+    }
+    &__edit {
+        display: flex;
+        align-items: center;
+        color: #bebbc3;
+        font-weight: bold;
+        height: 5rem;
+        cursor: pointer;
+        img {
+            width: 2.4rem;
+            margin-right: 1.5rem;
+            flex-shrink: 0;
+        }
+    }
+    &__teg {
+        background-color: #ebebed;
+        border-radius: 1rem;
+        padding: 1rem 2rem;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 5rem;
+    }
+    &__text {
+        font-size: 1.7rem;
+        font-weight: 700;
+        line-height: 1.5;
+        margin-right: 3rem;
+        margin-bottom: 1rem;
+        min-height: 5rem;
+        padding-top: 1rem;
+        .cur {
+            color: $red;
+            font-weight: bold;
+            font-size: 1.8rem;
+            margin-left: 1rem;
+        }
+    }
+    &__img {
+        width: 11rem;
+        height: 11rem;
+        border-radius: 1.4rem;
+        object-fit: cover;
+        overflow: hidden;
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+    }
+    &__buttons {
+        display: flex;
+        justify-content: center;
+        .btn-ca--red {
+            padding-left: 5.3rem;
+            padding-right: 2.5rem;
+            height: 7rem;
+        }
+    }
+}

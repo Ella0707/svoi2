@@ -1,0 +1,273 @@
+.orders {
+    &--performer {
+        .orders {
+            &__info {
+                grid-template-columns: repeat(1, 28rem);
+            }
+        }
+    }
+    &--empty {
+    }
+    &__item {
+        display: flex;
+        position: relative;
+        margin-bottom: 4.5rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__left {
+        flex-grow: 1;
+        padding-left: 3.7rem;
+        padding-top: 3.4rem;
+        padding-bottom: 3.8rem;
+        background-color: #fff;
+        border-radius: 4rem 0 4rem 4rem;
+        display: flex;
+    }
+    &__user-wrap {
+        width: 30rem;
+        flex-shrink: 0;
+        margin-right: 5rem;
+        border-right: 1.5px solid $grey;
+    }
+    &__user {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    &__ava {
+        flex-shrink: 0;
+        margin-right: 2.4rem;
+        img {
+            width: 7rem;
+            height: 7rem;
+            object-fit: cover;
+            @include rad-hide;
+        }
+    }
+    &__name {
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        &-inner {
+            font-weight: bold;
+            font-size: 2rem;
+        }
+    }
+    &__confirmed {
+        width: 2.6rem;
+        margin-left: 1rem;
+    }
+    &__rate {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        font-size: 1.6rem;
+        span {
+            color: $greyt;
+            font-weight: normal;
+            margin-left: 0.8rem;
+        }
+        img {
+            width: 1.8rem;
+            flex-shrink: 0;
+            margin-right: 0.8rem;
+        }
+    }
+    &__price {
+        display: inline-flex;
+        align-items: center;
+        height: 5rem;
+        padding-left: 2.5rem;
+        padding-right: 3rem;
+        background-color: $grey;
+        border-radius: 0 4rem 4rem 4rem;
+    }
+    &__price-title {
+        font-size: 1.6rem;
+        color: $greyt;
+    }
+    &__cost {
+        font-weight: bold;
+        margin-left: 1rem;
+    }
+    &__sum {
+        font-size: 2rem;
+    }
+    &__cur {
+        font-size: 1.4rem;
+        position: relative;
+        top: -0.4rem;
+    }
+    &__date {
+        font-size: 1.4rem;
+        color: #898d93;
+        position: absolute;
+        right: 4.3rem;
+        top: 8rem;
+        z-index: 2;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 2.4rem;
+        margin-bottom: 3.7rem;
+    }
+    &__info {
+        display: grid;
+        grid-template-columns: repeat(2, 32rem);
+        grid-gap: 2.3rem;
+    }
+    &__point {
+        display: flex;
+        align-items: center;
+        font-size: 1.6rem;
+        img {
+            width: 2.3rem;
+            margin-right: 1.4rem;
+            flex-shrink: 0;
+        }
+    }
+    &__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__status-wrap {
+        padding-top: 2rem;
+        padding-right: 2.2rem;
+        flex-grow: 1;
+        background-color: #fff;
+        border-radius: 0 4rem 3rem 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__status {
+        min-width: 15rem;
+        height: 3.6rem;
+        display: inline-flex;
+        align-items: center;
+        background: $grey;
+        border-radius: 100rem;
+        font-weight: bold;
+        font-size: 1.5rem;
+        padding-left: 1.3rem;
+        img {
+            width: 1.6rem;
+        }
+        span {
+            margin: auto;
+        }
+    }
+    &__btn {
+        padding-top: 2rem;
+        padding-left: 2.5rem;
+        padding-bottom: 0.5rem;
+        position: relative;
+        .corner {
+            width: 4rem;
+        }
+        .btn-ca {
+            width: 25rem;
+            height: 5.5rem;
+            font-weight: bold;
+            padding: 0;
+            justify-content: center;
+            position: relative;
+            img {
+                margin-right: 1.4rem;
+            }
+        }
+        .orders__btn-ca {
+            justify-content: space-between;
+            padding-left: 3.8rem;
+            padding-right: 2rem;
+            img {
+                margin-right: 0;
+            }
+        }
+        .orders__btn-ref {
+            img {
+                width: 1.9rem;
+                margin-right: 1.6rem;
+                margin-left: 0;
+            }
+        }
+        .orders__btn-leave-rev {
+            img {
+                width: 1.9rem;
+                margin-right: 1.6rem;
+                margin-left: 0;
+            }
+        }
+        .orders__btn-edit {
+            img {
+                width: 2.2rem;
+                margin-right: 1.6rem;
+                margin-left: 0;
+            }
+        }
+    }
+    &__more {
+        display: flex;
+        justify-content: center;
+        margin-top: 4.5rem;
+        .btn-ca {
+            width: 25rem;
+        }
+    }
+    &__empty {
+        padding-top: 12.2rem;
+        padding-bottom: 10rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 3rem;
+        padding-right: 10rem;
+        &-rose {
+            position: absolute;
+            bottom: 0;
+            left: 0rem;
+            width: 45rem;
+            overflow: hidden;
+            border-radius: 0 0 0 4rem;
+            z-index: 1;
+            img.mobile {
+                display: none;
+            }
+        }
+        &-bot {
+            display: flex;
+            justify-content: space-between;
+        }
+        &-bot-left {
+            background-color: $grey;
+            flex-grow: 1;
+            border-radius: 0 0 2.5rem 2.5rem;
+            position: relative;
+            &::before {
+                content: "";
+                display: inline-block;
+                width: 7rem;
+                height: 7rem;
+                position: absolute;
+                left: 0;
+                bottom: 100%;
+                background-color: $grey;
+            }
+        }
+    }
+    &__gocatalog {
+        position: relative;
+        padding-top: 2.5rem;
+        padding-left: 2.5rem;
+        .btn-ca {
+            position: relative;
+            span.mobile {
+                display: none;
+            }
+        }
+    }
+}

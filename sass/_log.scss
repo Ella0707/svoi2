@@ -1,0 +1,105 @@
+.login {
+    &__inner {
+        display: flex;
+        padding: 0;
+    }
+    &__content {
+        width: 50rem;
+        position: relative;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__subtitle {
+        width: 40.9rem;
+        text-align: center;
+        margin-bottom: 3.4rem;
+        & + .login__mtitle {
+            font-size: 3rem;
+        }
+    }
+    &__mtitle {
+        font-size: 4rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    &__title {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 1.3rem;
+    }
+    &__soc-list {
+        width: 26.5rem;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+    }
+    &__soc-icon {
+        width: 5rem;
+        height: 5rem;
+        @include cover;
+    }
+    &__form {
+        width: 26.5rem;
+        .btn-ca {
+            width: 100%;
+            height: 5.8rem;
+            justify-content: space-between;
+            font-weight: bold;
+            padding-left: 2.1rem;
+            padding-right: 1.4rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+    }
+    &__img {
+        width: 50rem;
+        min-height: 62rem;
+        @include cover;
+    }
+    &__fogot {
+        text-align: center;
+        color: $greyt;
+        font-size: 1.6rem;
+        margin-bottom: 2.4rem;
+    }
+    &__toreg {
+        text-align: center;
+        a {
+            color: $green;
+        }
+    }
+    &__confirm {
+        margin-bottom: 4rem;
+        display: flex;
+        align-items: flex-start;
+        color: $greyt;
+        font-size: 1.6rem;
+        a {
+            text-decoration: underline;
+        }
+        &-lab {
+            display: inline-block;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+        span {
+            display: inline-block;
+            cursor: pointer;
+            width: 1.7rem;
+            height: 1.7rem;
+            border-radius: 0.2rem;
+            border: 1px solid $green;
+            background-repeat: no-repeat;
+            background-size: 70%;
+            background-position: center;
+        }
+        input:checked + span {
+            background-image: url(../img/check-green.svg);
+        }
+    }
+}

@@ -1,0 +1,113 @@
+.service-banner {
+    margin-top: 10.3rem;
+    margin-bottom: 15rem;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        background-color: #f2f1f5;
+        border-radius: 4rem;
+        overflow: hidden;
+        position: relative;
+        padding-top: 3.2rem;
+        padding-right: 1.5rem;
+        padding-left: 10.2rem;
+        padding-bottom: 9rem;
+    }
+    &__bg {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 0;
+    }
+    &__left {
+        padding-top: 7.5rem;
+        position: relative;
+        z-index: 1;
+    }
+    &__mtitle {
+        font-weight: bold;
+        font-size: 4rem;
+        margin-bottom: 4.8rem;
+    }
+    &__list {
+        padding-left: 0.4rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3.5rem;
+        margin-bottom: 5rem;
+    }
+    &__item {
+        width: 40rem;
+        display: flex;
+        align-items: center;
+        padding: 1.8rem 2rem;
+        background-color: #ffffff;
+        box-shadow: 1.5rem 3rem 7rem rgba(207, 207, 207, 0.3);
+        border-radius: 3rem;
+        border-top-left-radius: 0;
+        font-weight: bold;
+        font-size: 2.3rem;
+    }
+    &__icon {
+        box-shadow: 1rem 1rem 4rem rgba(229, 39, 39, 0.3);
+        border-radius: 1.5rem;
+        border-top-left-radius: 0;
+        width: 6.4rem;
+        margin-right: 4rem;
+        flex-shrink: 0;
+    }
+    &__right {
+        position: relative;
+        z-index: 1;
+        width: 71.5rem;
+    }
+    @media (max-width: 48em) {
+        margin-top: 17rem;
+        margin-bottom: 17.2rem;
+        &__inner {
+            display: block;
+            border-radius: 6rem;
+            padding-top: 3.2rem;
+            padding-right: 3.2rem;
+            padding-left: 3.2rem;
+            padding-bottom: 9rem;
+        }
+        &__left {
+            padding-top: 7.5rem;
+        }
+        &__mtitle {
+            font-size: 5.6rem;
+            margin-bottom: 5.1rem;
+        }
+        &__list {
+            padding-left: 0rem;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 3rem;
+            margin-bottom: 6.1rem;
+        }
+        &__item {
+            width: 100%;
+            padding: 2.2rem;
+            box-shadow: 2.4rem 5rem 12rem rgba(207, 207, 207, 0.3);
+            border-radius: 3.7rem;
+            border-top-left-radius: 0;
+            font-size: 3.6rem;
+        }
+        &__icon {
+            box-shadow: 2.4rem 5rem 12rem rgba(229, 39, 39, 0.3);
+            border-radius: 5rem;
+            border-top-left-radius: 0;
+            width: 9.2rem;
+            margin-right: 3.2rem;
+            flex-shrink: 0;
+        }
+        &__right {
+            left: -11rem;
+            bottom: 5.1rem;
+            width: 150%;
+            height: 75.5vw;
+            img {
+            }
+        }
+    }
+}

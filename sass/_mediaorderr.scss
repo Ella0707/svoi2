@@ -1,0 +1,211 @@
+@media (max-width: 48em) {
+    .orderr {
+        width: 100%;
+        &__content {
+            width: 100%;
+        }
+    }
+    .orderr-info__map {
+        height: 59.8rem;
+    }
+    .orderr-info {
+        padding-left: 2.4rem;
+        padding-right: 2.4rem;
+        padding-top: 0;
+    }
+    .orderr-info__info-wrap {
+        flex-direction: column;
+    }
+    .orderr__bg {
+        background-image: url(../dopimage/orderbgmob.png);
+        height: 15rem;
+        align-items: initial;
+    }
+    .orderr__nomer {
+        width: 27rem;
+        padding-top: 3rem;
+    }
+    .orderr__suptitle {
+        width: 56%;
+        font-size: 3rem;
+        line-height: 4.4rem;
+        padding-top: 3rem;
+    }
+    .orderr-info {
+        border-radius: 0 0 2.2rem 2.2rem;
+    }
+    .orderr__prev {
+        top: -7rem;
+        position: absolute;
+        display: none;
+    }
+    .orderr__prev--mobile {
+        display: block;
+        position: absolute;
+        top: -11rem;
+        &::before {
+            position: absolute;
+            content: '';
+            width: 7.8rem;
+            height: 7.8rem;
+            background: linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
+            box-shadow: 1rem 3rem 6rem rgba(98, 98, 98, 0.1);
+            border-radius: 50%;
+            top: 0;
+            background-image: url(../dopimage/redarrow.svg);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+        }
+        span {
+            font-size: 3.6rem;
+            padding-left: 11rem;
+            position: relative;
+            top: 1.8rem;
+        }
+    }
+    .orderr-info__mtitle {
+        font-size: 4rem;
+        margin-bottom: 6rem;
+    }
+    .orderr-info__price {
+        width: 100%;
+        height: 10rem;
+        margin-bottom: 4rem;
+    }
+    .orderr-info__price .btn-car--green {
+        height: 10rem;
+        font-size: 3rem;
+    }
+    .orderr-info__price .btn-car span {
+        font-size: 3rem;
+    }
+    .orderr-info__price .btn-car div {
+        font-size: 3rem;
+    }
+    .orderr-info__info-item {
+        height: 12rem;
+        flex-direction: column;
+        padding-top: 2rem;
+        .open-cir-green,
+        .eye-gra {
+            display: none;
+        }
+        p {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .orderr-info__info-item:first-child {
+        padding-top: 2rem;
+    }
+    .orderr-info__info-item img {
+        height: 2.5rem;
+        width: auto;
+        margin-right: 0rem;
+        margin-bottom: 1rem;
+    }
+    .orderr-info__det {
+        padding-left: 2.6rem;
+        padding-right: 2.4rem;
+        padding-top: 6.4rem;
+        border-radius: 3rem 3rem 0 0;
+    }
+    .orderr-info__det-title {
+        font-size: 4rem;
+        line-height: 125%;
+        margin-bottom: 5rem;
+    }
+    .orderr-info__item {
+        flex-direction: column;
+        margin-bottom: 4rem;
+        img {
+            width: 2.7rem;
+            height: 3rem;
+        }
+        .orderr-info__k {
+            width: 100%;
+            color: #898D93;
+            font-size: 3rem;
+            line-height: 4.4rem;
+        }
+    }
+    .orderr-info__v {
+        .o-gallery {
+            width: 100%;
+            overflow: hidden;
+            grid-template-columns: repeat(2, 1fr);
+            display: none;
+            img {
+                width: 28.8rem;
+                height: 18rem;
+            }
+        }
+        .o-gallery--mobile {
+            display: grid;
+        }
+    }
+    .orderr-info__btns {
+        display: none;
+    }
+    .orderr-info__btn {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        width: 100%;
+        background-color: #fff;
+        position: relative;
+        flex-shrink: 0;
+        border-radius: 0 0 3rem 3rem;
+    }
+    .orderr-info__btn .corner {
+        display: none;
+    }
+    .orderr-info__btn .btn-ca {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 10rem;
+        font-size: 3rem;
+    }
+    .orderr-info__respons img {
+        width: 4rem;
+        height: 4rem;
+    }
+    .orderr-side__mtitle {
+        font-size: 4rem;
+    }
+    .orderr-side__ava {
+        width: 16rem;
+        height: 16rem;
+        margin-right: 3rem;
+    }
+    .orderr-side__name-str {
+        font-size: 3rem;
+    }
+    .orderr-side__rate {
+        img {
+            width: 3.2rem;
+        }
+    }
+    .orderr-side .btn-ca {
+        height: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        img {
+            width: 4rem;
+            height: 4rem;
+        }
+    }
+    .orderr-side__btns {
+        .orderr-side__help {
+            display: none;
+        }
+    }
+    .orderr-info__v .o-gallery {
+        grid-gap: 2rem;
+    }
+}

@@ -1,0 +1,127 @@
+.sub-tariff {
+    margin: 11rem 0 13rem;
+    &__inner {
+        background: #f2f1f5;
+        border-radius: 7rem;
+        padding: 9.9rem 10.4rem;
+    }
+    &__mtitle {
+        font-weight: bold;
+        font-size: 4rem;
+        color: #263238;
+        padding-bottom: 7.8rem;
+    }
+    &__comfortable {
+        display: flex;
+        justify-content: space-between;
+    } 
+    &__card {
+        padding-left: 5rem;
+        width: 72.766rem;
+        height: 39rem;
+        padding-top: 4.43rem;
+        border-radius: 3rem;
+        position: relative;
+        background-image: url(../img/bgcard.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 0 0;
+    }
+
+    &__title {
+        padding-bottom: 1.8rem;
+        font-weight: bold;
+        font-size: 4rem;
+        color: #2b3242;
+    }
+    &__sub-title {
+        font-weight: normal;
+        padding-bottom: 2.7rem;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        color: #2b3242;
+    }
+   
+    &__price {
+        display: flex;
+        align-items: center;
+        margin-bottom: 3.3rem;
+    }
+    &__icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 4.9rem;
+        height: 4.9rem;
+        border-radius: 10rem;
+        box-shadow: 0.5rem 1rem 3rem rgba(230, 230, 230, 0.4);
+        img{
+            width: 2.4rem;
+            height: 2.4rem;
+        }
+    }
+    &__value{
+        padding-left: 2.5rem;
+        font-weight: 700;
+        
+    }
+    &__number{
+        font-size: 4.5rem;
+        display: inline-block;
+        margin-right: 0.7rem;
+    }
+    &__currency{
+        font-size: 1.5rem;
+        display: inline-block;
+        margin-right: 1rem;
+        position: relative;
+        top: -2.5rem;
+    }
+    &__month{
+        font-size: 3rem;
+        display: inline-block;
+    }
+    
+    &__btns{
+        .btn-car {
+            width: 27.8rem;
+            height: 6.8rem;
+            padding-left: 4.1rem;
+            padding-right: 2.3rem;
+
+        }
+    }
+    &__top-icon{
+        width: 7.8rem;
+        height: 7.8rem;
+        border-radius: 10rem;
+        background-color: #fff;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 11px;
+        right: 11.8px;
+        box-shadow: 1rem 3rem 10rem rgba(95, 95, 95, 0.3);
+        img{
+            width: 3.8rem;
+            height: 3.8rem;
+        }
+    }
+    &__pic{
+        overflow: hidden;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 28.9rem;
+        height: 20.3rem;
+        border-radius: 4rem;
+        img{
+        transform: scale(1,-1);
+            width: 47rem;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+}

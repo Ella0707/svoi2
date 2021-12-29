@@ -1,0 +1,26 @@
+.article-bottom{
+  &__inner{
+    width: 151.1rem;
+    margin-left: 11rem;
+  }
+  &__other{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+  }
+  &__other-text{
+    font-weight: bold;
+    font-size: 4rem;
+    color: #171E2F;
+  }
+  &__other-btns{
+    img{
+      transform: rotate(0deg);
+    }
+  }
+  &__blocks{
+    display: flex;
+    justify-content: center;
+    gap: 4.4rem;
+  }
+}

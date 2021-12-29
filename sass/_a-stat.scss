@@ -1,0 +1,31 @@
+.a-stat {
+    margin-bottom: 13rem;
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 4rem;
+    }
+    &__item {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 4rem;
+        height: 25.2rem;
+        background-image: url(../img/a-stat-bg.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 4.5rem;
+        color: #232020;
+        margin-bottom: 2rem;
+    }
+    &__text {
+        color: $greyt;
+        padding: 0 2rem;
+    }
+}

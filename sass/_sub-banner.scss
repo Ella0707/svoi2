@@ -1,0 +1,276 @@
+.sub-banner {
+    padding-top: 14.6rem;
+    margin-bottom: 9.2rem;
+    overflow: hidden;
+    &__inner {
+        height: 59.7rem;
+        display: flex;
+        justify-content: space-between;
+        background-color: #f2f1f5;
+        border-radius: 7rem;
+        padding-right: 10.7rem;
+        padding-left: 10.5rem;
+        padding-bottom: 5.9rem;
+        position: relative;
+    }
+    &__dash {
+        position: absolute;
+        &.mobile {
+            display: none;
+        }
+        &--left {
+            width: 16rem;
+            left: -10rem;
+            top: 15rem;
+        }
+        &--mid {
+            width: 15rem;
+            left: 47rem;
+            top: 34rem;
+        }
+        &--right {
+            width: 62rem;
+            right: -20rem;
+            top: 3rem;
+        }
+    }
+    &__left {
+        width: 42.8rem;
+        padding-top: 10rem;
+    }
+    &__title {
+        width: 42.8rem;
+        font-weight: bold;
+        font-size: 5rem;
+        line-height: 5.8rem;
+        color: #171e2f;
+    }
+    &__subtitle {
+        width: 37.5rem;
+        font-size: 1.8rem;
+        line-height: 1.4;
+        color: #868a8e;
+        padding-top: 3rem;
+        margin-bottom: 4.6rem;
+    }
+    &__down {
+        display: flex;
+        align-items: center;
+    }
+    &__down-texts {
+        padding-left: 3rem;
+    }
+    &__a-button {
+        display: inline-block;
+        width: 7rem;
+        height: 10rem;
+        z-index: 1;
+        img.mobile {
+            display: none;
+        }
+    }
+    &__services {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 2.9rem;
+        color: #171e2f;
+        position: relative;
+        padding-bottom: 1.2rem;
+        &::after {
+            content: "";
+            display: inline-block;
+            width: 3.3rem;
+            height: 0.2rem;
+            background-color: #171e2f;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+    &__all-services {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        color: #868a8e;
+        padding-top: 1.3rem;
+    }
+    &__mid {
+        // width: 110rem;
+        width: 70rem;
+        padding-top: 5rem;
+        margin-left: -0.5rem;
+        position: relative;
+        img.mobile {
+            display: none;
+        }
+    }
+    &__img-1 {
+        position: relative;
+        right: -5.1rem;
+        width: 77rem;
+        height: 51rem;
+        top: 1.3rem;
+    }
+    &__img-2 {
+        position: absolute;
+        top: 6.4rem;
+        width: 63rem;
+        right: 8rem;
+    }
+    &__right {
+        // width: 35rem;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-bottom: 4rem;
+    }
+    &__stat {
+        text-align: right;
+        padding-right: 4rem;
+        position: relative;
+        margin-bottom: 6rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &::after {
+            content: "";
+            display: inline-block;
+            width: 1rem;
+            height: 1rem;
+            background-color: #3ab292;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 100%;
+        }
+    }
+    &__key {
+        font-size: 3.5rem;
+        font-weight: 700;
+        color: #232020;
+    }
+    &__value {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        color: #898d93;
+    }
+    @media (max-width: 48em) {
+        padding-top: 20rem;
+        margin-bottom: 14.5rem;
+        .container {
+            padding: 0;
+        }
+        &__inner {
+            height: auto;
+            flex-wrap: wrap;
+            border-radius: 6rem;
+            padding: 0;
+        }
+        &__dash {
+            display: none;
+            &.mobile {
+                display: block;
+            }
+            &--left {
+                width: 16rem;
+                left: 0;
+                top: auto;
+                bottom: 10rem;
+            }
+            &--right {
+                width: 26rem;
+                right: 0;
+                top: 35rem;
+            }
+        }
+        &__left {
+            width: 100%;
+            padding: 11.5rem 3rem 5rem
+        }
+        &__title {
+            width: 100%;
+            font-size: 5.6rem;
+            line-height: 1.14;
+            color: #3B3E47;
+            margin-bottom: 3rem;
+        }
+        &__subtitle {
+            width: 100%;
+            font-size: 3rem;
+            line-height: 1.47;
+            padding-top: 0;
+            margin-bottom: 7rem;
+        }
+        &__down {
+            display: flex;
+            align-items: center;
+        }
+        &__down-texts {
+            padding-left: 4.5rem;
+        }
+        &__a-button {
+            width: 7.8rem;
+            height: auto;
+            img {
+                display: none;
+                &.mobile {
+                    display: block;
+                }
+            }
+        }
+        &__services {
+            font-size: 3.2rem;
+            line-height: 1.5;
+            color: #3B3E47;
+            padding-bottom: 1rem;
+            &::after {
+                width: 4.6rem;
+                height: 0.4rem;
+                background-color: #3B3E47;
+                border-radius: 2rem;
+            }
+        }
+        &__all-services {
+            font-size: 2.8rem;
+            line-height: 1.2;
+            padding-top: 2rem;
+        }
+        &__mid {
+            width: 100%;
+            padding-top: 1rem;
+            margin-left: 0;
+            img {
+                display: none;
+                &.mobile {
+                    display: block;
+                }
+            }
+        }
+        &__right {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0 9rem 0 12rem;
+            margin: 3rem 0 8rem;
+        }
+        &__stat {
+            text-align: left;
+            padding-right: 0;
+            margin-bottom: 0;
+            &::after {
+                right: auto;
+                left: -2.5rem;
+            }
+        }
+        &__key {
+            font-size: 4.8rem;
+            color: #3B3E47;
+        }
+        &__value {
+            font-size: 3rem;
+            line-height: 1.6;
+        }
+    }
+}

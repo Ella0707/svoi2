@@ -1,0 +1,108 @@
+.solve{
+    margin-top: 10.3rem;
+    margin-bottom: 18rem;
+    .container{
+        position: relative;
+        padding-top: 10.6rem
+    }
+    &__bg{
+        width: 100%;
+        height: 52.4rem;
+        background-color: #ECEBEF;
+        border-radius: 4rem;
+        position: absolute;
+        top: 0;
+        overflow: hidden;
+    }
+    &__rose {
+        width: 66.4rem;
+        position: absolute;
+        &--1 {
+            left: -16rem;
+            top: -12.2rem;
+            transform: rotate(313deg);
+        }
+        &--2 {
+            right: -8.9rem;
+            bottom: -1.8rem;
+            transform: rotate(170deg);
+        }
+        &.mobile {
+            display: none;
+        }
+    }
+    &__inner {
+        position: relative;
+    }
+    &__mtitle{
+        font-weight: bold;
+        font-size: 4rem;
+        color: #171E2F;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    &__subtitle{
+        font-weight: normal;
+        font-size: 1.6rem;
+        color: #898D93;
+        text-align: center;
+        margin-bottom: 5.7rem;
+    }
+  
+    &__buttons{
+        height: 5.4rem;
+        margin-bottom: 7rem;
+    }
+    &__btns{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        z-index: 1;
+        .btn-car{
+            width: 24.6rem;
+            margin-right: 2rem;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    &__list{
+        display: flex;
+        justify-content: center;
+        gap: 4.5rem;
+    }
+
+    &__item{
+        box-shadow: 2rem 3rem 6rem rgba(149, 156, 165, 0.2);
+        background-color: #FFFFFF;
+        width: 34.2rem;
+        height: 27.9rem;
+        border-radius: 4rem;
+    }
+    &__item-conditions{
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        font-size: 24px;
+        color: #2F3646;
+        padding-left: 3rem;
+        padding-top: 4.6rem;
+        margin-bottom: 3.9rem;
+        img {
+            // margin-right: 0.5rem;
+            margin-right: 3rem;
+            flex-shrink: 0;
+            object-fit: contain;
+            height: 3.8rem;
+            width: 3.8rem;
+        }
+    }
+    &__item-text{
+        color: #898D93;
+        margin: 0rem 6rem 4rem 4rem;
+    }
+}
+
+
+
+

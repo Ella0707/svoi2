@@ -1,0 +1,44 @@
+.add-adv {
+    .select--add-adv {
+        margin-bottom: 4.6rem;
+    }
+    .cus-select__drop {
+        max-height: 34rem;
+    }
+    .search-item {
+        margin-bottom: 3rem;
+    }
+    .btn--green {
+        padding-left: 4.2rem;
+        padding-right: 4.2rem;
+    }
+    &__inner {
+        margin-bottom: 4rem;
+    }
+    &__title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    &__fx-sb {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: bold;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    &__sum {
+        color: $green;
+        span {
+            font-size: 1.5rem;
+            position: relative;
+            top: -0.5rem;
+        }
+    }
+    &__dur {
+        color: #8c8989;
+    }
+    &__info {
+        margin-top: 4rem;
+    }
+}

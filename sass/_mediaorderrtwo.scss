@@ -1,0 +1,195 @@
+@media (max-width: 48em) {
+    .open-customer {
+        .container .container--sm {
+            width: 100%;
+        }
+        .orderr-info__bot {
+            flex-direction: column;
+        }
+        .orderr-info__btns .btn-ca {
+            width: 100%;
+            height: 10rem;
+            margin-bottom: 2rem;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 3rem;
+                height: 3rem;
+            }
+        }
+        .orderr-info__edit {
+            img {
+                width: 4rem;
+                height: 4rem;
+            }
+        }
+        .orderr-info__btn {
+            border-radius: initial;
+        }
+        .orderr-info__btns {
+            display: flex;
+            flex-direction: column;
+            border-radius: 0 0 3rem 3rem;
+            padding-right: 2rem;
+            .orderr-info__help {
+                display: none;
+            }
+        }
+    }
+    .response {
+        padding-top: 9rem;
+        padding-left: 2.6rem;
+        padding-right: 2.6rem;
+    }
+    .response__mtitle {
+        justify-content: inherit;
+        margin-bottom: 4rem;
+    }
+    .response__mtitle-str {
+        font-weight: bold;
+        font-size: 4rem;
+    }
+    .response__total {
+        font-size: 0;
+        span {
+            font-size: 4rem;
+            color: #898D93;
+            padding-left: 3rem;
+        }
+    }
+    .response__item {
+        flex-direction: column;
+        padding: 2rem;
+        background: #fff;
+        border-radius: 4rem;
+    }
+    .response__user {
+        display: none;
+    }
+    .response__user--mobile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border-radius: 3rem 3rem 0 0;
+        justify-content: inherit;
+        align-items: inherit;
+        padding-top: 8.2rem;
+    }
+    .response__content {
+        width: 100%;
+        border-radius: 3rem 3rem 3rem 3rem;
+        background: #F1F1F5;
+    }
+    .response__price {
+        font-size: 0;
+        background: linear-gradient(0deg, #FFFFFF, #FFFFFF), #F4F3F8;
+        border-radius: 100rem;
+        height: 9rem;
+        padding-left: 3.6rem;
+        padding-right: 3.6rem;
+        margin-right: 2rem;
+        span,
+        b {
+            font-size: 3rem;
+        }
+        img {
+            width: 2.6rem;
+            height: 2.3rem;
+            margin-right: 0.5rem;
+        }
+    }
+    .response__tel {
+        width: 35rem;
+        height: 9rem;
+        background: linear-gradient(0deg, #FFFFFF, #FFFFFF), #F4F3F8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        b {
+            font-size: 3rem;
+        }
+        img {
+            width: 2.6rem;
+            height: 2.6rem;
+        }
+    }
+    .response__date {
+        font-size: 3rem;
+    }
+    .response__text {
+        font-size: 3rem;
+    }
+    .response__show {
+        font-size: 3rem;
+        display: flex;
+        align-items: center;
+        img {
+            width: 1rem;
+            height: 1.8rem;
+            position: relative;
+            top: -0.2rem;
+            margin-left: 2.2rem;
+        }
+    }
+    .response__ava-img {
+        width: 14.2rem;
+        height: 14.2rem;
+    }
+    .response__user-mob-block {
+        display: flex;
+    }
+    .response__ava {
+        margin-right: 2.4rem;
+    }
+    .response__name-str {
+        font-size: 3rem;
+    }
+    .response__rate {
+        font-size: 3rem;
+        align-items: center;
+        img {
+            width: 2.8rem;
+        }
+    }
+    .response__name {
+        justify-content: inherit;
+    }
+    .response__btns {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .btn-car--green {
+            width: 42rem;
+            height: 10rem;
+            font-size: 3rem;
+            border-radius: 100rem;
+            padding-left: 0rem;
+            position: relative;
+            &::before {
+                position: absolute;
+                content: '';
+            }
+        }
+        .response__message {
+            width: 15.6rem;
+            height: 10rem;
+            display: none;
+        }
+        .response__message--mobile {
+            display: flex;
+            padding-left: 0;
+            padding-right: 0;
+            font-size: 3rem;
+            img {
+                width: 3rem;
+            }
+        }
+    }
+    .orderr__sidebar {
+        display: none;
+    }
+    .orderr__sidebar--mobile {
+        display: block;
+        margin-bottom: 5rem;
+    }
+}

@@ -1,0 +1,89 @@
+.performer-info {
+    &__block {
+        display: none;
+        &.active {
+            display: block;
+        }
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+        &--remove {
+            margin-top: 2rem;
+            position: relative;
+            width: calc(100% + 3rem);
+            .performer-info__item {
+                cursor: pointer;
+                color: #fff;
+                background-color: #ff7795;
+                background-image: url(../img/red-close.svg);
+            }
+        }
+    }
+    &__title {
+        font-weight: bold;
+        margin-bottom: 1.1rem;
+    }
+    &__item {
+        height: 5rem;
+        padding-left: 2.7rem;
+        padding-right: 4.5rem;
+        min-width: 21.6rem;
+        margin-right: 2.3rem;
+        margin-bottom: 2rem;
+        color: $blackt;
+        font-size: 1.5rem;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        box-shadow: 0.5rem 0.5rem 3rem rgba(229, 39, 85, 0.2);
+        border-radius: 200rem;
+        background-image: url(../img/check-cir.svg);
+        background-repeat: no-repeat;
+        background-position: right 0.7rem top 50%;
+        background-size: 3rem;
+    }
+    &__text {
+        color: $pink;
+        width: 85.4rem;
+        margin-top: 2rem;
+        line-height: 1.4;
+    }
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.5rem;
+        &--btn {
+            margin-top: 4rem;
+        }
+    }
+    &__left {
+        width: 24.5rem;
+        padding-top: 3rem;
+    }
+    &__right {
+        width: 69.3rem;
+    }
+    &__lab {
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+    &__disc {
+        color: $pink;
+        font-size: 1.5rem;
+    }
+    &__textarea {
+        width: 100%;
+        height: 20rem;
+        background-color: #fff;
+        padding: 2.7rem;
+        border-radius: 1.4rem;
+        color: $blackt;
+        resize: none;
+        &::placeholder {
+            color: $greyt;
+        }
+    }
+}

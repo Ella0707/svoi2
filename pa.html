@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="another website">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/croppie.css">
+    <link href="css/style.css" rel="stylesheet">
+    <title>title</title>
+</head>
+
+<body>
+    <div class="root">
+        <header class="header">
+            <div class="container container--sm">
+                <div class="header__inner">
+                    <a href="" class="header__logo">
+                        <img src="./img/logo.svg" alt="">
+                    </a>
+                    <nav class="nav">
+                        <button class="nav__close">
+                            <img src="./img/modal-close.svg" alt="">
+                        </button>
+                        <div class="nav__inner">
+                            <div class="nav__list">
+                                <a href="">Услуги</a>
+                                <a href="">Исполнители</a>
+                                <a href="">О нас</a>
+                                <a href="">Блог</a>
+                                <a href="">Контакты</a>
+                            </div>
+                            <a href="" class="btn-ca btn-ca--green">Зарегистрироваться<img
+                                    src="./img/arr-whi-rig-cir.svg" alt="">
+                            </a><a href="" class="btn-ca btn-ca--green">Стать исполнителем<img
+                                    src="./img/arr-whi-rig-cir.svg" alt="">
+                            </a>
+                        </div>
+                    </nav>
+                    <div class="header__btns menu-btns">
+                        <div class="menu-btns__item">
+                            <span class="menu-btns__link" data-class="notice">
+                                <img src="./img/menu-ring.svg" alt="">
+                                <span>1</span>
+                            </span>
+                            <div class="notice close-x" data-modal="notice">
+                                <div class="notice__inner">
+                                    <div class="notice__mtitle">
+                                        <div class="notice__mtitle-str">Уведомления</div>
+                                        <div class="notice__newmsg">6 новых</div>
+                                    </div>
+                                    <div class="notice__list">
+                                        <div class="notice__g">
+                                            <div class="notice__icon">
+                                                <img src="./img/notice-pen.svg" alt="">
+                                            </div>
+                                            <a href="" class="notice__item">
+                                                <div>
+                                                    <div class="notice__title">1 новое предложение к задания предложение
+                                                        к задания</div>
+                                                    <!-- <div class="notice__subtitle">Сделать маникюр с покрытием...</div> -->
+                                                    <div class="notice__subtitle">Сделать маникюр с покрытием
+                                                        и&nbsp;узорами</div>
+                                                </div>
+                                                <div class="notice__date">10.10.21</div>
+                                            </a>
+                                            <a href="" class="notice__item">
+                                                <div>
+                                                    <div class="notice__title">2 новое предложение к задания</div>
+                                                    <div class="notice__subtitle">Сделать маникюр с покрытием
+                                                        и&nbsp;лакировкой</div>
+                                                </div>
+                                                <div class="notice__date">10.10.21</div>
+                                            </a>
+                                        </div>
+                                        <div class="notice__g">
+                                            <div class="notice__icon">
+                                                <img src="./img/notice-star.svg" alt="">
+                                            </div>
+                                            <a href="" class="notice__item">
+                                                <div>
+                                                    <div class="notice__title">Вы выбрали исполнителя</div>
+                                                    <div class="notice__subtitle">Анна Соболенкова</div>
+                                                </div>
+                                                <div class="notice__date">10.10.21</div>
+                                            </a>
+                                            <a href="" class="notice__item">
+                                                <div>
+                                                    <div class="notice__title">2 новое предложение к задания</div>
+                                                    <div class="notice__subtitle">Сделать маникюр с покрытием
+                                                        и&nbsp;лакировкой</div>
+                                                </div>
+                                                <div class="notice__date">10.10.21</div>
+                                            </a>
+                                        </div>
+                                        <div class="notice__g">
+                                            <div class="notice__icon">
+                                                <img src="./img/notice-msg.svg" alt="">
+                                            </div>
+                                            <a href="" class="notice__item">
+                                                <div>
+                                                    <div class="notice__title">Исполнитель оставил отзыв</div>
+                                                    <div class="notice__subtitle">Наращивание ресниц</div>
+                                                </div>
+                                                <div class="notice__date">10.10.21</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="notice-over close-x"></div>
+                        </div>
+                        <div class="menu-btns__item">
+                            <a href="" class="menu-btns__link">
+                                <img src="./img/menu-msg.svg" alt="">
+                                <span>1</span>
+                            </a>
+                        </div>
+                        <div class="menu-btns__item">
+                            <a href="" class="menu-btns__link">
+                                <img src="./img/menu-log.svg" alt="">
+                            </a>
+                            <span class="menu-btns__title">Войти</span>
+                        </div>
+                        <div class="menu-btns__item menu-btns__item--burger burger">
+                            <button class="menu-btns__link">
+                                <img src="./img/burger.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="pa">
+                <div class="container container--sm">
+                    <div class="pa__inner">
+                        <div class="pa-sidebar pa__sidebar">
+                            <div class="pa-sidebar__inner">
+                                <div class="user">
+                                    <div class="user__name">Ирина Романова</div>
+                                    <div class="user__inner">
+                                        <div class="hint user__ava" data-class="edit-ava">
+                                            <img src="./img/ava4.jpg" alt="">
+                                            <div class="hint__content">
+                                                <div class="hint__text">Загрузите фото не более 25 МБ в формате jpg или
+                                                    png</div>
+                                            </div>
+                                        </div>
+                                        <div class="user__content">
+                                            <div class="user__title">
+                                                <div class="user__role">Я заказчик</div>
+                                                <div class="user__rate"> 4.7 <img src="./img/star-green.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="user__text">Оставленные отзывы</div>
+                                            <div class="user__list">
+                                                <div class="user__item">
+                                                    <div class="user__k">350</div>
+                                                    <div class="user__v">Всего</div>
+                                                </div>
+                                                <div class="user__item">
+                                                    <div class="user__k user__k--positiv">300</div>
+                                                    <div class="user__v">Положительных</div>
+                                                </div>
+                                                <div class="user__item">
+                                                    <div class="user__k user__k--negative">50</div>
+                                                    <div class="user__v">Негативных</div>
+                                                </div>
+                                            </div>
+                                            <div class="user__title">
+                                                <div class="user__role">Я исполнитель</div>
+                                                <div class="user__rate"> 4.7 <img src="./img/star-green.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="user__text">Полученные отзывы</div>
+                                            <div class="user__list">
+                                                <div class="user__item">
+                                                    <div class="user__k">350</div>
+                                                    <div class="user__v">Всего</div>
+                                                </div>
+                                                <div class="user__item">
+                                                    <div class="user__k user__k--positiv">300</div>
+                                                    <div class="user__v">Положительных</div>
+                                                </div>
+                                                <div class="user__item">
+                                                    <div class="user__k user__k--negative">50</div>
+                                                    <div class="user__v">Негативных</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="user-info">
+                                    <div class="user-info__avatar">
+                                        <img src="./img/ava4.jpg" alt="">
+                                    </div>
+                                    <div class="user-info__text">
+                                        <div class="user-info__name">Ирина Романова</div>
+                                        <div class="user-info__rating">
+                                            <div class="user-info__rating-item">
+                                                <span class="user-info__rating-number">4.7</span>
+                                                <img src="./img/star-green.svg" alt="">
+                                            </div>
+                                            <div class="user-info__rating-item">
+                                                <span class="user-info__rating-number">5.0</span>
+                                                <img src="./img/star-green.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="pa-user-detail.html" class="user-info__link">
+                                        <img src="img/user-info-arrow.svg" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="pa-sidebar__filter">
+                                    <div class="pa-sidebar__filter-img">
+                                        <svg width="61" height="61" viewBox="0 0 61 61" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0 14C0 6.26802 6.26801 0 14 0H47C54.732 0 61 6.26801 61 14V47C61 54.732 54.732 61 47 61H14C6.26802 61 0 54.732 0 47V14Z"
+                                                fill="white" />
+                                            <path
+                                                d="M22.5938 28.5833H24.9896C27.3854 28.5833 28.5833 27.3854 28.5833 24.9896V22.5938C28.5833 20.1979 27.3854 19 24.9896 19H22.5938C20.1979 19 19 20.1979 19 22.5938V24.9896C19 27.3854 20.1979 28.5833 22.5938 28.5833Z"
+                                                stroke="#BEBBC3" stroke-width="1.9" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M36.01 28.5833H38.4058C40.8017 28.5833 41.9996 27.3854 41.9996 24.9896V22.5938C41.9996 20.1979 40.8017 19 38.4058 19H36.01C33.6142 19 32.4163 20.1979 32.4163 22.5938V24.9896C32.4163 27.3854 33.6142 28.5833 36.01 28.5833Z"
+                                                stroke="#BEBBC3" stroke-width="1.9" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M36.01 41.9998H38.4058C40.8017 41.9998 41.9996 40.8019 41.9996 38.4061V36.0103C41.9996 33.6144 40.8017 32.4165 38.4058 32.4165H36.01C33.6142 32.4165 32.4163 33.6144 32.4163 36.0103V38.4061C32.4163 40.8019 33.6142 41.9998 36.01 41.9998Z"
+                                                stroke="#BEBBC3" stroke-width="1.9" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M22.5938 41.9998H24.9896C27.3854 41.9998 28.5833 40.8019 28.5833 38.4061V36.0103C28.5833 33.6144 27.3854 32.4165 24.9896 32.4165H22.5938C20.1979 32.4165 19 33.6144 19 36.0103V38.4061C19 40.8019 20.1979 41.9998 22.5938 41.9998Z"
+                                                stroke="#BEBBC3" stroke-width="1.9" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div class="pa-sidebar__filter-text">Мои заказы</div>
+                                </div>
+
+                                <div class="pa-sidebar__catalog">
+                                    <div class="pa-sidebar__list pa-sidebar__list--chat">
+                                        <a href="" class="pa-sidebar__item">
+                                            <div class="pa-sidebar__icon">
+                                                <svg width="61" height="61" viewBox="0 0 61 61" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path class="fill-white"
+                                                        d="M0 0H46C54.2843 0 61 6.71573 61 15V46C61 54.2843 54.2843 61 46 61H15C6.71573 61 0 54.2843 0 46V0Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M38.7801 29.3997V34.6208C38.7801 34.9601 38.767 35.2865 38.7278 35.5997C38.4276 39.1239 36.3523 40.873 32.5278 40.873H32.0057C31.6794 40.873 31.3661 41.0296 31.1703 41.2907L29.604 43.3791C28.9122 44.3058 27.7897 44.3058 27.0979 43.3791L25.5316 41.2907C25.3619 41.0688 24.9834 40.873 24.6962 40.873H24.1741C20.0103 40.873 17.9219 39.8418 17.9219 34.6208V29.3997C17.9219 25.5753 19.684 23.4999 23.1952 23.1997C23.5084 23.1605 23.8347 23.1475 24.1741 23.1475H32.5278C36.6916 23.1475 38.7801 25.2359 38.7801 29.3997Z"
+                                                        stroke="#BEBBC3" stroke-width="1.9" stroke-miterlimit="10"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path
+                                                        d="M44.0008 24.1785V29.3996C44.0008 33.2371 42.2387 35.2994 38.7275 35.5996C38.7667 35.2863 38.7797 34.96 38.7797 34.6206V29.3996C38.7797 25.2358 36.6913 23.1473 32.5275 23.1473H24.1738C23.8344 23.1473 23.5081 23.1604 23.1948 23.1996C23.495 19.6884 25.5704 17.9263 29.3948 17.9263H37.7485C41.9124 17.9263 44.0008 20.0147 44.0008 24.1785Z"
+                                                        stroke="#BEBBC3" stroke-width="1.9" stroke-miterlimit="10"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path
+                                                        d="M32.9261 31.9106C32.5395 31.9106 32.2261 32.224 32.2261 32.6106C32.2261 32.9972 32.5395 33.3106 32.9261 33.3106H32.9378C33.3244 33.3106 33.6378 32.9972 33.6378 32.6106C33.6378 32.224 33.3244 31.9106 32.9378 31.9106H32.9261Z"
+                                                        stroke="#BEBBC3" stroke-width="1.4" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path
+                                                        d="M28.3579 31.9106C27.9713 31.9106 27.6579 32.224 27.6579 32.6106C27.6579 32.9972 27.9713 33.3106 28.3579 33.3106H28.3697C28.7563 33.3106 29.0697 32.9972 29.0697 32.6106C29.0697 32.224 28.7563 31.9106 28.3697 31.9106H28.3579Z"
+                                                        stroke="#BEBBC3" stroke-width="1.4" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path
+                                                        d="M23.7896 31.9106C23.403 31.9106 23.0896 32.224 23.0896 32.6106C23.0896 32.9972 23.403 33.3106 23.7896 33.3106H23.8013C24.1879 33.3106 24.5013 32.9972 24.5013 32.6106C24.5013 32.224 24.1879 31.9106 23.8013 31.9106H23.7896Z"
+                                                        stroke="#BEBBC3" stroke-width="1.4" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="pa-sidebar__name">Мои чаты</div>
+                                            <div class="pa-sidebar__ind">8</div>
+                                        </a>
+                                    </div>
+                                    <div class="pa-sidebar__list">
+                                        <a href="" class="pa-sidebar__item">
+                                            <div class="pa-sidebar__icon">
+                                                <svg width="61" height="61"
+                                                    viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M0 14C0 6.26802 6.26801 0 14 0H47C54.732 0 61 6.26801 61 14V47C61 54.732 54.732 61 47 61H14C6.26802 61 0 54.732 0 47V14Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M22.5938 28.5833H24.9896C27.3854 28.5833 28.5833 27.3854 28.5833 24.9896V22.5938C28.5833 20.1979 27.3854 19 24.9896 19H22.5938C20.1979 19 19 20.1979 19 22.5938V24.9896C19 27.3854 20.1979 28.5833 22.5938 28.5833Z"
+                                                        stroke="#BEBBC3" stroke-width="1.9" stroke-miterlimit="10"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path
+                                                        d="M36.01 28.5833H38.4058C40.8017 28.5833 41.9996 27.3854 41.9996 24.9896V22.5938C41.9996 20.1979 40.8017 19 38.4058 19H36.01C33.6142 19 32.4163 20.1979 32.4163 22.5938V24.9896C32.4163 27.3854 33.6142 28.5833 36.01 28.5833Z"
+                                                        stroke="#BEBBC3" stroke-width="1.9" stroke-miterlimit="10"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path
+                                                        d="M36.01 41.9998H38.4058C40.8017 41.9998 41.9996 40.8019 41.9996 38.4061V36.0103C41.9996 33.6144 40.8017 32.4165 38.4058 32.4165H36.01C33.6142 32.4165 32.4163 33.6144 32.4163 36.0103V38.4061C32.4163 40.8019 33.6142 41.9998 36.01 41.9998Z"
+                                                        stroke="#BEBBC3" stroke-width="1.9" stroke-miterlimit="10"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path
+                                                        d="M22.5938 41.9998H24.9896C27.3854 41.9998 28.5833 40.8019 28.5833 38.4061V36.0103C28.5833 33.6144 27.3854 32.4165 24.9896 32.4165H22.5938C20.1979 32.4165 19 33.6144 19 36.0103V38.4061C19 40.8019 20.1979 41.9998 22.5938 41.9998Z"
+                                                        stroke="#BEBBC3" stroke-width="1.9" stroke-miterlimit="10"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="pa-sidebar__name">Мои заказы</div>
+                                        </a>
+                                        <a href="" class="pa-sidebar__item">
+                                            <div class="pa-sidebar__icon"><svg width="61" height="61"
+                                                    viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M0 14C0 6.26802 6.26801 0 14 0H47C54.732 0 61 6.26801 61 14V47C61 54.732 54.732 61 47 61H14C6.26802 61 0 54.732 0 47V14Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M41.1114 24.7366C41.1114 25.3036 41.0709 25.8571 41.0034 26.3836C40.3824 26.1136 39.7074 25.9651 38.9919 25.9651C37.3448 25.9651 35.8868 26.7616 34.9823 27.9766C34.0643 26.7616 32.6062 25.9651 30.9592 25.9651C28.1917 25.9651 25.9506 28.2196 25.9506 31.0142C25.9506 34.6322 27.8677 37.3998 30.0007 39.2763C29.9332 39.3168 29.8657 39.3303 29.7982 39.3573C29.3932 39.5059 28.7182 39.5059 28.3132 39.3573C24.8166 38.1558 17 33.1877 17 24.7366C17 21.0105 19.997 18 23.6961 18C25.8966 18 27.8407 19.053 29.0557 20.6865C30.2842 19.053 32.2282 18 34.4153 18C38.1143 18 41.1114 21.0105 41.1114 24.7366Z"
+                                                        stroke="#BEBBC3" stroke-width="1.9" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path
+                                                        d="M44.0002 31.0144C44.0002 37.3325 38.1546 41.0586 35.5356 41.9496C35.2251 42.0576 34.7256 42.0576 34.4151 41.9496C33.2945 41.5716 31.58 40.667 30.0005 39.2765C27.8675 37.4 25.9504 34.6325 25.9504 31.0144C25.9504 28.2199 28.1915 25.9653 30.959 25.9653C32.606 25.9653 34.0641 26.7618 34.9821 27.9769C35.8866 26.7618 37.3446 25.9653 38.9917 25.9653C39.7072 25.9653 40.3822 26.1138 41.0032 26.3838C42.7717 27.1668 44.0002 28.9354 44.0002 31.0144Z"
+                                                        stroke="#BEBBC3" stroke-width="1.9" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="pa-sidebar__name">Избранное</div>
+                                        </a>
+                                        <a href="" class="pa-sidebar__item active">
+                                            <div class="pa-sidebar__icon"><svg width="61" height="61"
+                                                    viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M0 14C0 6.26802 6.26801 0 14 0H47C54.732 0 61 6.26801 61 14V47C61 54.732 54.732 61 47 61H14C6.26802 61 0 54.732 0 47V14Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M40.9171 26.7502C40.9171 28.8043 40.3079 30.6885 39.2596 32.261C37.7296 34.5277 35.3071 36.1285 32.4879 36.5393C32.0062 36.6243 31.5104 36.6668 31.0004 36.6668C30.4904 36.6668 29.9946 36.6243 29.5129 36.5393C26.6937 36.1285 24.2712 34.5277 22.7412 32.261C21.6929 30.6885 21.0837 28.8043 21.0837 26.7502C21.0837 21.2677 25.5179 16.8335 31.0004 16.8335C36.4829 16.8335 40.9171 21.2677 40.9171 26.7502Z"
+                                                        stroke="#BEBBC3" stroke-width="1.9" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path
+                                                        d="M44.1047 40.1662L41.7672 40.7187C41.243 40.8462 40.8322 41.2429 40.7189 41.7671L40.223 43.8496C39.9539 44.9829 38.5089 45.3229 37.758 44.4304L31.0005 36.6671L24.243 44.4446C23.4922 45.3371 22.0472 44.997 21.778 43.8637L21.2822 41.7812C21.1547 41.257 20.7439 40.8462 20.2339 40.7329L17.8964 40.1804C16.8197 39.9254 16.4372 38.5795 17.2164 37.8004L22.7414 32.2754C24.2714 34.5421 26.6939 36.1429 29.513 36.5538C29.9947 36.6388 30.4905 36.6812 31.0005 36.6812C31.5105 36.6812 32.0064 36.6388 32.488 36.5538C35.3072 36.1429 37.7297 34.5421 39.2597 32.2754L44.7847 37.8004C45.5639 38.5654 45.1814 39.9112 44.1047 40.1662Z"
+                                                        stroke="#BEBBC3" stroke-width="1.9" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path
+                                                        d="M31.822 22.472L32.6579 24.1436C32.7712 24.3703 33.0687 24.597 33.3379 24.6395L34.8537 24.8945C35.817 25.0503 36.0437 25.7587 35.3495 26.4528L34.1737 27.6286C33.9754 27.827 33.862 28.2095 33.9329 28.4928L34.2729 29.952C34.542 31.0995 33.9329 31.5528 32.9129 30.9436L31.4962 30.1078C31.2412 29.952 30.8162 29.952 30.5612 30.1078L29.1445 30.9436C28.1245 31.5386 27.5154 31.0995 27.7845 29.952L28.1245 28.4928C28.1812 28.2237 28.082 27.827 27.8837 27.6286L26.7079 26.4528C26.0137 25.7587 26.2404 25.0645 27.2037 24.8945L28.7195 24.6395C28.9745 24.597 29.272 24.3703 29.3854 24.1436L30.2212 22.472C30.632 21.5653 31.3687 21.5653 31.822 22.472Z"
+                                                        stroke="#BEBBC3" stroke-width="1.9" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="pa-sidebar__name">Отзывы</div>
+                                        </a>
+                                    </div>
+                                    <div class="pa-sidebar__list">
+                                        <a href="" class="pa-sidebar__item">
+                                            <div class="pa-sidebar__icon"><svg width="61" height="61"
+                                                    viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M0 14C0 6.26802 6.26801 0 14 0H47C54.732 0 61 6.26801 61 14V47C61 54.732 54.732 61 47 61H14C6.26802 61 0 54.732 0 47V14Z"
+                                                        fill="white" />
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M28.0733 45.7656H29.9267C31.4257 45.7656 32.6453 44.5461 32.6453 43.0472V42.4202C33.2826 42.2165 33.9017 41.9595 34.4966 41.6517L34.9405 42.0957C36.0147 43.171 37.7382 43.1448 38.7856 42.096L40.0956 40.786C41.1429 39.7399 41.1726 38.0164 40.096 36.9409L39.6516 36.4966C39.9594 35.9017 40.2164 35.2826 40.4201 34.6453H41.047C42.546 34.6453 43.7656 33.4257 43.7656 31.9267V30.0733C43.7656 28.5743 42.546 27.3547 41.047 27.3547H40.4201C40.2164 26.7173 39.9594 26.0983 39.6516 25.5034L40.0956 25.0594C41.1729 23.9833 41.1428 22.26 40.096 21.2143L38.786 19.9044C37.7411 18.8581 36.0171 18.8265 34.9409 19.904L34.4966 20.3484C33.9017 20.0406 33.2826 19.7835 32.6453 19.5799V18.9529C32.6453 17.4539 31.4257 16.2344 29.9267 16.2344H28.0733C26.5743 16.2344 25.3547 17.4539 25.3547 18.9529V19.5799C24.7175 19.7835 24.0983 20.0406 23.5034 20.3483L23.0595 19.9044C21.9853 18.829 20.2618 18.8552 19.2144 19.904L17.9044 21.214C16.8571 22.2601 16.8274 23.9837 17.904 25.0591L18.3484 25.5034C18.0406 26.0983 17.7836 26.7174 17.5799 27.3547H16.953C15.454 27.3547 14.2344 28.5743 14.2344 30.0733V31.9267C14.2344 33.4257 15.454 34.6453 16.9529 34.6453H17.5799C17.7835 35.2827 18.0405 35.9017 18.3483 36.4966L17.9043 36.9406C16.8271 38.0167 16.8572 39.74 17.904 40.7857L19.2139 42.0956C20.2589 43.1419 21.9828 43.1735 23.059 42.096L23.5034 41.6516C24.0982 41.9594 24.7174 42.2165 25.3547 42.4201V43.0471C25.3547 44.5461 26.5743 45.7656 28.0733 45.7656ZM26.4361 40.9319C25.5084 40.6925 24.619 40.3233 23.7926 39.8346C23.3743 39.5871 22.9462 39.7617 22.7404 39.9675L21.8352 40.8727C21.4444 41.264 20.8178 41.2528 20.4379 40.8724L19.1272 39.5616C18.7465 39.1815 18.7363 38.5551 19.1275 38.1644L20.0324 37.2595C20.3117 36.9802 20.3664 36.5473 20.1654 36.2073C19.6767 35.381 19.3075 34.4916 19.0681 33.5639C18.9695 33.1819 18.625 32.9149 18.2304 32.9149H16.953C16.4081 32.9149 15.9647 32.4716 15.9647 31.9267V30.0733C15.9647 29.5284 16.4081 29.0851 16.953 29.085H18.2304C18.625 29.085 18.9695 28.8181 19.0682 28.4361C19.3076 27.5083 19.6767 26.6189 20.1654 25.7926C20.3664 25.4527 20.3118 25.0197 20.0325 24.7405L19.1272 23.8352C18.7352 23.4437 18.7479 22.8171 19.1276 22.438L20.4384 21.1272C20.8189 20.746 21.4455 20.737 21.8356 21.1276L22.7405 22.0325C23.0197 22.3118 23.4526 22.3664 23.7927 22.1654C24.6191 21.6767 25.5084 21.3075 26.4361 21.0681C26.8182 20.9695 27.0851 20.625 27.0851 20.2304V18.9529C27.0851 18.408 27.5285 17.9647 28.0734 17.9647H29.9268C30.4717 17.9647 30.915 18.408 30.915 18.9529V20.2305C30.915 20.6251 31.182 20.9696 31.564 21.0682C32.4917 21.3076 33.3811 21.6768 34.2075 22.1655C34.5474 22.3666 34.9804 22.3119 35.2597 22.0326L36.1649 21.1273C36.5556 20.7361 37.1822 20.7472 37.5622 21.1277L38.8729 22.4384C39.2535 22.8186 39.2637 23.445 38.8725 23.8357L37.9676 24.7406C37.6884 25.0199 37.6337 25.4528 37.8347 25.7928C38.3233 26.6191 38.6925 27.5084 38.932 28.4362C39.0306 28.8182 39.3751 29.0851 39.7697 29.0851H41.0471C41.592 29.0851 42.0353 29.5285 42.0353 30.0733V31.9268C42.0353 32.4717 41.592 32.915 41.0471 32.915H39.7697C39.3752 32.915 39.0306 33.1819 38.932 33.5639C38.6925 34.4917 38.3234 35.3811 37.8347 36.2074C37.6337 36.5473 37.6884 36.9803 37.9676 37.2595L38.8729 38.1648C39.2649 38.5563 39.2522 39.1829 38.8725 39.562L37.5617 40.8728C37.1811 41.254 36.5546 41.263 36.1645 40.8724L35.2596 39.9675C34.9803 39.6882 34.5474 39.6335 34.2074 39.8346C33.3811 40.3233 32.4917 40.6925 31.564 40.9319C31.1819 41.0305 30.915 41.375 30.915 41.7696V43.0471C30.915 43.592 30.4716 44.0353 29.9267 44.0353H28.0733C27.5285 44.0353 27.0851 43.592 27.0851 43.0471V41.7696C27.0851 41.375 26.8181 41.0305 26.4361 40.9319ZM21.167 31C21.167 35.319 24.6807 38.8328 28.9998 38.8328C33.3189 38.8328 36.8326 35.319 36.8326 31C36.8326 26.681 33.3189 23.1672 28.9998 23.1672C24.6807 23.1672 21.167 26.681 21.167 31ZM23.2764 31C23.2764 27.8441 25.8438 25.2766 28.9998 25.2766C32.1558 25.2766 34.7232 27.8441 34.7232 31C34.7232 34.1559 32.1557 36.7234 28.9998 36.7234C25.8439 36.7234 23.2764 34.1559 23.2764 31Z"
+                                                        fill="#BEBBC3" />
+                                                </svg>
+                                            </div>
+                                            <div class="pa-sidebar__name">Настройки аккакунта</div>
+                                        </a>
+                                    </div>
+                                    <div class="pa-sidebar__list">
+                                        <a href="" class="pa-sidebar__item">
+                                            <div class="pa-sidebar__icon"><svg width="61" height="61"
+                                                    viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M0 14C0 6.26802 6.26801 0 14 0H47C54.732 0 61 6.26801 61 14V47C61 54.732 54.732 61 47 61H14C6.26802 61 0 54.732 0 47V14Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M39.8419 28.401H39.7676V26.5817C39.7676 20.7376 35.0301 16 29.1859 16C23.3418 16 18.6042 20.7376 18.6042 26.5817V28.401H18.1587C16.525 28.401 15.2627 29.849 15.2627 31.5198V36.1609C15.2215 37.7803 16.501 39.1264 18.1204 39.1676C18.1332 39.1679 18.1459 39.1681 18.1587 39.1683H20.9062C21.2954 39.15 21.5961 38.8196 21.5777 38.4305C21.5771 38.4165 21.576 38.4025 21.5745 38.3886V29.292C21.5745 28.8465 21.3146 28.4009 20.9062 28.4009H20.0894V26.5816C20.0894 21.5578 24.1621 17.4851 29.1859 17.4851C34.2098 17.4851 38.2824 21.5578 38.2824 26.5816V28.4009H37.4656C37.0572 28.4009 36.7973 28.8464 36.7973 29.292V38.3886C36.7559 38.7759 37.0363 39.1236 37.4237 39.165C37.4376 39.1665 37.4516 39.1676 37.4656 39.1682H38.3195L38.2453 39.2796C37.1312 40.7603 35.3829 41.6275 33.5299 41.6187C33.1243 39.6296 31.1829 38.3459 29.1938 38.7516C27.4928 39.0985 26.2664 40.5882 26.2527 42.3242C26.273 44.3602 27.9295 46 29.9656 45.9999C30.9735 45.9835 31.9343 45.5699 32.6388 44.8489C33.1142 44.3621 33.4257 43.739 33.5299 43.0667C35.8504 43.0755 38.0388 41.9881 39.4334 40.1335L40.1389 39.0939C41.7354 38.9825 42.7378 37.9801 42.7378 36.532V31.8909C42.7379 30.2946 41.5498 28.401 39.8419 28.401ZM20.0894 37.6831H18.1587C17.3592 37.6637 16.7269 36.9998 16.7463 36.2003C16.7467 36.1872 16.7472 36.174 16.7478 36.1608V31.5197C16.7478 30.6658 17.3419 29.8861 18.1587 29.8861H20.0894V37.6831ZM31.5622 43.8094C31.1507 44.2555 30.5726 44.511 29.9657 44.5148C28.7577 44.4957 27.7774 43.5317 27.7379 42.3242C27.7374 41.1144 28.7178 40.1332 29.9276 40.1327C31.1375 40.1322 32.1186 41.1126 32.1191 42.3224C32.1191 42.323 32.1191 42.3237 32.1191 42.3242C32.15 42.8755 31.9479 43.4144 31.5622 43.8094ZM41.2528 36.5321C41.2528 37.5346 40.2874 37.6831 39.8419 37.6831H38.2824V29.8861H39.8419C40.6587 29.8861 41.2528 31.0371 41.2528 31.8911V36.5321Z"
+                                                        fill="#BEBBC3" />
+                                                </svg>
+                                            </div>
+                                            <div class="pa-sidebar__name">Помощь и поддержка</div>
+                                        </a>
+                                    </div>
+                                    <div class="pa-sidebar__list">
+                                        <a href="" class="pa-sidebar__item">
+                                            <div class="pa-sidebar__icon"><svg width="61" height="61"
+                                                    viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M0 14C0 6.26802 6.26801 0 14 0H47C54.732 0 61 6.26801 61 14V47C61 54.732 54.732 61 47 61H14C6.26802 61 0 54.732 0 47V14Z"
+                                                        fill="white" />
+                                                    <path d="M31.2002 32.6998L26.9335 28.4332L31.2002 24.1665"
+                                                        stroke="#BEBBC3" stroke-width="1.9" stroke-miterlimit="10"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M44.0002 28.4331H27.0502" stroke="#BEBBC3"
+                                                        stroke-width="1.9" stroke-miterlimit="10" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path
+                                                        d="M30.6667 15C23.3001 15 17.3334 20 17.3334 28.3333C17.3334 36.6667 23.3001 41.6667 30.6667 41.6667"
+                                                        stroke="#BEBBC3" stroke-width="1.9" stroke-miterlimit="10"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="pa-sidebar__name">Выйти</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pa__content">
+                            <div class="tab">
+                                <div class="tab__blocks">
+                                    <div class="tab__block tab__block--red">
+                                        <div class="tab__tabs">
+                                            <a href="" class="tab__tab active">
+                                                <div class="corner corner--rb"></div>
+                                                <div class="tab__tab-str">О пользователе</div>
+                                                <div class="corner corner--lb"></div>
+                                            </a>
+                                            <a href="" class="tab__tab">
+                                                <div class="corner corner--rb"></div>
+                                                <div class="tab__tab-str">Об исполнителе</div>
+                                                <div class="corner corner--lb"></div>
+                                            </a>
+                                            <a href="" class="tab__tab">
+                                                <div class="corner corner--rb"></div>
+                                                <div class="tab__tab-str">Подписка</div>
+                                                <div class="corner corner--lb"></div>
+                                            </a>
+                                            <a href="" class="tab__tab">
+                                                <div class="corner corner--rb"></div>
+                                                <div class="tab__tab-str">Реклама</div>
+                                                <div class="corner corner--lb"></div>
+                                            </a>
+                                            <a href="" class="tab__tab">
+                                                <div class="corner corner--rb"></div>
+                                                <div class="tab__tab-str">Статистика</div>
+                                                <div class="corner corner--lb"></div>
+                                            </a>
+                                        </div>
+                                        <div class="tab__block-inner">
+                                            <div class="tab__mtitle">
+                                                <div class="tab__mtitle-str">Общие данные</div>
+                                                <label class="switch">
+                                                    <div class="switch-text">Редактировать</div>
+                                                    <input type="checkbox" hidden name="general-info-edit">
+                                                    <span class="switch__row">
+                                                        <span class="switch__icon">
+                                                            <img class="switch__lock" src="./img/lock.svg" alt="">
+                                                            <img class="switch__unlock" src="./img/unlock.svg" alt="">
+                                                            <img src="img/switch-edit.svg" alt="" class="switch__mobile">
+                                                        </span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <div class="general-info">
+                                                <div class="general-info__block general-info-edit active">
+                                                    <div class="general-info__list">
+                                                        <div class="general-info__item">
+                                                            <div class="general-info__k">Ваше имя</div>
+                                                            <div class="general-info__v">Анжелика</div>
+                                                        </div>
+                                                        <div class="general-info__item">
+                                                            <div class="general-info__k">Ваша фамилия</div>
+                                                            <div class="general-info__v">Романова</div>
+                                                        </div>
+                                                        <div class="general-info__item">
+                                                            <div class="general-info__k">Телефон</div>
+                                                            <div class="general-info__v">+7 800 333 21 21</div>
+                                                        </div>
+                                                        <div class="general-info__item">
+                                                            <div class="general-info__k">Город</div>
+                                                            <div class="general-info__v">Марсель</div>
+                                                        </div>
+                                                        <div class="general-info__item">
+                                                            <div class="general-info__k">Адрес</div>
+                                                            <div class="general-info__v">81 Bd de la Libération</div>
+                                                        </div>
+                                                        <div class="general-info__item">
+                                                            <div class="general-info__k">Дата рождения</div>
+                                                            <div class="general-info__v">12.04.1980</div>
+                                                        </div>
+                                                        <div class="general-info__item">
+                                                            <div class="general-info__k">E-mail</div>
+                                                            <div class="general-info__v">a.besedina96@gmail.com</div>
+                                                        </div>
+                                                        <div class="general-info__item">
+                                                            <div class="general-info__k">Пароль</div>
+                                                            <div class="general-info__v">Обновлён год назад</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <form class="general-info__block general-info-edit">
+                                                    <div class="lab-inp">
+                                                        <div class="lab-inp__list">
+                                                            <label class="lab-inp__label lab-inp__label--33">
+                                                                <div class="lab-inp__str">Ваше имя</div>
+                                                                <input class="lab-inp__input" required type="name"
+                                                                    value="Ирина">
+                                                            </label>
+                                                            <label class="lab-inp__label lab-inp__label--33">
+                                                                <div class="lab-inp__str">Ваша фамилия</div>
+                                                                <input class="lab-inp__input" required type="name"
+                                                                    value="Романова">
+                                                            </label>
+                                                            <label class="lab-inp__label lab-inp__label--33">
+                                                                <div class="lab-inp__str">Дата рождения</div>
+                                                                <input class="lab-inp__input" required type="date"
+                                                                    value="12.04.1980">
+                                                            </label>
+                                                            <label class="lab-inp__label lab-inp__label--33">
+                                                                <div class="lab-inp__str">Город</div>
+                                                                <input class="lab-inp__input" required type="text"
+                                                                    value="Марсель">
+                                                            </label>
+                                                            <label class="lab-inp__label lab-inp__label--66">
+                                                                <div class="lab-inp__str">Адрес</div>
+                                                                <input class="lab-inp__input" required type="address"
+                                                                    value="81 Bd de la Libération">
+                                                            </label>
+                                                            <label
+                                                                class="lab-inp__label lab-inp__label--33 i-msg error">
+                                                                <div class="lab-inp__str">Телефон</div>
+                                                                <span class="i-msg__item">Данный номер занят</span>
+                                                                <input class="lab-inp__input" required type="tel"
+                                                                    value="Телефон">
+                                                            </label>
+                                                            <label class="lab-inp__label lab-inp__label--66 i-msg">
+                                                                <div class="lab-inp__str">E-mail</div>
+                                                                <span class="i-msg__item">Данный e-mail занят</span>
+                                                                <input class="lab-inp__input" required type="email"
+                                                                    value="a.besedina96@gmail.com">
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="lab-inp">
+                                                        <div class="general-info__mtitle lab-inp__mtitle">Изменить
+                                                            пароль </div>
+                                                        <div class="lab-inp__list">
+                                                            <label class="lab-inp__label lab-inp__label--33">
+                                                                <div class="lab-inp__str">Старый пароль</div>
+                                                                <input class="lab-inp__input" required type="password"
+                                                                    value="">
+                                                            </label>
+                                                            <label class="lab-inp__label lab-inp__label--33">
+                                                                <div class="lab-inp__str">Новый пароль</div>
+                                                                <input class="lab-inp__input" required type="password"
+                                                                    value="">
+                                                            </label>
+                                                            <label class="lab-inp__label lab-inp__label--33">
+                                                                <div class="lab-inp__str">Повторите пароль</div>
+                                                                <input class="lab-inp__input" required type="password"
+                                                                    value="">
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="general-info__btns">
+                                                        <button class="general-info__remove" type="button"><img
+                                                                src="./img/trash-bin.svg" alt=""> Удалить аккаунт
+                                                        </button>
+                                                        <button class="btn-ca btn-ca--pinkborder" type="submit">
+                                                            Сохранить изменения<img src="./img/arr-whibla-rig-cir.svg"
+                                                                alt="">
+                                                        </button>
+                                                    </div>
+                                                </form>
+                                                <div class="general-info__swithes">
+                                                    <label class="switch"> Скрыть страницу <input type="checkbox" hidden
+                                                            checked>
+                                                        <span class="switch__row">
+                                                            <span class="switch__icon">
+                                                            </span>
+                                                        </span>
+                                                    </label>
+                                                    <label class="switch"> Скрыть фамилию <input type="checkbox" hidden>
+                                                        <span class="switch__row">
+                                                            <span class="switch__icon">
+                                                            </span>
+                                                        </span>
+                                                    </label>
+                                                    <label class="switch switch--hide-address"> Скрыть полный адрес
+                                                        <input type="checkbox" hidden>
+                                                        <span class="switch__row">
+                                                            <span class="switch__icon">
+                                                            </span>
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="general-info__bot">
+                                                    <div class="general-info__mtitle">Рассылки и оповещения</div>
+                                                    <label class="checkbox"> <input type="checkbox" hidden>
+                                                        <span class="checkbox__icon">
+                                                            <img src="./img/check-black.svg" alt="">
+                                                        </span>E-mail рассылка </label>
+                                                    <label class="checkbox"> <input type="checkbox" hidden checked>
+                                                        <span class="checkbox__icon">
+                                                            <img src="./img/check-black.svg" alt="">
+                                                        </span>Уведомления</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab__block tab__block-social">
+                                        <div class="tab__block-inner">
+                                            <div class="tab__mtitle">
+                                                <div class="tab__mtitle-str">Привяжите ваши аккаунты социальных cетей
+                                                </div>
+                                            </div>
+                                            <div class="tab-subscribes">
+                                                <div class="tab-subscribes__inner">
+                                                    <a href="" class="tab-subscribes__item">
+                                                        <div class="tab-subscribes__icon">
+                                                            <img src="./img/vk.svg" alt="">
+                                                        </div>
+                                                        <div>
+                                                            <div class="tab-subscribes__title">Вконтакте</div>
+                                                            <div class="tab-subscribes__subtitle"> Привязать<img
+                                                                    src="./img/arr-gra-rig-cir.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="" class="tab-subscribes__item">
+                                                        <div class="tab-subscribes__icon">
+                                                            <img src="./img/face-book.svg" alt="">
+                                                        </div>
+                                                        <div>
+                                                            <div class="tab-subscribes__title">Facebook</div>
+                                                            <div class="tab-subscribes__subtitle"> Привязать<img
+                                                                    src="./img/arr-gra-rig-cir.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="" class="tab-subscribes__item">
+                                                        <div class="tab-subscribes__icon">
+                                                            <img src="./img/google-big.svg" alt="">
+                                                        </div>
+                                                        <div>
+                                                            <div class="tab-subscribes__title">Google</div>
+                                                            <div class="tab-subscribes__subtitle"> Привязать<img
+                                                                    src="./img/arr-gra-rig-cir.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="" class="tab-subscribes__item">
+                                                        <div class="tab-subscribes__icon">
+                                                            <img src="./img/apple-big.svg" alt="">
+                                                        </div>
+                                                        <div>
+                                                            <div class="tab-subscribes__title">Apple ID</div>
+                                                            <div class="tab-subscribes__subtitle"> Привязать<img
+                                                                    src="./img/arr-gra-rig-cir.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="modals">
+            <div class="modal close-x edit-avatar" data-modal="edit-ava">
+                <div class="modal__inner">
+                    <div class="modal__bg modal__bg--top">
+                        <img src="./img/modal-bg1.png" alt="">
+                    </div>
+                    <div class="modal__bg modal__bg--bot">
+                        <img src="./img/modal-bg2.png" alt="">
+                    </div>
+                    <button class="modal__close close-x" type="button">
+                        <img class="close-x" src="./img/modal-close.svg" alt="">
+                    </button>
+                    <div class="modal__content edit-avatar__content active">
+                        <div class="modal__header">
+                            <div class="modal__mtitle">Удалить или загрузить новое фото?</div>
+                            <div class="modal__subtitle">При загрузке новой фотографии, текущая фотография будет удалена
+                                с вашего профиля </div>
+                        </div>
+                        <div class="modal__footer">
+                            <button class="btn btn--lg close-x">Удалить текущие фото</button>
+                            <label class="btn btn--green btn--lg"><input type="file" class="edit-avatar__file" name=""
+                                    hidden> Загрузить новое фото</label>
+                        </div>
+                    </div>
+                    <div class="modal__content edit-avatar__content">
+                        <div class="modal__header">
+                            <div class="modal__mtitle">Загрузка нового фото</div>
+                            <div class="modal__subtitle">Выберите область для отображения на сайте</div>
+                        </div>
+                        <div class="edit-avatar__avatar">
+                            <div class="edit-avatar__img crop-avatar">
+                                <div class="edit-avatar__rotate">
+                                    <button class="edit-avatar__rotate-left"><img src="./img/rotate-left.svg"
+                                            alt=""></button>
+                                    <button class="edit-avatar__rotate-right"><img src="./img/rotate-right.svg"
+                                            alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="cropped"></div> -->
+                        <img src="" class="cropped">
+                        <div class="modal__footer">
+                            <div class="btn btn--md close-x">Отмена</div>
+                            <button class="btn btn--green btn--md edit-avatar__upload">Загрузить</button>
+                        </div>
+                    </div>
+                    <div class="modal__content edit-avatar__content">
+                        <div class="modal__header">
+                            <div class="modal__mtitle">Загрузка нового фото</div>
+                        </div>
+                        <div class="edit-avatar__progress">
+                            <div class="edit-avatar__progress-title">Загрузка</div>
+                            <div class="edit-avatar__progress-row">
+                                <div class="edit-avatar__progress-value"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal close-x" data-modal="hide-address">
+                <div class="modal__inner">
+                    <div class="modal__bg modal__bg--top">
+                        <img src="./img/modal-bg1.png" alt="">
+                        <img src="./img/modal-bg1-mobile.png" alt="" class="mobile">
+                    </div>
+                    <div class="modal__bg modal__bg--bot">
+                        <img src="./img/modal-bg2.png" alt="">
+                        <img src="./img/modal-bg2-mobile.png" alt="" class="mobile">
+                    </div>
+                    <button class="modal__close close-x" type="button">
+                        <img class="close-x" src="./img/modal-close.svg" alt="">
+                    </button>
+                    <div class="modal__content">
+                        <div class="modal__header">
+                            <div class="modal__mtitle">Осторожно!</div>
+                            <div class="modal__subtitle">Если вы скроете свой полный адрес, клиенты не смогут корректно
+                                расчитать расстояние до вас. Вы&nbsp;уверены, что хотите продолжить?</div>
+                        </div>
+                        <div class="modal__footer">
+                            <button class="btn btn--lg hide-address-yes close-x">Да, скрыть мой адрес</button>
+                            <button class="btn btn--green close-x">Нет, оставить адрес доступным</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__top">
+                        <div class="footer__logo">
+                            <div class="footer__logo-img">
+                                <img src="./img/logo-white.svg" alt="">
+                            </div>
+                            <div class="footer__logo-text">Исполнители <br> для любых задач</div>
+                        </div>
+                        <div class="footer__list">
+                            <div class="footer__item">
+                                <div class="footer__title">Услуги</div>
+                                <div class="footer__ul">
+                                    <ul>
+                                        <li><a href="">Услуги визажиста</a></li>
+                                        <li><a href="">Брови и ресницы</a></li>
+                                        <li><a href="">Ногтевой сервис</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="">Косметология</a></li>
+                                        <li><a href="">Мастер по волосам</a></li>
+                                        <li><a href="">Услуги стилиста</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer__item">
+                                <div class="footer__title">Информация</div>
+                                <div class="footer__ul">
+                                    <ul>
+                                        <li><a href="">Исполнители</a></li>
+                                        <li><a href="">Контакты</a></li>
+                                        <li><a href="">Подписка</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="">Блог</a></li>
+                                        <li><a href="">О нас</a></li>
+                                        <li><a href="">Реклама</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer__item">
+                                <div class="footer__title">Контакты</div>
+                                <div class="footer__ul">
+                                    <ul>
+                                        <li><a href=""><img src="./img/footer-local.svg" alt="">Россия, г. Москва,
+                                                Огородный проезд, 5с2</a>
+                                        </li>
+                                        <li><a href=""><img src="./img/footer-tel.svg" alt="">+7 800 333 21 21</a></li>
+                                        <li><a href=""><img src="./img/footer-mail.svg" alt="">test@mail.ru</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__bot">
+                        <div class="footer__bot-text">Политика конфиденциальности </div>
+                        <div class="footer__bot-text footer__bot-text--year">2021</div>
+                        <div class="footer__bot-text footer__bot-text--logo">Разработано <a
+                                href="https://requestdesign.ru/" target="_blank"><img src="./img/logo-footer.svg"
+                                    alt=""></a></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script defer src="js/swiper-bundle.min.js"></script>
+    <script defer src="js/jquery-3.5.1.min.js"></script>
+    <script defer src="js/croppie.js"></script>
+    <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script> -->
+    <script defer src="js/main.js"></script>
+</body>
+
+</html>

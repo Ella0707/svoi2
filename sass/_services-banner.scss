@@ -1,0 +1,262 @@
+.services-banner {
+    padding-top: 14.6rem;
+    margin-bottom: 9.5rem;
+    overflow: hidden;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        background-color: #f2f1f5;
+        border-radius: 7rem;
+        padding-right: 10.7rem;
+        padding-left: 10.5rem;
+        padding-bottom: 4.9rem;
+        position: relative;
+    }
+    &__dash {
+        position: absolute;
+        &.mobile {
+            display: none;
+        }
+        &--left {
+            width: 15rem;
+            left: -10rem;
+            top: 10rem;
+        }
+        &--mid {
+            width: 28rem;
+            left: 45rem;
+            top: 23rem;
+        }
+        &--right {
+            width: 52rem;
+            right: -6rem;
+            top: 6rem;
+        }
+    }
+    &__left {
+        width: 50.1rem;
+        padding-top: 10rem;
+    }
+    &__title {
+        width: 50rem;
+        font-weight: bold;
+        font-size: 5rem;
+        line-height: 5.8rem;
+        color: #171e2f;
+    }
+    &__subtitle {
+        // width: 37.5rem;
+        width: 35rem;
+        font-size: 1.8rem;
+        line-height: 1.4;
+        color: #868a8e;
+        padding-top: 3rem;
+        margin-bottom: 6rem;
+    }
+    &__down {
+        display: flex;
+        align-items: center;
+    }
+    &__down-texts {
+        padding-left: 3rem;
+    }
+    &__a-button {
+        display: inline-block;
+        width: 7rem;
+        height: 10rem;
+        z-index: 1;
+    }
+    &__services {
+        font-size: 2rem;
+        line-height: 2.9rem;
+        color: #171e2f;
+        position: relative;
+        padding-bottom: 1.2rem;
+        font-weight: bold;
+        &::after {
+            content: "";
+            display: inline-block;
+            width: 3.3rem;
+            height: 0.2rem;
+            background-color: #171e2f;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+    &__all-services {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        color: #868a8e;
+        padding-top: 1.3rem;
+    }
+    &__mid {
+        width: 50rem;
+        margin-left: 11.7rem;
+        position: relative;
+        top: -1rem;
+    }
+    &__img-1 {
+        position: relative;
+    }
+    &__right {
+        width: 35rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-bottom: 5rem;
+    }
+    &__stat {
+        text-align: right;
+        padding-right: 3.3rem;
+        position: relative;
+        margin-bottom: 6rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &::after {
+            content: "";
+            display: inline-block;
+            width: 1rem;
+            height: 1rem;
+            background-color: #3ab292;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 50%;
+        }
+    }
+    &__key {
+        font-weight: bold;
+        font-size: 3.5rem;
+        color: #232020;
+    }
+    &__value {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        color: #898d93;
+    }
+    @media (max-width: 48em) {
+        padding-top: 14.6rem;
+        &__inner {
+            display: flex;
+            justify-content: space-between;
+            border-radius: 7rem;
+            padding-right: 10.7rem;
+            padding-left: 10.5rem;
+            padding-bottom: 5.9rem;
+        }
+        &__left {
+            width: 50.1rem;
+            padding-top: 10rem;
+        }
+        &__title {
+            width: 50rem;
+            font-weight: bold;
+            font-size: 5rem;
+            line-height: 5.8rem;
+            color: #171e2f;
+        }
+        &__subtitle {
+            width: 37.5rem;
+            font-size: 1.8rem;
+            line-height: 1.4;
+            color: #868a8e;
+            padding-top: 3rem;
+            margin-bottom: 10rem;
+        }
+        &__down {
+            display: flex;
+            align-items: center;
+        }
+        &__down-texts {
+            padding-left: 3rem;
+        }
+        &__a-button {
+            display: inline-block;
+            width: 7rem;
+            height: 10rem;
+            z-index: 1;
+        }
+        &__services {
+            font-size: 2rem;
+            line-height: 2.9rem;
+            color: #171e2f;
+            position: relative;
+            padding-bottom: 1.2rem;
+            &::after {
+                content: "";
+                display: inline-block;
+                width: 3.3rem;
+                height: 0.1rem;
+                background-color: #171e2f;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        }
+        &__line {
+        }
+        &__all-services {
+            font-size: 1.5rem;
+            line-height: 2.5rem;
+            color: #868a8e;
+            padding-top: 1.3rem;
+        }
+        &__mid {
+            // width: 50rem;
+            // padding-top: 4rem;
+            // margin-left: 14.4rem;
+            width: 56rem;
+            padding-top: 1rem;
+            margin: 0 auto;
+        }
+        &__img-1 {
+            position: relative;
+        }
+        &__img-2 {
+            position: absolute;
+            top: 0rem;
+            display: none;
+        }
+        // &__right {
+        //     // width: 35rem;
+        //     width: 100%;
+        //     display: flex;
+        //     flex-direction: row-reverse;
+        //     justify-content: space-between;
+        //     padding: 0;
+        //     padding-top: 6.2rem;
+        // }
+        &__stat {
+            // width: 48%;
+            // text-align: center;
+            // padding-right: 0;
+            // position: relative;
+            // margin-bottom: 0;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &::after {
+                content: "";
+                display: inline-block;
+                width: 1rem;
+                height: 1rem;
+                background-color: #3ab292;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                border-radius: 100%;
+            }
+        }
+        &__key {
+            font-size: 4.8rem;
+        }
+        &__value {
+            font-size: 3rem;
+            line-height: 1.2;
+        }
+    }
+}

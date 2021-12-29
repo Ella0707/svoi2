@@ -1,0 +1,119 @@
+.statistics {
+    &__chart-wrap {
+        color: $blackt;
+        background-color: #fff;
+        background-image: linear-gradient(90deg, #ffffff 6.15%, rgba(255, 255, 255, 0) 30.65%);
+        border-radius: 3rem;
+        padding: 2.4rem 3.5rem;
+        padding-bottom: 6rem;
+        margin-bottom: 9rem;
+    }
+    &__filter {
+        margin-bottom: 5rem;
+        .select_checked {
+            display: none;
+        }
+        .select-dropdown {
+            display: flex;
+            align-items: center;
+        }
+        &-item {
+            font-size: 1.6rem;
+            height: 4.5rem;
+            padding: 0 2rem;
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+            color: #fff;
+            &.active {
+                color: #DE3954;
+                background: #FFFFFF;
+                border-radius: 20rem;
+                // padding: 0 2rem;
+                box-shadow: .5rem .5rem 3rem rgba(229, 39, 85, 0.2)
+            }
+            &:not(:last-child) {
+                margin-right: 1rem;
+            }
+        }
+
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 4rem;
+        &-title {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 3rem;
+        }
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        width: 48rem;
+        height: 15rem;
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+        background-color: #ffffff;
+        color: $blackt;
+        border-radius: 3rem;
+        background-image: url(../img/stat-rose.png);
+        background-position: right top;
+        background-repeat: no-repeat;
+        background-size: 27rem auto;
+    }
+    &__icon {
+        width: 6.4rem;
+        height: 6.4rem;
+        flex-shrink: 0;
+        margin-right: 3rem;
+        border-radius: 0 1.5rem 1.5rem 1.5rem;
+        &--red {
+            box-shadow: 1rem 1rem 4rem rgba(229, 39, 39, 0.3);
+        }
+        &--green {
+            box-shadow: 1rem 1rem 4rem rgba(39, 229, 195, 0.3);
+        }
+        @include contain;
+    }
+    &__k {
+        font-weight: bold;
+        font-size: 5rem;
+        span {
+            font-size: 1.8rem;
+            color: #2b3242;
+            font-weight: normal;
+        }
+    }
+    &__v {
+        color: #2b3242;
+        span.mobile {
+            display: none;
+        }
+    }
+    &__icon-right {
+        width: 5rem;
+        height: 6.8rem;
+        flex-shrink: 0;
+        margin-left: auto;
+        @include contain;
+    }
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__title {
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+    &__chart-over {
+        overflow: auto;
+    }
+    &__chart {
+        width: 100%;
+        height: 50rem;
+    }
+}

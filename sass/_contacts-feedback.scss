@@ -1,0 +1,70 @@
+.contacts-feedback {
+    &__inner {
+        background-color: #cc283c;
+        border-radius: 7rem;
+        position: relative;
+        margin-bottom: 7rem;
+        padding-top: 4.6rem;
+        padding-left: 10.6rem;
+        padding-right: 8rem;
+        padding-bottom: 4.4rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left {
+        padding-top: 4rem;
+        position: relative;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 4rem;
+        color: #ffffff;
+        margin-bottom: 1.9rem;
+    }
+    &__subtitle {
+        font-weight: normal;
+        font-size: 1.8rem;
+        color: #ffc2d1;
+        margin-bottom: 5.1rem;
+
+        &.mobile {
+            display: none;
+        }
+    }
+    &__list {
+        width: 87.7rem;
+    }
+    &__boy {
+        position: relative;
+        width: 56.5rem;
+    }
+    &__pic {
+        position: absolute;
+        width: 66.7rem;
+        bottom: -22.1rem;
+        left: -1rem;
+        transform: rotate(187deg);
+        overflow: hidden;
+    }
+    &__pic2 {
+        position: absolute;
+        width: 61.7rem;
+        top: -14rem;
+        right: 56rem;
+        transform: rotate(187deg) scale(1, -1);
+        overflow: hidden;
+    }
+    .lab-inp__str {
+        margin-bottom: .6rem;
+    }
+    .lab-inp__label--textarea {
+        .lab-inp__str {
+            margin-bottom: 1rem;
+        }
+    }
+    .lab-inp__textarea {
+        height: 2.2rem;
+        resize: none;
+        margin-bottom: -0.5rem;
+    }
+}

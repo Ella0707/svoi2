@@ -1,0 +1,64 @@
+.politica-info {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: relative;
+    }
+    &__list {
+        width: 96.1rem;
+    }
+    &__title {
+        font-weight: bold;
+        line-height: 3.5rem;
+        color: #171e2f;
+        font-size: 2.4rem;
+        padding-bottom: 2rem;
+    }
+    &__text {
+        font-weight: normal;
+        font-size: 1.7rem;
+        line-height: 2.5rem;
+        color: #898d93;
+        padding-bottom: 5rem;
+    }
+    &__function {
+        width: 47.3rem;
+        background: #f4f3f8;
+        border-radius: 2.5rem;
+        padding: 2.3rem 1.5rem;
+        position: sticky;
+        top: 2rem;
+    }
+    &__point {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        padding-right: 1.5rem;
+        border-radius: 1.4rem;
+        cursor: pointer;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &.active {
+            background-color: #fff;
+            color: #cc284a;
+        }
+        &:hover {
+            color: #cc284a;
+        }
+    }
+    &__icon {
+        flex-shrink: 0;
+        width: 6rem;
+        height: 6rem;
+        background-color: #fff;
+        margin-right: 1.9rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1.4rem;
+        top: 0;
+        left: 0;
+    }
+}

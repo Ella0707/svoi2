@@ -1,0 +1,44 @@
+.hint {
+    position: relative;
+    flex-shrink: 0;
+    cursor: default;
+    display: inline-block;
+    &:hover {
+        .hint__content {
+            display: block;
+        }
+    }
+    &__content {
+        display: none;
+        position: absolute;
+        z-index: 5;
+        padding: 3rem;
+        background-color: #fff;
+        border-radius: 3rem;
+        top: calc(100% + 2rem);
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2rem;
+        width: 36.3rem;
+        box-shadow: 1.5rem 3rem 12rem rgba(36, 36, 36, 0.2);
+        &::after {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            width: 2rem;
+            height: 2rem;
+            background-color: #fff;
+            left: 50%;
+            top: 0;
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+    }
+    &__title {
+        font-weight: bold;
+        margin-bottom: 0.7rem;
+    }
+    &__text {
+        color: $greyt;
+        font-weight: normal;
+    }
+}
