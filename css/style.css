@@ -1283,9 +1283,92 @@ input[type=number] {
 .modal__footer .btn:last-child {
   margin-right: 0;
 }
+.modal.modal-leave-review .leave-review__who {
+  font-size: 1.8rem;
+  color: #898D93;
+}
+.modal.modal-leave-review .leave-review__task-task {
+  font-size: 1.8rem;
+  color: #898d93;
+}
+.modal.modal-leave-review .leave-review__task-name {
+  font-size: 2rem;
+  color: #171e2f;
+  font-weight: 700;
+}
+.modal.modal-leave-review .leave-review__ava img {
+  border-radius: 50%;
+}
 .modal.modal-review-for-performer .leave-review__who {
   font-size: 1.8rem;
   color: #898D93;
+}
+.modal.modal-review-for-performer .leave-review__task-task {
+  font-size: 1.8rem;
+  color: #898d93;
+}
+.modal.modal-review-for-performer .leave-review__task-name {
+  font-size: 2rem;
+  color: #171e2f;
+  font-weight: 700;
+}
+.modal.modal-review-for-performer .leave-review__ava img {
+  border-radius: 50%;
+}
+.modal.modal-review-for-customer .leave-review__who {
+  font-size: 1.8rem;
+  color: #898D93;
+}
+.modal.modal-review-for-customer .leave-review__task-task {
+  font-size: 1.8rem;
+  color: #898d93;
+}
+.modal.modal-review-for-customer .leave-review__task-name {
+  font-size: 2rem;
+  color: #171e2f;
+  font-weight: 700;
+}
+.modal.modal-review-for-customer .leave-review__ava img {
+  border-radius: 50%;
+}
+.modal.modal-signin .login__soc-icon {
+  background-color: white;
+  border-radius: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.modal.modal-login .login__soc-icon {
+  background-color: white;
+  border-radius: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.modal.modal-login-task .login__soc-icon {
+  background-color: white;
+  border-radius: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header {
@@ -23725,15 +23808,606 @@ input[type=number] {
     width: 85%;
     margin: 0 auto;
   }
+  .modal.modal-leave-review .modal__header {
+    margin-bottom: 5rem;
+  }
+  .modal.modal-leave-review .modal__header .modal__mtitle {
+    line-height: 1.35;
+  }
+  .modal.modal-leave-review .leave-review__user {
+    margin-bottom: 4.2rem;
+  }
+  .modal.modal-leave-review .leave-review__ava {
+    width: 9.6rem;
+    height: 9.6rem;
+    margin-right: 3rem;
+  }
+  .modal.modal-leave-review .leave-review__name {
+    font-size: 3.6rem;
+  }
+  .modal.modal-leave-review .leave-review__who {
+    font-size: 3.2rem;
+  }
+  .modal.modal-leave-review .leave-review__task {
+    padding-left: 0rem;
+    margin-bottom: 9rem;
+  }
+  .modal.modal-leave-review .leave-review__task-task {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  .modal.modal-leave-review .leave-review__task-name {
+    font-size: 3rem;
+  }
+  .modal.modal-leave-review .leave-review__title {
+    font-size: 3.6rem;
+    margin-bottom: 4rem;
+  }
+  .modal.modal-leave-review .leave-review__title {
+    margin-bottom: 5rem;
+  }
+  .modal.modal-leave-review .leave-review__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 9rem;
+  }
+  .modal.modal-leave-review .leave-review__item:nth-child(-n+2) {
+    margin-bottom: 4rem;
+  }
+  .modal.modal-leave-review .leave-review__item:not(:nth-child(2n)) {
+    margin-right: 5.51rem;
+  }
+  .modal.modal-leave-review .leave-review__item:nth-child(2n) {
+    margin-right: 0;
+  }
+  .modal.modal-leave-review .leave-review__star {
+    width: 3.6rem;
+    height: 3.4rem;
+    margin-right: 1.3rem;
+  }
+  .modal.modal-leave-review .leave-review__r-title {
+    margin-bottom: 2rem;
+  }
+  .modal.modal-leave-review .leave-review__textarea {
+    border-radius: 4.38rem;
+    height: 20rem;
+  }
+  .modal.modal-leave-review .leave-review__submit {
+    width: 32.4rem;
+  }
+  .modal.modal-review-for-performer .modal__header {
+    margin-bottom: 5rem;
+  }
+  .modal.modal-review-for-performer .modal__header .modal__mtitle {
+    line-height: 1.35;
+  }
+  .modal.modal-review-for-performer .leave-review__user {
+    margin-bottom: 4.2rem;
+  }
   .modal.modal-review-for-performer .leave-review__ava {
     width: 9.6rem;
     height: 9.6rem;
+    margin-right: 3rem;
   }
   .modal.modal-review-for-performer .leave-review__name {
     font-size: 3.6rem;
   }
   .modal.modal-review-for-performer .leave-review__who {
     font-size: 3.2rem;
+  }
+  .modal.modal-review-for-performer .leave-review__task {
+    padding-left: 0rem;
+    margin-bottom: 9rem;
+  }
+  .modal.modal-review-for-performer .leave-review__task-task {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  .modal.modal-review-for-performer .leave-review__task-name {
+    font-size: 3rem;
+  }
+  .modal.modal-review-for-performer .leave-review__title {
+    font-size: 3.6rem;
+    margin-bottom: 4rem;
+  }
+  .modal.modal-review-for-performer .leave-review__title {
+    margin-bottom: 5rem;
+  }
+  .modal.modal-review-for-performer .leave-review__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 9rem;
+  }
+  .modal.modal-review-for-performer .leave-review__item:nth-child(-n+2) {
+    margin-bottom: 4rem;
+  }
+  .modal.modal-review-for-performer .leave-review__item:not(:nth-child(2n)) {
+    margin-right: 5.51rem;
+  }
+  .modal.modal-review-for-performer .leave-review__item:nth-child(2n) {
+    margin-right: 0;
+  }
+  .modal.modal-review-for-performer .leave-review__star {
+    width: 3.6rem;
+    height: 3.4rem;
+    margin-right: 1.3rem;
+  }
+  .modal.modal-review-for-performer .leave-review__r-title {
+    margin-bottom: 2rem;
+  }
+  .modal.modal-review-for-performer .leave-review__textarea {
+    border-radius: 4.38rem;
+    height: 20rem;
+  }
+  .modal.modal-review-for-performer .leave-review__submit {
+    width: 32.4rem;
+  }
+  .modal.modal-review-for-customer .modal__header {
+    margin-bottom: 5rem;
+  }
+  .modal.modal-review-for-customer .modal__header .modal__mtitle {
+    line-height: 1.35;
+  }
+  .modal.modal-review-for-customer .leave-review__user {
+    margin-bottom: 4.2rem;
+  }
+  .modal.modal-review-for-customer .leave-review__ava {
+    width: 9.6rem;
+    height: 9.6rem;
+    margin-right: 3rem;
+  }
+  .modal.modal-review-for-customer .leave-review__name {
+    font-size: 3.6rem;
+  }
+  .modal.modal-review-for-customer .leave-review__who {
+    font-size: 3.2rem;
+  }
+  .modal.modal-review-for-customer .leave-review__task {
+    padding-left: 0rem;
+    margin-bottom: 9rem;
+  }
+  .modal.modal-review-for-customer .leave-review__task-task {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  .modal.modal-review-for-customer .leave-review__task-name {
+    font-size: 3rem;
+  }
+  .modal.modal-review-for-customer .leave-review__title {
+    font-size: 3.6rem;
+    margin-bottom: 4rem;
+  }
+  .modal.modal-review-for-customer .leave-review__title {
+    margin-bottom: 5rem;
+  }
+  .modal.modal-review-for-customer .leave-review__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 9rem;
+  }
+  .modal.modal-review-for-customer .leave-review__item:nth-child(-n+2) {
+    margin-bottom: 4rem;
+  }
+  .modal.modal-review-for-customer .leave-review__item:not(:nth-child(2n)) {
+    margin-right: 5.51rem;
+  }
+  .modal.modal-review-for-customer .leave-review__item:nth-child(2n) {
+    margin-right: 0;
+  }
+  .modal.modal-review-for-customer .leave-review__star {
+    width: 3.6rem;
+    height: 3.4rem;
+    margin-right: 1.3rem;
+  }
+  .modal.modal-review-for-customer .leave-review__r-title {
+    margin-bottom: 2rem;
+  }
+  .modal.modal-review-for-customer .leave-review__textarea {
+    border-radius: 4.38rem;
+    height: 20rem;
+  }
+  .modal.modal-review-for-customer .leave-review__submit {
+    width: 32.4rem;
+  }
+  .modal.modal-tel-confirm .modal__inner {
+    padding-bottom: 10rem;
+  }
+  .modal.modal-tel-confirm .modal__header {
+    margin-bottom: 6rem;
+  }
+  .modal.modal-tel-confirm .modal__mtitle {
+    margin-bottom: 5rem;
+  }
+  .modal.modal-tel-confirm .modal__subtitle {
+    width: 59%;
+    margin: 0 auto;
+  }
+  .modal.modal-tel-confirm .modal__footer .tel-confirm {
+    width: 100%;
+    height: 13.2rem;
+    border-radius: 4.27rem;
+    padding-left: 5.5rem;
+    padding-top: 2rem;
+  }
+  .modal.modal-tel-confirm .modal__footer .tel-confirm .tel-confirm__str {
+    font-size: 3rem;
+    margin-bottom: 1.3rem;
+  }
+  .modal.modal-tel-confirm .modal__footer .tel-confirm .tel-confirm__input {
+    font-size: 3rem;
+  }
+  .modal.modal-email-confirm .modal__subtitle {
+    width: 65%;
+    margin: 0 auto;
+  }
+  .modal.modal-signin .modal__inner {
+    padding-bottom: 6rem;
+  }
+  .modal.modal-signin .modal__close {
+    right: -3rem;
+    top: -11rem;
+  }
+  .modal.modal-signin .modal__close img {
+    width: 4rem;
+  }
+  .modal.modal-signin .login__content {
+    padding-top: 0rem;
+  }
+  .modal.modal-signin .login__img {
+    display: none;
+  }
+  .modal.modal-signin .login__content {
+    width: 100%;
+  }
+  .modal.modal-signin .login__mtitle {
+    font-size: 5.2rem;
+    margin-bottom: 6.5rem;
+  }
+  .modal.modal-signin .login__title {
+    font-size: 3.6rem;
+    font-weight: 700;
+    margin-bottom: 2.3rem;
+  }
+  .modal.modal-signin .login__soc-icon {
+    width: 10rem;
+    height: 10rem;
+  }
+  .modal.modal-signin .login__soc-list {
+    width: 82.5%;
+    margin-bottom: 7rem;
+  }
+  .modal.modal-signin .login__form {
+    width: 100%;
+  }
+  .modal.modal-signin .lab-inp__list {
+    margin-top: 2rem;
+  }
+  .modal.modal-signin .lab-inp__str {
+    font-size: 3rem;
+    margin-bottom: 1.4rem;
+  }
+  .modal.modal-signin .lab-inp__input {
+    font-size: 3rem;
+  }
+  .modal.modal-signin .lab-inp__label {
+    height: 15.4rem;
+    margin-bottom: 0rem;
+    width: 97%;
+    padding-top: 3.2rem;
+    border-radius: 4rem;
+  }
+  .modal.modal-signin .lab-inp__label:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+  .modal.modal-signin .lab-inp {
+    margin-bottom: 3.4rem;
+  }
+  .modal.modal-signin .btn-ca {
+    height: 10rem;
+    margin-bottom: 2.1rem;
+    width: 100%;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .modal.modal-signin .login__fogot {
+    font-size: 3rem;
+    margin-bottom: 5rem;
+  }
+  .modal.modal-signin .modal__bg--left {
+    top: -2rem;
+    left: -14rem;
+  }
+  .modal.modal-signin .modal__bg--left img {
+    display: none;
+  }
+  .modal.modal-signin .modal__bg--left img.mobile {
+    display: block;
+    -webkit-transform: rotate(301deg) scale(-1, 1);
+            transform: rotate(301deg) scale(-1, 1);
+    width: 45rem;
+  }
+  .modal.modal-signin .modal__bg--bot {
+    bottom: -10rem;
+    right: -30rem;
+  }
+  .modal.modal-signin .modal__bg--bot img.mobile {
+    display: block;
+    -webkit-transform: rotate(46deg);
+            transform: rotate(46deg);
+    width: 28rem;
+  }
+  .modal.modal-login .modal__inner {
+    padding-bottom: 3.5rem;
+  }
+  .modal.modal-login .modal__close {
+    right: -3rem;
+    top: -11rem;
+  }
+  .modal.modal-login .modal__close img {
+    width: 4rem;
+  }
+  .modal.modal-login .login__content {
+    padding-top: 0rem;
+  }
+  .modal.modal-login .login__img {
+    display: none;
+  }
+  .modal.modal-login .login__content {
+    width: 100%;
+  }
+  .modal.modal-login .login__mtitle {
+    font-size: 5.2rem;
+    margin-bottom: 6.5rem;
+  }
+  .modal.modal-login .login__title {
+    font-size: 3.6rem;
+    font-weight: 700;
+    margin-bottom: 2.3rem;
+  }
+  .modal.modal-login .login__soc-icon {
+    width: 10rem;
+    height: 10rem;
+  }
+  .modal.modal-login .login__soc-list {
+    width: 82.5%;
+    margin-bottom: 7rem;
+  }
+  .modal.modal-login .login__form {
+    width: 100%;
+  }
+  .modal.modal-login .lab-inp__list {
+    margin-top: 2rem;
+  }
+  .modal.modal-login .lab-inp__str {
+    font-size: 3rem;
+    margin-bottom: 1.4rem;
+  }
+  .modal.modal-login .lab-inp__input {
+    font-size: 3rem;
+  }
+  .modal.modal-login .lab-inp__label {
+    height: 15.4rem;
+    margin-bottom: 0rem;
+    width: 97%;
+    padding-top: 3.2rem;
+    border-radius: 4rem;
+  }
+  .modal.modal-login .lab-inp__label:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+  .modal.modal-login .lab-inp {
+    margin-bottom: 3.4rem;
+  }
+  .modal.modal-login .btn-ca {
+    height: 10rem;
+    margin-bottom: 4.1rem;
+    width: 100%;
+    padding-left: 4rem;
+    padding-right: 5rem;
+  }
+  .modal.modal-login .login__fogot {
+    font-size: 3rem;
+    margin-bottom: 5rem;
+  }
+  .modal.modal-login .modal__bg--left {
+    top: -7rem;
+    left: -14rem;
+  }
+  .modal.modal-login .modal__bg--left img {
+    display: none;
+  }
+  .modal.modal-login .modal__bg--left img.mobile {
+    display: block;
+    -webkit-transform: rotate(301deg) scale(-1, 1);
+            transform: rotate(301deg) scale(-1, 1);
+    width: 45rem;
+  }
+  .modal.modal-login .modal__bg--bot {
+    bottom: -6rem;
+    right: -30rem;
+  }
+  .modal.modal-login .modal__bg--bot img.mobile {
+    display: block;
+    -webkit-transform: rotate(46deg);
+            transform: rotate(46deg);
+    width: 28rem;
+  }
+  .modal.modal-login .login__confirm {
+    font-size: 3rem;
+  }
+  .modal.modal-login .login__confirm span {
+    width: 3.4rem;
+    height: 3.4rem;
+  }
+  .modal.modal-login .login__confirm-lab {
+    margin-right: 2rem;
+  }
+  .modal.modal-login-task .modal__inner {
+    padding-bottom: 3.5rem;
+  }
+  .modal.modal-login-task .modal__close {
+    right: -3rem;
+    top: -11rem;
+  }
+  .modal.modal-login-task .modal__close img {
+    width: 4rem;
+  }
+  .modal.modal-login-task .login__content {
+    padding-top: 0rem;
+  }
+  .modal.modal-login-task .login__img {
+    display: none;
+  }
+  .modal.modal-login-task .login__content {
+    width: 100%;
+  }
+  .modal.modal-login-task .login__mtitle {
+    font-size: 5.2rem;
+    margin-bottom: 6.5rem;
+  }
+  .modal.modal-login-task .login__title {
+    font-size: 3.6rem;
+    font-weight: 700;
+    margin-bottom: 2.3rem;
+  }
+  .modal.modal-login-task .login__soc-icon {
+    width: 10rem;
+    height: 10rem;
+  }
+  .modal.modal-login-task .login__soc-list {
+    width: 82.5%;
+    margin-bottom: 7rem;
+  }
+  .modal.modal-login-task .login__form {
+    width: 100%;
+  }
+  .modal.modal-login-task .lab-inp__list {
+    margin-top: 2rem;
+  }
+  .modal.modal-login-task .lab-inp__str {
+    font-size: 3rem;
+    margin-bottom: 1.4rem;
+  }
+  .modal.modal-login-task .lab-inp__input {
+    font-size: 3rem;
+  }
+  .modal.modal-login-task .lab-inp__label {
+    height: 15.4rem;
+    margin-bottom: 0rem;
+    width: 97%;
+    padding-top: 3.2rem;
+    border-radius: 4rem;
+  }
+  .modal.modal-login-task .lab-inp__label:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+  .modal.modal-login-task .lab-inp {
+    margin-bottom: 3.4rem;
+  }
+  .modal.modal-login-task .btn-ca {
+    height: 10rem;
+    margin-bottom: 4.1rem;
+    width: 100%;
+    padding-left: 4rem;
+    padding-right: 5rem;
+  }
+  .modal.modal-login-task .login__fogot {
+    font-size: 3rem;
+    margin-bottom: 5rem;
+  }
+  .modal.modal-login-task .modal__bg--left {
+    top: 8rem;
+    left: -13rem;
+  }
+  .modal.modal-login-task .modal__bg--left img {
+    display: none;
+  }
+  .modal.modal-login-task .modal__bg--left img.mobile {
+    display: block;
+    -webkit-transform: rotate(271deg) scale(-1, 1);
+            transform: rotate(271deg) scale(-1, 1);
+    width: 45rem;
+  }
+  .modal.modal-login-task .login__confirm {
+    font-size: 3rem;
+  }
+  .modal.modal-login-task .login__confirm span {
+    width: 3.4rem;
+    height: 3.4rem;
+  }
+  .modal.modal-login-task .login__confirm-lab {
+    margin-right: 2rem;
+  }
+  .modal.modal-login-task .login__subtitle {
+    width: 100%;
+    line-height: 1.45;
+    text-align: center;
+    margin-bottom: 5.4rem;
+  }
+  .modal.modal-delete-task-confirm .modal__footer {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .modal.modal-delete-task-confirm .modal__footer .btn {
+    width: 45%;
+  }
+  .modal.modal-leave-review-done .modal__bg--top {
+    top: -11rem;
+    left: -4rem;
+    width: 38.4rem;
+  }
+  .modal.modal-leave-review-done .modal__bg--top img.mobile {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+  .modal.modal-leave-review-done .modal__bg--bot {
+    bottom: -9rem;
+    right: -11rem;
+  }
+  .modal.modal-leave-review-done .modal__bg--bot img {
+    -webkit-transform: rotate(171deg);
+            transform: rotate(171deg);
+    width: 38.4rem;
+  }
+  .modal.modal-leave-review-done .modal__subtitle {
+    width: 81%;
+    margin: 0 auto;
+  }
+  .modal.modal-to-response .modal__mtitle {
+    width: 63%;
+    margin: 0 auto;
+    line-height: 1.3;
+  }
+  .modal.modal-to-response .modal__header {
+    margin-bottom: 6rem;
+  }
+  .modal.modal-to-response .leave-review__title {
+    font-size: 3.6rem;
+    margin-bottom: 2.5rem;
+  }
+  .modal.modal-to-response .leave-review__textarea {
+    border-radius: 4rem;
+    padding-top: 4.5rem;
+    height: 30rem;
+    margin-bottom: 6rem;
+  }
+  .modal.modal-to-response .leave-review__input {
+    height: 9.6rem;
+    border-radius: 4rem;
+  }
+  .modal.modal-to-response .leave-review__inner {
+    margin-bottom: 6.5rem;
+  }
+  .modal.modal-to-response .leave-review__submit {
+    width: 53%;
+    height: 10rem;
   }
 
   .advertisign {

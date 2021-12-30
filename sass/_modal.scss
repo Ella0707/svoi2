@@ -98,10 +98,105 @@
         }
     }
 
+    &.modal-leave-review {
+        .leave-review__who {
+            font-size: 1.8rem;
+            color: #898D93;
+        }
+
+        .leave-review__task-task {
+            font-size: 1.8rem;
+            color: rgba(137, 141, 147, 1);
+        }
+
+        .leave-review__task-name {
+            font-size: 2rem;
+            color: rgba(23, 30, 47, 1);
+            font-weight: 700;
+        }
+
+        .leave-review__ava {
+                img {
+            border-radius: 50%;
+            }
+        }
+    }
+
     &.modal-review-for-performer {
         .leave-review__who {
             font-size: 1.8rem;
             color: #898D93;
+        }
+
+        .leave-review__task-task {
+            font-size: 1.8rem;
+            color: rgba(137, 141, 147, 1);
+        }
+
+        .leave-review__task-name {
+            font-size: 2rem;
+            color: rgba(23, 30, 47, 1);
+            font-weight: 700;
+        }
+
+        .leave-review__ava {
+                img {
+            border-radius: 50%;
+            }
+        }
+    }
+
+    &.modal-review-for-customer {
+        .leave-review__who {
+            font-size: 1.8rem;
+            color: #898D93;
+        }
+
+        .leave-review__task-task {
+            font-size: 1.8rem;
+            color: rgba(137, 141, 147, 1);
+        }
+
+        .leave-review__task-name {
+            font-size: 2rem;
+            color: rgba(23, 30, 47, 1);
+            font-weight: 700;
+        }
+
+        .leave-review__ava {
+            img {
+        border-radius: 50%;
+        }
+    }
+    }
+
+    &.modal-signin {
+        .login__soc-icon {
+            background-color: rgba(255, 255, 255, 1);
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &.modal-login {
+        .login__soc-icon {
+            background-color: rgba(255, 255, 255, 1);
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &.modal-login-task {
+        .login__soc-icon {
+            background-color: rgba(255, 255, 255, 1);
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
 }
